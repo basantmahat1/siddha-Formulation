@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { productData } from "../productdata.js";
+import RelatedProducts from "../components/RelatedProducts";
 
 // ----------------------------------------------------------------------
 // 1. CONTENT DATA DEFINITION (Unchanged)
@@ -177,7 +178,7 @@ const RelatedProductCard = ({ product }) => (
 // 4. RELATED PRODUCTS SECTION (Unchanged)
 // ----------------------------------------------------------------------
 
-const RelatedProducts = ({ currentProductId }) => {
+const RelatedProduct = ({ currentProductId }) => {
   // Logic: Exclude the current product and get up to 8 items
   const relatedItems = productData
     .filter((item) => item.id !== currentProductId)
@@ -221,6 +222,7 @@ const ProductDetail = () => {
   const product = productData.find((p) => p.id === productId);
 
   const [qty, setQty] = useState(1);
+  const [activeTab, setActiveTab] = useState("details");
 
   if (!product) {
     return <Navigate to="/" />;
@@ -333,8 +335,25 @@ const ProductDetail = () => {
             <button className="h-11 px-5 bg-[#6e9e54] hover:bg-[#5c8546] text-white font-semibold rounded-sm transition flex items-center gap-2">
               Add to Cart →
             </button>
-            <button className="h-11 px-5 bg-white border border-gray-800 hover:bg-gray-50 text-gray-900 font-semibold rounded-sm transition flex items-center gap-2">
-              Buy Now →
+            <button
+              onClick={() => setActiveTab("reviews")}
+              className={`pb-4 font-semibold transition ${
+                activeTab === "reviews"
+                  ? "text-green-600 border-b-2 border-green-600"
+                  : "text-gray-600 hover:text-gray-900"
+              }`}
+            >
+              Product Reviews
+            </button>
+            <button
+              onClick={() => setActiveTab("shipping")}
+              className={`pb-4 font-semibold transition ${
+                activeTab === "shipping"
+                  ? "text-green-600 border-b-2 border-green-600"
+                  : "text-gray-600 hover:text-gray-900"
+              }`}
+            >
+              Shipping and Returns
             </button>
           </div>
 
