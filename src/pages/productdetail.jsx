@@ -49,7 +49,7 @@ const getContentData = (product) => [
 // 2. PRODUCT DETAILS COMPONENT (Custom Tabs) - FINAL FIX
 // ----------------------------------------------------------------------
 
-const ProductDetails = ({ product }) => {
+const ProductDescription = ({ product }) => {
   const contentData = getContentData(product);
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
@@ -89,7 +89,7 @@ const ProductDetails = ({ product }) => {
         </div>
 
         {/* Content Area: Restored padding p-6 md:p-12 */}
-        <div className="mt-1 bg-[#fcfbf7] p-6 md:py-12 rounded-b-lg  border border-gray-200 mx-4">
+        <div className="mt-1 bg-[#fcfbf7] p-6 md:py-12 rounded-b-lg   mx-4">
           {contentData[activeTabIndex].content}
         </div>
       </div>
@@ -286,7 +286,7 @@ const ProductDetail = () => {
         </div>
 
         {/* --- BOTTOM SECTION: DYNAMIC PRODUCT DETAILS (Tabs) --- */}
-        <ProductDetails product={product} />
+        <ProductDescription product={product} />
       </div>
       {/* --- END MASTER CONTAINER --- */}
 
