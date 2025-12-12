@@ -73,7 +73,7 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Header Section */}
-      <div className="bg-gradient-to-r from-green-600 to-green-700 text-white py-20">
+      <div className="bg-linear-to-r from-green-600 to-green-700 text-white py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             About Siddha Foundation
@@ -254,7 +254,7 @@ export default function AboutUs() {
         </section>
 
         {/* Achievements */}
-        <section className="bg-gradient-to-r from-green-600 to-green-700 text-white rounded-2xl p-16 mb-20 shadow-lg">
+        <section className="bg-linear-to-r from-green-600 to-green-700 text-white rounded-2xl p-16 mb-20 shadow-lg">
           <h2 className="text-4xl font-bold mb-12 text-center">
             Our Achievements
           </h2>
@@ -322,7 +322,7 @@ export default function AboutUs() {
         </section>
 
         {/* Call to Action */}
-        <section className="bg-gradient-to-r from-green-600 to-green-700 text-white rounded-2xl p-16 text-center shadow-xl">
+        <section className="bg-linear-to-r from-green-600 to-green-700 text-white rounded-2xl p-16 text-center shadow-xl">
           <h2 className="text-4xl font-bold mb-6">Join Our Wellness Journey</h2>
           <p className="text-green-100 mb-10 max-w-3xl mx-auto text-lg leading-relaxed">
             Discover the transformative power of Ayurveda and experience natural
