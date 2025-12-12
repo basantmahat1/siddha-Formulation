@@ -14,14 +14,17 @@ const LatestProducts = () => {
   };
 
   return (
-    <div className="p-6 md:p-12 max-w-6xl mx-auto bg-gradient-to-b from-white to-green-50">
+    <div className="p-6 md:p-12 max-w-6xl mx-auto  from-white to-green-50">
       <div className="text-center mb-12">
-        <p className="text-green-600 font-bold text-sm uppercase tracking-widest mb-2">Our Collection</p>
+        <p className="text-green-600 font-bold text-sm uppercase tracking-widest mb-2">
+          Our Collection
+        </p>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           Latest Products
         </h1>
         <p className="text-center text-gray-700 text-lg max-w-2xl mx-auto">
-          Discover our newest herbal medicines and premium wellness products crafted for your health
+          Discover our newest herbal medicines and premium wellness products
+          crafted for your health
         </p>
       </div>
 
@@ -37,7 +40,7 @@ const LatestProducts = () => {
             <div
               className="bg-white border border-gray-100 rounded-2xl p-4 md:p-6 
                          hover:shadow-xl hover:-translate-y-2 transition-all duration-300 
-                         flex flex-col items-center text-center h-full min-h-[320px]"
+                         flex flex-col items-center text-center h-full min-h-80"
             >
               {/* Image Container */}
               <div className="bg-white w-full flex items-center justify-center p-2 mb-2">
@@ -50,14 +53,14 @@ const LatestProducts = () => {
                 </div>
               </div>
 
-              <div className="flex-grow flex flex-col justify-between items-center w-full">
+              <div className="grow flex flex-col justify-between items-center w-full">
                 {/* Title */}
                 <h2 className="text-base font-bold text-gray-900 line-clamp-2 mb-3">
                   {product.title}
                 </h2>
 
                 {/* Description */}
-                <p className="text-sm text-gray-600 line-clamp-2 mb-4 px-1 flex-grow">
+                <p className="text-sm text-gray-600 line-clamp-2 mb-4 px-1 grow">
                   {getProductDescription(product)}
                 </p>
 
