@@ -27,12 +27,12 @@ const ProductList = () => {
           >
             {/* Card Container: Minimal border, clean background, fixed min-height for uniformity */}
             <div
-              className="bg-white border border-gray-100 rounded-lg p-3 md:p-4 
-                         hover:shadow-lg transition-shadow duration-300 
+              className="bg-green-50 border border-gray-100 rounded-lg p-3 md:p-4 
+                         hover:shadow-2xl  transition-shadow duration-300 
                          flex flex-col items-center text-center h-full min-h-[300px]"
             >
               {/* Image Container: Square aspect ratio, white/light background */}
-              <div className="bg-white w-full flex items-center justify-center p-2 mb-2">
+              <div className="bg-green-50 w-full flex items-center justify-center p-2 mb-2">
                 <div className="w-2/3 aspect-square flex items-center justify-center">
                   <img
                     src={product.image}

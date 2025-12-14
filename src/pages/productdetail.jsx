@@ -104,7 +104,11 @@ const ProductDescription = ({ product }) => {
 const RelatedProductCard = ({ product }) => (
   <Link
     to={`/product/${product.id}`}
-    className="w-full border border-gray-200 rounded-lg p-3 flex flex-col items-center text-center hover:shadow-lg transition duration-300"
+    // className="w-full border border-gray-200 rounded-lg p-3 flex flex-col items-center text-center hover:shadow-lg transition duration-300"
+
+    className="bg-green-50 border border-gray-100 rounded-lg p-3 md:p-4 
+                         hover:shadow-2xl  transition-shadow duration-300 
+                         flex flex-col items-center text-center h-full min-h-[300px]"
   >
     <div className="relative w-full h-32 mb-4 flex items-center justify-center">
       <img
