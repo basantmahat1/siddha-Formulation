@@ -35,12 +35,12 @@ const LatestProducts = () => {
           >
             {/* Card Container */}
             <div
-              className="bg-white border border-gray-100 rounded-2xl p-4 md:p-6 
+              className="bg-green-50 border border-gray-100 rounded-2xl p-4 md:p-6 
                          hover:shadow-xl hover:-translate-y-2 transition-all duration-300 
                          flex flex-col items-center text-center h-full min-h-[320px]"
             >
               {/* Image Container */}
-              <div className="bg-white w-full flex items-center justify-center p-2 mb-2">
+              <div className="bg-green-50 w-full flex items-center justify-center p-2 mb-2">
                 <div className="w-2/3 aspect-square flex items-center justify-center">
                   <img
                     src={product.image}
