@@ -8,7 +8,6 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
           {/* Left Text Section */}
           <div className="animate-fadeIn">
-            <img src="../src/assets/img/siddha.png" alt="Logo" className="h-12 mb-4" />
             <p className="text-sm text-green-600 tracking-widest font-bold mb-2 uppercase">
               Premium Ayurvedic
             </p>
@@ -19,7 +18,7 @@ export default function Hero() {
             <p className="text-gray-700 mt-6 mb-8 md:max-w-md text-lg leading-relaxed">
               Experience the power of ancient Ayurvedic traditions combined with modern science. Premium quality herbal products for your complete wellness journey.
             </p>
-            <button className="bg-green-700 text-white px-8 py-4 rounded-lg font-bold hover:bg-green-800 transition-all hover:shadow-lg transform hover:scale-105 flex items-center gap-2 text-lg">
+            <button className="bg-green-700 text-white px-6 py-2 rounded-lg font-bold hover:bg-green-800 transition-all hover:shadow-lg transform hover:scale-105 flex items-center gap-2 text-lg">
               Shop Now
               <span className="text-2xl">→</span>
             </button>

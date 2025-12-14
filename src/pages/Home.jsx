@@ -1,14 +1,18 @@
 import React from "react";
 import Hero from "../components/Hero";
 import LatestProducts from "../components/LatestProducts";
-import Testimonials from "../components/Testimonials";
+import Banner from "../components/Banner";
+// import Testimonials from "../components/Testimonials";
 
 export default function Home() {
   return (
     <div className="w-full">
       <Hero />
       <LatestProducts />
-      <Testimonials />
+      <Banner/>
+      
+
+      {/* <Testimonials /> */}
     </div>
   );
 }

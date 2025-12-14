@@ -14,7 +14,7 @@ const LatestProducts = () => {
   };
 
   return (
-    <div className="p-6 md:p-12 max-w-6xl mx-auto bg-gradient-to-b from-white to-green-50">
+    <div className="p-6 md:p-12 max-w-6xl mx-auto  from-white to-green-50">
       <div className="text-center mb-12">
         <p className="text-green-600 font-bold text-sm uppercase tracking-widest mb-2">Our Collection</p>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

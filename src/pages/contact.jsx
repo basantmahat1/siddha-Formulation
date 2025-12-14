@@ -1,204 +1,192 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'; // 1. Import useState
 
-export default function Contact() {
+
+/**
+ * A responsive Contact Us form component styled with Tailwind CSS.
+ * It now includes state management to capture form data and logs it to the console on submit.
+ */
+const Contact = () => {
+  
+  // 2. Initialize State for all form fields
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
+    name: '',
+    email: '',
+    help: '',
+    address: '',
+    phone: '',
+    country: '',
   });
 
-  const [submitted, setSubmitted] = useState(false);
-
+  // 3. Handler for updating state when inputs change
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value, // Update the specific field using its 'name' attribute
     }));
   };
 
+  // 4. Handler for form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here (send to backend or email service)
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-      setSubmitted(false);
-    }, 3000);
+    
+    // Log the entire form data object to the console
+    console.log('Form Data Captured:', formData); 
+    
+    // Optional: Reset form fields after submission
+    // setFormData({
+    //   name: '', email: '', help: '', address: '', phone: '', country: '',
+    // });
+    
+    // Placeholder for actual submission logic (e.g., sending data to an API)
+    alert('Form submitted! Check your browser console for the data.');
   };
 
   return (
-    <div className="min-h-screen bg-white">
-   
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+      {/* Main Container */}
+      <div className="w-full max-w-6xl bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        {/* Header Section */}
+        <header className="px-6 py-6 border-b border-gray-200">
+          <p className="text-sm uppercase tracking-wider text-gray-500 font-medium">
+            Contact Us
+          </p>
+          <h1 className="text-3xl font-bold text-gray-800 mt-1">
+            Reach Out Anytime, Anywhere
+          </h1>
+        </header>
 
-      {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
-
-            {/* Address */}
-            <div className="mb-8">
-              <div className="flex gap-4">
-                <div className="text-green-600 text-2xl mt-1">📍</div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Address</h3>
-                  <p className="text-gray-600">
-                    Siddha Foundation<br />
-                    123 Herbal Street<br />
-                    Chennai, TN 600001<br />
-                    India
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Phone */}
-            <div className="mb-8">
-              <div className="flex gap-4">
-                <div className="text-green-600 text-2xl mt-1">📱</div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Phone</h3>
-                  <p className="text-gray-600">
-                    <a href="tel:+914448599296" className="hover:text-green-600 transition">
-                      +91 44 4859 9296
-                    </a>
-                  </p>
-                  <p className="text-gray-600 text-sm mt-1">Available 9 AM - 6 PM IST</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Email */}
-            <div className="mb-8">
-              <div className="flex gap-4">
-                <div className="text-green-600 text-2xl mt-1">✉️</div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Email</h3>
-                  <p className="text-gray-600">
-                    <a href="mailto:info@siddha.com" className="hover:text-green-600 transition">
-                      info@siddha.com
-                    </a>
-                  </p>
-                  <p className="text-gray-600 text-sm mt-1">We'll respond within 24 hours</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Business Hours */}
-            <div>
-              <div className="flex gap-4">
-                <div className="text-green-600 text-2xl mt-1">🕐</div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Business Hours</h3>
-                  <p className="text-gray-600">
-                    Monday - Friday: 9:00 AM - 6:00 PM<br />
-                    Saturday: 10:00 AM - 4:00 PM<br />
-                    Sunday: Closed
-                  </p>
-                </div>
-              </div>
+        {/* Content Grid (Image and Form) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          
+          {/* Image Section */}
+          <div className="p-6">
+            <div className="h-full w-full rounded-lg overflow-hidden">
+              <img 
+                src="src/assets/img/herbal-medicine2020.jpg"
+                alt="A collection of Ayurvedic ingredients, including powders, herbs, and a dark paste in a bowl." 
+                className="w-full h-full object-cover"
+                style={{ minHeight: '300px' }} 
+              />
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Send us a Message</h2>
-
-            {submitted && (
-              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
-                ✓ Thank you! Your message has been sent successfully. We'll get back to you soon!
-              </div>
-            )}
-
+          {/* Form Section */}
+          <div className="p-6 sm:p-8 lg:p-10">
             <form onSubmit={handleSubmit} className="space-y-6">
+              
+              {/* NOTE: Each input now has a 'name', a 'value', and an 'onChange' handler. */}
+              
               {/* Name */}
               <div>
-                <label className="block text-sm font-semibold text-gray-900 mb-2">Full Name</label>
+                <label htmlFor="name" className="sr-only">Name</label> 
                 <input
                   type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
+                  id="name"
+                  name="name" // <--- CRITICAL: Matches state key
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
-                  placeholder="Your name"
+                  placeholder="Name"
+                  value={formData.name} // <--- CRITICAL: Controlled input
+                  onChange={handleChange} // <--- CRITICAL: Updates state on change
+                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 transition duration-150 ease-in-out"
                 />
               </div>
 
               {/* Email */}
               <div>
-                <label className="block text-sm font-semibold text-gray-900 mb-2">Email Address</label>
+                <label htmlFor="email" className="sr-only">Email</label> 
                 <input
                   type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  id="email"
+                  name="email" // <--- CRITICAL
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
-                  placeholder="your@email.com"
+                  placeholder="Email"
+                  value={formData.email} // <--- CRITICAL
+                  onChange={handleChange} // <--- CRITICAL
+                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 transition duration-150 ease-in-out"
                 />
               </div>
-
-              {/* Phone */}
+              
+              {/* How can we help? (Textarea) */}
               <div>
-                <label className="block text-sm font-semibold text-gray-900 mb-2">Phone Number</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
-                  placeholder="+91 XXXXX XXXXX"
-                />
-              </div>
-
-              {/* Subject */}
-              <div>
-                <label className="block text-sm font-semibold text-gray-900 mb-2">Subject</label>
-                <input
-                  type="text"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
-                  placeholder="How can we help?"
-                />
-              </div>
-
-              {/* Message */}
-              <div>
-                <label className="block text-sm font-semibold text-gray-900 mb-2">Message</label>
+                <label htmlFor="help" className="sr-only">How can we help?</label> 
                 <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows="5"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
-                  placeholder="Tell us more about your inquiry..."
+                  id="help"
+                  name="help" // <--- CRITICAL
+                  rows="1"
+                  placeholder="How can we help?"
+                  value={formData.help} // <--- CRITICAL
+                  onChange={handleChange} // <--- CRITICAL
+                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 resize-none transition duration-150 ease-in-out"
                 ></textarea>
               </div>
 
+              {/* Address */}
+              <div>
+                <label htmlFor="address" className="sr-only">Address</label> 
+                <input
+                  type="text"
+                  id="address"
+                  name="address" // <--- CRITICAL
+                  placeholder="Address"
+                  value={formData.address} // <--- CRITICAL
+                  onChange={handleChange} // <--- CRITICAL
+                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 transition duration-150 ease-in-out"
+                />
+              </div>
+              
+              {/* Phone */}
+              <div>
+                <label htmlFor="phone" className="sr-only">Phone</label> 
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone" // <--- CRITICAL
+                  placeholder="Phone"
+                  value={formData.phone} // <--- CRITICAL
+                  onChange={handleChange} // <--- CRITICAL
+                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 transition duration-150 ease-in-out"
+                />
+              </div>
+
+              {/* Country */}
+              <div>
+                <label htmlFor="country" className="sr-only">Country</label> 
+                <input
+                  type="text"
+                  id="country"
+                  name="country" // <--- CRITICAL
+                  placeholder="Country"
+                  value={formData.country} // <--- CRITICAL
+                  onChange={handleChange} // <--- CRITICAL
+                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 transition duration-150 ease-in-out"
+                />
+              </div>
+              
               {/* Submit Button */}
-              <button
-                type="submit"
-                className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition duration-200"
-              >
-                Send Message
-              </button>
+              <div className="pt-4">
+                <button
+                  type="submit"
+                  className="w-auto px-6 py-2.5 bg-green-500 text-white font-semibold rounded-md shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-200 ease-in-out"
+                >
+                  Submit
+                </button>
+              </div>
+
             </form>
           </div>
         </div>
       </div>
-
-    
-
+      
+      {/* Scroll Up Button */}
+      <a href="#top" className="fixed bottom-4 right-4 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition duration-300" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </a>
     </div>
   );
-}
+};
+
+export default Contact;

@@ -9,6 +9,10 @@ import Contact from "./pages/contact";
 import AboutUs from "./pages/aboutus";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import BlogDetail from "./pages/BlogDetails";
+import Blog from "./components/Blog";
+
+
 
 function AppInner() {
   return (
@@ -28,6 +32,9 @@ function AppInner() {
 
         {/* About Us route */}
         <Route path="/about" element={<AboutUs />} />
+         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
+
 
         {/* Example additional route: full products detail mapping */}
         {/* <Route path="/featured" element={<ProductsDtl />} /> */}
