@@ -36,7 +36,7 @@ const LatestProducts = () => {
             {/* Card Container */}
             <div
               className="bg-green-50 border border-gray-100 rounded-2xl p-4 md:p-6 
-                         hover:shadow-xl hover:-translate-y-2 transition-all duration-300 
+                         hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 
                          flex flex-col items-center text-center h-full min-h-[320px]"
             >
               {/* Image Container */}
