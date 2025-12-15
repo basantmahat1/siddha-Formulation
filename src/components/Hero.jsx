@@ -8,11 +8,7 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
           {/* Left Text Section */}
           <div className="animate-fadeIn">
-            <img
-              src="../src/assets/img/siddha.png"
-              alt="Logo"
-              className="h-12 mb-4"
-            />
+          
             <p className="text-sm text-green-600 tracking-widest font-bold mb-2 uppercase">
               Premium Ayurvedic
             </p>

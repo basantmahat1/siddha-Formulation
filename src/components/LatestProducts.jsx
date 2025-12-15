@@ -43,7 +43,7 @@ const LatestProducts = () => {
                          flex flex-col items-center text-center h-full min-h-80"
             >
               {/* Image Container */}
-              <div className="bg-green-50 w-full flex items-center justify-center p-2 mb-2">
+              <div className="bg-white w-full flex items-center justify-center p-2 mb-2">
                 <div className="w-2/3 aspect-square flex items-center justify-center">
                   <img
                     src={product.image}

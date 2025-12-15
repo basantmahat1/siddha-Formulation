@@ -1,36 +1,91 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+// Define the slides data for the carousel
+const slides = [
+  {
+    title: "About Siddha Foundation",
+    subtitle:
+      "A legacy of Ayurveda dedicated to transforming lives through pure, natural, and scientifically crafted herbal wellness.",
+  },
+  {
+    title: "Rooted in Ancient Ayurveda",
+    subtitle:
+      "Bridging the wisdom of traditional healing with the assurance of modern scientific research and quality control.",
+  },
+  {
+    title: "Committed to Pure Ingredients",
+    subtitle:
+      "Ethically sourced, potent, and 100% natural ingredients from the finest regions, ensuring maximum efficacy.",
+  },
+];
+
 export default function AboutUs() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Function to move to the next slide
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  // Function to set a specific slide
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
+  // Automatic slide transition effect
+  useEffect(() => {
+    const timer = setTimeout(nextSlide, 5000); // Change slide every 5 seconds
+    return () => clearTimeout(timer); // Clear timeout if component unmounts or state changes
+  }, [currentSlide]);
+
   return (
     <div className="min-h-screen bg-gray-50">
+    {/* Hero Section (Slider with Background Image) */}
+<div
+  className="relative py-28 text-white overflow-hidden"
+  style={{
+    backgroundImage: "url('/src/assets/img/herbal-medicine2020.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black opacity-30"></div>
 
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-700 to-green-800 text-white py-24 shadow-xl">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-            About Siddha Foundation
-          </h1>
-          <p className="text-lg md:text-xl text-green-100 leading-relaxed max-w-3xl mx-auto">
-            A legacy of Ayurveda dedicated to transforming lives through
-            pure, natural, and scientifically crafted herbal wellness.
-          </p>
+  {/* Content */}
+  <div className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out">
+    <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
+      {slides[currentSlide].title}
+    </h1>
 
-          {/* Decorative dots */}
-          <div className="flex justify-center gap-2 mt-6">
-            <div className="w-3 h-3 bg-white rounded-full"></div>
-            <div className="w-3 h-3 bg-green-300 rounded-full"></div>
-            <div className="w-3 h-3 bg-white rounded-full"></div>
-          </div>
-        </div>
-      </div>
+    <p className="text-lg md:text-xl text-green-100 leading-relaxed max-w-3xl mx-auto">
+      {slides[currentSlide].subtitle}
+    </p>
+
+    {/* Slider Indicators */}
+    <div className="flex justify-center gap-2 mt-8">
+      {slides.map((_, index) => (
+        <div
+          key={index}
+          onClick={() => goToSlide(index)}
+          className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
+            currentSlide === index
+              ? "bg-white scale-110"
+              : "bg-green-300 hover:bg-white/70"
+          }`}
+        />
+      ))}
+    </div>
+  </div>
+</div>
+
 
       {/* Story Section */}
       <div className="max-w-6xl mx-auto px-6 py-20">
         <section className="mb-24">
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
-              
               {/* Text */}
               <div className="p-12 flex flex-col justify-center">
                 <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -75,7 +130,6 @@ export default function AboutUs() {
         {/* Mission Vision */}
         <section className="mb-24">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
             {/* Mission */}
             <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition">
               <div className="text-6xl mb-6">🎯</div>
@@ -156,7 +210,9 @@ export default function AboutUs() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {item.text}
+                </p>
               </div>
             ))}
           </div>
@@ -169,7 +225,8 @@ export default function AboutUs() {
           </h2>
           <p className="text-green-100 mb-10 max-w-3xl mx-auto text-lg leading-relaxed">
             Discover the pure essence of Ayurveda with our premium herbal
-            products. Your path to better health, balance, and vitality begins now.
+            products. Your path to better health, balance, and vitality begins
+            now.
           </p>
 
           <Link
