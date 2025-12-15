@@ -31,12 +31,12 @@ export default function Patron_Adviser() {
               {
                 name: "Dhundir Raj Shastri Poudel",
                 role: "Patron / Founding Member",
-                img: "/src/assets/img/patron1.jpeg",
+                img: "/assets/img/patron1.jpeg",
               },
               {
                 name: "Dr Ram Bahadur BC",
                 role: "Patron / Founding Member",
-                img: "/src/assets/img/patron2.jpeg",
+                img: "/assets/img/patron2.jpeg",
               },
             ].map((m) => (
               <div
@@ -70,17 +70,17 @@ export default function Patron_Adviser() {
               {
                 name: "Dr Nanda Shrestha",
                 role: "Sr Adviser",
-                img: "/src/assets/img/adviser1.jpeg",
+                img: "/assets/img/adviser1.jpeg",
               },
               {
                 name: "Dr Gopal Gyawali",
                 role: "Adviser",
-                img: "/src/assets/img/patron4.jpeg",
+                img: "/assets/img/patron4.jpeg",
               },
               {
                 name: "Shiva Prasad Ghimire",
                 role: "Adviser",
-                img: "/src/assets/img/adviser3.jpeg",
+                img: "/assets/img/adviser3.jpeg",
               },
             ].map((m) => (
               <div
@@ -114,17 +114,17 @@ export default function Patron_Adviser() {
               {
                 name: "Basanta Ghimire",
                 role: "Co-ordinator",
-                img: "/src/assets/img/co-ordinator.jpeg",
+                img: "/assets/img/co-ordinator.jpeg",
               },
               {
                 name: "Narayan Prasad Panthi",
                 role: "Member",
-                img: "/src/assets/img/member1.jpeg",
+                img: "/assets/img/member1.jpeg",
               },
               {
                 name: "Santosh Atreya",
                 role: "Member",
-                img: "/src/assets/img/member2.jpeg",
+                img: "/assets/img/member2.jpeg",
               },
             ].map((m) => (
               <div

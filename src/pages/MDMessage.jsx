@@ -25,7 +25,7 @@ const MDMessage = () => {
                 <div className="text-center">
                   <div className="w-48 h-48 rounded-full overflow-hidden mx-auto mb-6 border-4 border-white shadow-lg">
                     <img 
-                      src="../src/assets/img/mdirector.jpeg" 
+                      src="/assets/img/mdirector.jpeg" 
                       alt="Managing Director" 
                       className="w-full h-full object-cover"
                     />

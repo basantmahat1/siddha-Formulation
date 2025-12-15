@@ -32,7 +32,7 @@ export default function Hero() {
           <div className="relative flex items-center justify-center">
             <div className="absolute w-96 h-96 bg-green-200 rounded-full blur-3xl opacity-40 -z-10"></div>
             <img
-              src="../src/assets/img/Herbal-Medicine.jpg"
+              src="/assets/img/Herbal-Medicine.jpg"
               alt="Herbal Product"
               className="w-96 md:w-full h-auto drop-shadow-2xl rounded-3xl hover:scale-105 transition-transform duration-300"
             />
@@ -46,7 +46,7 @@ export default function Hero() {
         <div
           className="w-full h-[360px] md:h-[420px] bg-cover bg-center flex items-center justify-center text-center px-6"
           style={{
-            backgroundImage: "url('/src/assets/img/Herbal-Medicine.jpg')",
+            backgroundImage: "url('/assets/img/Herbal-Medicine.jpg')",
           }}
         >
           {/* Overlay */}

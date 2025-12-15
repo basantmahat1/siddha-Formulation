@@ -65,7 +65,7 @@ const Contact = () => {
           <div className="p-6">
             <div className="h-full w-full rounded-lg overflow-hidden">
               <img 
-                src="src/assets/img/herbal-medicine2020.jpg"
+                src="/assets/img/herbal-medicine2020.jpg"
                 alt="A collection of Ayurvedic ingredients, including powders, herbs, and a dark paste in a bowl." 
                 className="w-full h-full object-cover"
                 style={{ minHeight: '300px' }} 

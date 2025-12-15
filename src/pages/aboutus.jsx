@@ -40,46 +40,49 @@ export default function AboutUs() {
   }, [currentSlide]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
-    {/* Hero Section (Slider with Background Image) */}
-<div
-  className="relative py-28 text-white overflow-hidden"
-  style={{
-    backgroundImage: "url('/src/assets/img/herbal-medicine2020.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black opacity-30"></div>
+    <div className="min-h-screen bg-gray-50 font-sans">
+      {/* Hero Section (Slider with Background Image) */}
+      <div
+        className="relative py-28 flex items-center justify-center text-center text-white overflow-hidden"
+        style={{
+          backgroundImage: "url('/assets/img/herbal-medicine2020.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black opacity-30"></div>
 
-  {/* Content */}
-  <div className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out">
-    <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-      {slides[currentSlide].title}
-    </h1>
-
-    <p className="text-lg md:text-xl text-green-100 leading-relaxed max-w-3xl mx-auto">
-      {slides[currentSlide].subtitle}
-    </p>
-
-    {/* Slider Indicators */}
-    <div className="flex justify-center gap-2 mt-8">
-      {slides.map((_, index) => (
+        {/* Content - ADDED 'key' PROP HERE for smooth transition */}
         <div
-          key={index}
-          onClick={() => goToSlide(index)}
-          className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
-            currentSlide === index
-              ? "bg-white scale-110"
-              : "bg-green-300 hover:bg-white/70"
-          }`}
-        />
-      ))}
-    </div>
-  </div>
-</div>
+          key={currentSlide}
+          className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out"
+        >
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
+            {slides[currentSlide].title}
+          </h1>
 
+          <p className="text-lg md:text-xl text-green-100 leading-relaxed max-w-3xl mx-auto">
+            {slides[currentSlide].subtitle}
+          </p>
+
+          {/* Slider Indicators */}
+          <div className="flex justify-center gap-2 mt-8">
+            {slides.map((_, index) => (
+              <div
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
+                  currentSlide === index
+                    ? "bg-white scale-110"
+                    : "bg-green-300 hover:bg-white/70"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Story Section */}
       <div className="max-w-6xl mx-auto px-6 py-20">
@@ -118,8 +121,8 @@ export default function AboutUs() {
               {/* Image */}
               <div className="h-96 md:h-auto">
                 <img
-                  src="/src/assets/img/img-1about.jpg"
-                  alt="Siddha Foundation"
+                  src="/assets/img/img-1about.jpg"
+                  alt="Herbal ingredients and Ayurvedic preparations on a wooden surface"
                   className="w-full h-full object-cover brightness-95"
                 />
               </div>
@@ -127,11 +130,11 @@ export default function AboutUs() {
           </div>
         </section>
 
-        {/* Mission Vision */}
+        {/* Mission Vision Values */}
         <section className="mb-24">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Mission */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition">
+            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
               <div className="text-6xl mb-6">🎯</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Our Mission
@@ -143,7 +146,7 @@ export default function AboutUs() {
             </div>
 
             {/* Vision */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-blue-600 hover:shadow-xl transition">
+            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-blue-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
               <div className="text-6xl mb-6">🌱</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Our Vision
@@ -155,7 +158,7 @@ export default function AboutUs() {
             </div>
 
             {/* Values */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-purple-600 hover:shadow-xl transition">
+            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-purple-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
               <div className="text-6xl mb-6">💎</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Our Values
@@ -204,7 +207,7 @@ export default function AboutUs() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl text-center transition border-l-4 border-green-600"
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl text-center transition border-l-4 border-green-600 transform hover:scale-[1.02]"
               >
                 <div className="text-6xl mb-4">{item.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -231,7 +234,7 @@ export default function AboutUs() {
 
           <Link
             to="/products"
-            className="inline-block bg-white text-green-700 font-bold px-12 py-4 rounded-lg shadow-lg hover:bg-gray-100 transition"
+            className="inline-block bg-white text-green-700 font-bold px-12 py-4 rounded-lg shadow-xl hover:bg-gray-100 transition transform hover:scale-105"
           >
             Explore Products
           </Link>

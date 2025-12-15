@@ -2,7 +2,7 @@ export const productData = [
   // --- ID 1: Xtreme Tablet --- (Existing data)
   {
     id: 1,
-    image: "../src/assets/img/xtreme.jpg",
+    image: "/assets/img/xtreme.jpg",
     title: "Xtreme Tablet",
     price: 18.99,
     oldPrice: 24.99,
@@ -21,11 +21,11 @@ export const productData = [
     ],
     paymentMethods: ["Visa", "MasterCard"], // --- NEW DETAILED TABS DATA ---
     details: {
-      "Therapeutic Category": "Non-hormonal and safe sex stimulant for men.",
+      "Therapeutic Category": "Non-hormonal and safe sex stimulant for men",
       Description:
-        "It improves sperm count, hormonal level, corrects morphology of sperms, improves motility of sperms, prevents oxidative stress and therefore improves male fertility. ",
+      "It improves sperm count, hormonal level, corrects morphology of sperms, improves motility of sperms, prevents oxidative stress and therefore improves male fertility.",
       "How It Works":
-        "Exhibits spermatogenic activity and increases serum hormone levels.Improves sperm motility and total sperm count in infertile males.Enhances semen quality by combating oxidative stress.Improves blood circulation to genital organs. ",
+        "Exhibits spermatogenic activity and increases serum hormone levels. Improves sperm motility and total sperm count in infertile males. Enhances semen quality by combating oxidative stress. Improves blood circulation to genital organs.",
       Indication:
         "Low sperm count, loss of libido, erectile dysfunction, and poor sexual performance.",
       Dosage:
@@ -36,7 +36,7 @@ export const productData = [
 
   {
     id: 2,
-    image: "../src/assets/img/balamrit.png",
+    image: "/assets/img/balamrit.png",
     title: "Bal Amrit Syrup",
     price: 14.5,
     oldPrice: null,
@@ -70,7 +70,7 @@ export const productData = [
 
   {
     id: 3,
-    image: "../src/assets/img/amherb.jpg",
+    image: "/assets/img/amherb.jpg",
     title: "Amherb",
     price: 16.0,
     oldPrice: null,
@@ -100,7 +100,7 @@ export const productData = [
 
   {
     id: 4,
-    image: "../src/assets/img/topzyme.jpg",
+    image: "/assets/img/topzyme.jpg",
     title: "Topzyme",
     price: 11.0,
     oldPrice: 14.0,
@@ -131,7 +131,7 @@ export const productData = [
 
   {
     id: 5,
-    image: "../src/assets/img/raktamrit.jpg",
+    image: "/assets/img/raktamrit.jpg",
     title: "Raktamrit",
     price: 17.5,
     oldPrice: null,
@@ -162,7 +162,7 @@ export const productData = [
 
   {
     id: 6,
-    image: "../src/assets/img/pylonil.jpg",
+    image: "/assets/img/pylonil.jpg",
     title: "Pylonil",
     price: 19.0,
     oldPrice: 21.0,
@@ -193,7 +193,7 @@ export const productData = [
 
   {
     id: 7,
-    image: "../src/assets/img/sidda_race_oil.jpg",
+    image: "/assets/img/sidda_race_oil.jpg",
     title: "Sidda Race Oil",
     price: 25.0,
     oldPrice: null,
@@ -224,7 +224,7 @@ export const productData = [
 
   {
     id: 8,
-    image: "../src/assets/img/prasuta_sajjavani.jpg",
+    image: "/assets/img/prasuta_sajjavani.jpg",
     title: "Prasuta Sajjavani",
     price: 21.0,
     oldPrice: 25.0,
@@ -254,7 +254,7 @@ export const productData = [
 
   {
     id: 9,
-    image: "../src/assets/img/birechani.jpg",
+    image: "/assets/img/birechani.jpg",
     title: "Birechani",
     price: 13.0,
     oldPrice: null,
@@ -284,7 +284,7 @@ export const productData = [
 
   {
     id: 10,
-    image: "../src/assets/img/arjuna.jpg",
+    image: "/assets/img/arjuna.jpg",
     title: "Arjuna",
     price: 15.5,
     oldPrice: 19.0,
@@ -314,7 +314,7 @@ export const productData = [
 
   {
     id: 11,
-    image: "../src/assets/img/gripe_water.jpg",
+    image: "/assets/img/gripe_water.jpg",
     title: "Gripe Water",
     price: 9.0,
     oldPrice: null,
@@ -345,7 +345,7 @@ export const productData = [
 
   {
     id: 12,
-    image: "../src/assets/img/kafher_pd.jpg",
+    image: "/assets/img/kafher_pd.jpg",
     title: "Kafher PD",
     price: 12.0,
     oldPrice: null,
@@ -376,7 +376,7 @@ export const productData = [
 
   {
     id: 13,
-    image: "../src/assets/img/siddhamol_malt.jpg",
+    image: "/assets/img/siddhamol_malt.jpg",
     title: "Siddhamol Malt",
     price: 28.0,
     oldPrice: 35.0,
@@ -408,7 +408,7 @@ export const productData = [
 
   {
     id: 14,
-    image: "../src/assets/img/apticome.jpg",
+    image: "/assets/img/apticome.jpg",
     title: "Apticome",
     price: 14.0,
     oldPrice: null,
@@ -439,7 +439,7 @@ export const productData = [
 
   {
     id: 15,
-    image: "../src/assets/img/leucoherb.jpg",
+    image: "/assets/img/leucoherb.jpg",
     title: "Leucoherb",
     price: 18.0,
     oldPrice: null,
@@ -470,7 +470,7 @@ export const productData = [
 
   {
     id: 16,
-    image: "../src/assets/img/livherb.jpg",
+    image: "/assets/img/livherb.jpg",
     title: "Livherb",
     price: 16.5,
     oldPrice: 20.0,
@@ -500,7 +500,7 @@ export const productData = [
 
   {
     id: 17,
-    image: "../src/assets/img/gasherb.jpg",
+    image: "/assets/img/gasherb.jpg",
     title: "Gasherb",
     price: 14.0,
     oldPrice: null,
@@ -530,7 +530,7 @@ export const productData = [
 
   {
     id: 18,
-    image: "../src/assets/img/crystomin.jpg",
+    image: "/assets/img/crystomin.jpg",
     title: "Crystomin Syrup",
     price: 18.0,
     oldPrice: 22.0,
@@ -561,7 +561,7 @@ export const productData = [
 
   {
     id: 19,
-    image: "../src/assets/img/shakti_herb.jpg",
+    image: "/assets/img/shakti_herb.jpg",
     title: "Shakti Herb",
     price: 22.0,
     oldPrice: null,
@@ -591,7 +591,7 @@ export const productData = [
 
   {
     id: 20,
-    image: "../src/assets/img/immu_care.jpg",
+    image: "/assets/img/immu_care.jpg",
     title: "Immu Care",
     price: 17.0,
     oldPrice: 19.5,
@@ -621,7 +621,7 @@ export const productData = [
 
   {
     id: 21,
-    image: "../src/assets/img/kafher_syrup.jpg",
+    image: "/assets/img/kafher_syrup.jpg",
     title: "Kafher Syrup",
     price: 13.0,
     oldPrice: null,
@@ -651,7 +651,7 @@ export const productData = [
 
   {
     id: 22,
-    image: "../src/assets/img/tensgaurd_tablet.jpg",
+    image: "/assets/img/tensgaurd_tablet.jpg",
     title: "Tensgaurd Tablet",
     price: 20.0,
     oldPrice: 26.0,
@@ -681,7 +681,7 @@ export const productData = [
 
   {
     id: 23,
-    image: "../src/assets/img/bslim_tablet.jpg",
+    image: "/assets/img/bslim_tablet.jpg",
     title: "Bslim Tablet",
     price: 24.0,
     oldPrice: null,
