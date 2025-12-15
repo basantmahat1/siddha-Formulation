@@ -266,7 +266,7 @@ const XtremeTabletPage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="../src/assets/img/xtreme.jpg"
+                  src="/assets/img/xtreme.jpg"
                   alt="Xtreme Tablet"
                   className="w-full h-96 object-cover"
                 />
@@ -403,7 +403,7 @@ const XtremeTabletPage = () => {
           {/* Product Image Section */}
           <div className="mt-12 text-center">
             <img 
-              src="../src/assets/img/naturalhearb.webp"
+              src="/assets/img/naturalhearb.webp"
               alt="Herbal Ingredients"
               className="w-full max-w-3xl mx-auto rounded-2xl shadow-xl"
             />
@@ -629,7 +629,7 @@ const XtremeTabletPage = () => {
               <div className="md:w-1/3 mb-6 md:mb-0">
                 <div className="relative w-40 h-40 mx-auto">
                   <img 
-                    src="../src/assets/img/suman_poudel.jpeg"
+                    src="/assets/img/suman_poudel.jpeg"
                     alt="Suman Poudel"
                     className="w-full h-full object-cover rounded-full border-4 border-green-500 shadow-lg"
                   />

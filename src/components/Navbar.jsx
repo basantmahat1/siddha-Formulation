@@ -32,7 +32,7 @@ export default function Navbar() {
         {/* LOGO */}
         <div className="flex items-center gap-3">
           <img
-            src="/src/assets/img/siddha.png"
+            src="/assets/img/siddha.png"
             alt="Siddha Foundation"
             className="h-14 object-contain"
           />
@@ -244,7 +244,7 @@ export default function Navbar() {
             <div
               className="relative p-6 rounded-xl border border-green-200 shadow-inner"
               style={{
-                backgroundImage: "url('/src/assets/img/contact-image.svg')",
+                backgroundImage: "url('/assets/img/contact-image.svg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}

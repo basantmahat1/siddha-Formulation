@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div>
             <div className="mb-4">
-              <img src="/src/assets/img/siddha.png" alt="Siddha Foundation" className="h-12 object-contain" />
+              <img src="/assets/img/siddha.png" alt="Siddha Foundation" className="h-12 object-contain" />
             </div>
             <p className="text-sm text-gray-400 mb-4">
               Siddha Foundation brings you authentic herbal medicines and nutraceutical products for your health and wellness.

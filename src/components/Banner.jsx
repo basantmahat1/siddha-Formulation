@@ -15,7 +15,7 @@ export default function Banner() {
             {/* Image on the left */}
             <div className="w-full md:w-1/2">
               <img
-                src="src/assets/img/img-1000.jpg"
+                src="/assets/img/img-1000.jpg"
                 className="rounded-xl shadow-lg w-full"
                 alt="Ayurvedic Product"
               />

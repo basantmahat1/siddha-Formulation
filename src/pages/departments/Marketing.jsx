@@ -30,7 +30,7 @@ export default function Marketing() {
               {/* Head Card */}
               <div className="bg-gray-50 rounded-xl shadow-md p-6 text-center">
                 <img
-                  src="../src/assets/img/harisir.jpeg"
+                  src="/assets/img/harisir.jpeg"
                   className="w-50 h-60 rounded-2xl mx-auto mb-4 object-cover"
                 />
                 <h3 className="text-lg font-semibold">Harihar Bhandari</h3>

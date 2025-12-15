@@ -29,7 +29,7 @@ export default function Finance() {
               {/* Head Card */}
               <div className="bg-gray-50  shadow-md p-6 text-center">
                 <img
-                  src="../src/assets/img/subodhsir.jpeg"
+                  src="/assets/img/subodhsir.jpeg"
                   className="w-45 h-55 rounded-2xl mx-auto mb-4 object-cover"
                 />
                 <h3 className="text-lg font-semibold">Subodh Attreya</h3>

@@ -7,14 +7,14 @@ const boardMembers = {
     {
       name: 'Prayag Lal Shrestha',
       position: 'Chairperson',
-            image: '../src/assets/img/Chairman.jpeg',
+            image: '/assets/img/Chairman.jpeg',
 
       description: 'Mr. Prayag Lal Shrestha currently holds the position of Chairperson of Siddha Formulation.',
     },
     {
       name: 'Ram Chandra Poudel',
       position: 'Managing Director',
-      image: '../src/assets/img/mdirector.jpeg',
+      image: '/assets/img/mdirector.jpeg',
 
       description: 'Mr. Ram Chandra Poudel currently holds the position of Managing Director of Siddha Formulation.',
     },
@@ -23,42 +23,42 @@ const boardMembers = {
     {
       name: 'Devraj Shrestha',
       position: 'Director',
-            image: '../src/assets/img/director.jpeg',
+            image: '/assets/img/director.jpeg',
 
       description: 'Mr. Devraj Shrestha currently holds the position of Director of Siddha Formulation.',
     },
     {
       name: 'Badri Panthi',
       position: 'Director',
-            image: '../src/assets/img/director2.jpeg',
+            image: '/assets/img/director2.jpeg',
 
       description: 'Mr. Badri Panthi currently holds the position of Director of Siddha Formulation.',
     },
     {
       name: 'Nama Narayan Belbase',
       position: 'Director',
-            image: '../src/assets/img/director3.jpeg',
+            image: '/assets/img/director3.jpeg',
 
       description: 'Mr. Nama Narayan Belbase currently holds the position of Director of Siddha Formulation.',
     },
     {
       name: 'Basanta Kumar Bashyal',
       position: 'Director',
-            image: '../src/assets/img/director4.jpeg',
+            image: '/assets/img/director4.jpeg',
 
       description: 'Mr. Basanta Kumar Bashyal currently holds the position of Director of Siddha Formulation.',
     },
     {
       name: 'Sita Bhattarai',
       position: 'Director',
-      image: '../src/assets/img/director6.jpeg',
+      image: '/assets/img/director6.jpeg',
 
       description: 'Mrs. Sita Bhattarai currently holds the position of Director of Siddha Formulation.',
     },
     {
       name: 'Anita Thapa',
       position: 'Director',
-      image: '../src/assets/img/director7.jpeg',
+      image: '/assets/img/director7.jpeg',
       description: 'Mrs. Anita Thapa currently holds the position of Director of Siddha Formulation.',
     },
   ],

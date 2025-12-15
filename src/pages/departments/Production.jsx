@@ -30,7 +30,7 @@ export default function Production() {
               {/* Head Card */}
               <div className="bg-gray-50 shadow-md p-6 text-center">
                 <img
-                  src="../src/assets/img/remlalsir.jpeg"
+                  src="/assets/img/remlalsir.jpeg"
                   className="w-50 h-70 rounded-2xl mx-auto mb-4 object-cover"
                 />
                 <h3 className="text-lg font-semibold">Remlal Poudel</h3>

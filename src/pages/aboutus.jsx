@@ -45,7 +45,7 @@ export default function AboutUs() {
 <div
   className="relative py-28 text-white overflow-hidden"
   style={{
-    backgroundImage: "url('/src/assets/img/herbal-medicine2020.jpg')",
+    backgroundImage: "url('/assets/img/herbal-medicine2020.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
   }}
@@ -118,7 +118,7 @@ export default function AboutUs() {
               {/* Image */}
               <div className="h-96 md:h-auto">
                 <img
-                  src="/src/assets/img/img-1about.jpg"
+                  src="/assets/img/img-1about.jpg"
                   alt="Siddha Foundation"
                   className="w-full h-full object-cover brightness-95"
                 />

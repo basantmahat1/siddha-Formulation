@@ -2,7 +2,7 @@ export const productData = [
   // --- ID 1: Xtreme Tablet ---
   {
     id: 1,
-    image: "../src/assets/img/xtreme.jpg",
+    image: "/assets/img/xtreme.jpg",
     title: "Xtreme Tablet",
     price: 18.99,
     oldPrice: 24.99,
@@ -38,7 +38,7 @@ export const productData = [
   // --- ID 2: Bal Amrit Syrup ---
   {
     id: 2,
-    image: "../src/assets/img/balamrit.png",
+    image: "/assets/img/balamrit.png",
     title: "Bal Amrit Syrup",
     price: 14.5,
     oldPrice: null,
@@ -74,7 +74,7 @@ export const productData = [
   // --- ID 3: Amherb ---
   {
     id: 3,
-    image: "../src/assets/img/amherb.jpg",
+    image: "/assets/img/amherb.jpg",
     title: "Amherb",
     price: 16.0,
     oldPrice: null,
@@ -106,7 +106,7 @@ export const productData = [
   // --- ID 4: Topzyme ---
   {
     id: 4,
-    image: "../src/assets/img/topzyme.jpg",
+    image: "/assets/img/topzyme.jpg",
     title: "Topzyme",
     price: 11.0,
     oldPrice: 14.0,
@@ -139,7 +139,7 @@ export const productData = [
   // --- ID 5: Raktamrit ---
   {
     id: 5,
-    image: "../src/assets/img/raktamrit.jpg",
+    image: "/assets/img/raktamrit.jpg",
     title: "Raktamrit",
     price: 17.5,
     oldPrice: null,
@@ -172,7 +172,7 @@ export const productData = [
   // --- ID 6: Pylonil ---
   {
     id: 6,
-    image: "../src/assets/img/pylonil.jpg",
+    image: "/assets/img/pylonil.jpg",
     title: "Pylonil",
     price: 19.0,
     oldPrice: 21.0,
@@ -205,7 +205,7 @@ export const productData = [
   // --- ID 7: Sidda Race Oil ---
   {
     id: 7,
-    image: "../src/assets/img/sidda_race_oil.jpg",
+    image: "/assets/img/sidda_race_oil.jpg",
     title: "Sidda Race Oil",
     price: 25.0,
     oldPrice: null,
@@ -238,7 +238,7 @@ export const productData = [
   // --- ID 8: Prasuta Sajjavani ---
   {
     id: 8,
-    image: "../src/assets/img/prasuta_sajjavani.jpg",
+    image: "/assets/img/prasuta_sajjavani.jpg",
     title: "Prasuta Sajjavani",
     price: 21.0,
     oldPrice: 25.0,
@@ -270,7 +270,7 @@ export const productData = [
   // --- ID 9: Birechani ---
   {
     id: 9,
-    image: "../src/assets/img/birechani.jpg",
+    image: "/assets/img/birechani.jpg",
     title: "Birechani",
     price: 13.0,
     oldPrice: null,
@@ -302,7 +302,7 @@ export const productData = [
   // --- ID 10: Arjuna ---
   {
     id: 10,
-    image: "../src/assets/img/arjuna.jpg",
+    image: "/assets/img/arjuna.jpg",
     title: "Arjuna",
     price: 15.5,
     oldPrice: 19.0,
@@ -334,7 +334,7 @@ export const productData = [
   // --- ID 11: Gripe Water ---
   {
     id: 11,
-    image: "../src/assets/img/gripe_water.jpg",
+    image: "/assets/img/gripe_water.jpg",
     title: "Gripe Water",
     price: 9.0,
     oldPrice: null,
@@ -367,7 +367,7 @@ export const productData = [
   // --- ID 12: Kafher PD ---
   {
     id: 12,
-    image: "../src/assets/img/kafher_pd.jpg",
+    image: "/assets/img/kafher_pd.jpg",
     title: "Kafher PD",
     price: 12.0,
     oldPrice: null,
@@ -400,7 +400,7 @@ export const productData = [
   // --- ID 13: Siddhamol Malt ---
   {
     id: 13,
-    image: "../src/assets/img/siddhamol_malt.jpg",
+    image: "/assets/img/siddhamol_malt.jpg",
     title: "Siddhamol Malt",
     price: 28.0,
     oldPrice: 35.0,
@@ -434,7 +434,7 @@ export const productData = [
   // --- ID 14: Apticome ---
   {
     id: 14,
-    image: "../src/assets/img/apticome.jpg",
+    image: "/assets/img/apticome.jpg",
     title: "Apticome",
     price: 14.0,
     oldPrice: null,
@@ -467,7 +467,7 @@ export const productData = [
   // --- ID 15: Leucoherb ---
   {
     id: 15,
-    image: "../src/assets/img/leucoherb.jpg",
+    image: "/assets/img/leucoherb.jpg",
     title: "Leucoherb",
     price: 18.0,
     oldPrice: null,
@@ -500,7 +500,7 @@ export const productData = [
   // --- ID 16: Livherb ---
   {
     id: 16,
-    image: "../src/assets/img/livherb.jpg",
+    image: "/assets/img/livherb.jpg",
     title: "Livherb",
     price: 16.5,
     oldPrice: 20.0,
@@ -532,7 +532,7 @@ export const productData = [
   // --- ID 17: Gasherb ---
   {
     id: 17,
-    image: "../src/assets/img/gasherb.jpg",
+    image: "/assets/img/gasherb.jpg",
     title: "Gasherb",
     price: 14.0,
     oldPrice: null,
@@ -564,7 +564,7 @@ export const productData = [
   // --- ID 18: Crystomin Syrup ---
   {
     id: 18,
-    image: "../src/assets/img/crystomin.jpg",
+    image: "/assets/img/crystomin.jpg",
     title: "Crystomin Syrup",
     price: 18.0,
     oldPrice: 22.0,
@@ -597,7 +597,7 @@ export const productData = [
   // --- ID 19: Shakti Herb ---
   {
     id: 19,
-    image: "../src/assets/img/shakti_herb.jpg",
+    image: "/assets/img/shakti_herb.jpg",
     title: "Shakti Herb",
     price: 22.0,
     oldPrice: null,
@@ -629,7 +629,7 @@ export const productData = [
   // --- ID 20: Immu Care ---
   {
     id: 20,
-    image: "../src/assets/img/immu_care.jpg",
+    image: "/assets/img/immu_care.jpg",
     title: "Immu Care",
     price: 17.0,
     oldPrice: 19.5,
@@ -661,7 +661,7 @@ export const productData = [
   // --- ID 21: Kafher Syrup ---
   {
     id: 21,
-    image: "../src/assets/img/kafher_syrup.jpg",
+    image: "/assets/img/kafher_syrup.jpg",
     title: "Kafher Syrup",
     price: 13.0,
     oldPrice: null,
@@ -693,7 +693,7 @@ export const productData = [
   // --- ID 22: Tensgaurd Tablet ---
   {
     id: 22,
-    image: "../src/assets/img/tensgaurd_tablet.jpg",
+    image: "/assets/img/tensgaurd_tablet.jpg",
     title: "Tensgaurd Tablet",
     price: 20.0,
     oldPrice: 26.0,
@@ -725,7 +725,7 @@ export const productData = [
   // --- ID 23: Bslim Tablet ---
   {
     id: 23,
-    image: "../src/assets/img/bslim_tablet.jpg",
+    image: "/assets/img/bslim_tablet.jpg",
     title: "Bslim Tablet",
     price: 24.0,
     oldPrice: null,

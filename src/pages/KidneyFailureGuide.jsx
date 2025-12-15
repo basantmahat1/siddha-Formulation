@@ -294,7 +294,7 @@ const KidneyFailureGuide = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="../src/assets/img/kidney.png"
+                  src="/assets/img/kidney.png"
                   alt="Kidney Anatomy"
                   className="w-full h-96 object-cover"
                 />
@@ -683,7 +683,7 @@ const KidneyFailureGuide = () => {
               <div className="md:w-1/3 mb-6 md:mb-0">
                 <div className="relative w-40 h-40 mx-auto">
                   <img 
-                    src="../src/assets/img/pooja_chalise.jpeg"
+                    src="/assets/img/pooja_chalise.jpeg"
                     alt="Pooja Chalise"
                     className="w-full h-full object-cover rounded-full border-4 border-green-500 shadow-lg"
                   />

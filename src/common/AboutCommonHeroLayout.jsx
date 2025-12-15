@@ -3,7 +3,7 @@ import React from "react";
 const SiddhaIcon = () => (
   <div className="w-30 h-30 rounded-full bg-white shadow-md flex items-center justify-center p-2">
     <img
-      src="../src/assets/img/siddha.jpeg"
+      src="/assets/img/siddha.jpeg"
       alt="Siddha Logo"
       className="w-full h-full object-contain"
     />
