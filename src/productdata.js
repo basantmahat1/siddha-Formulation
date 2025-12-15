@@ -710,6 +710,490 @@ export const productData = [
   },
 ];
 
+export const classicalProductData = [
+  // --- ID 201: Sitopiladi Churna ---
+  {
+    id: 201,
+    image: "../src/assets/img/sitopiladi_churna.jpg", // Placeholder path
+    title: "Sitopiladi Churna",
+    price: 12.0,
+    oldPrice: null,
+    bundleTag: "100gm Churna",
+    rating: 5,
+    reviewCount: 25,
+    category: "Classical Respiratory", // Key for Related Products
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Classical Ayurvedic Medicine",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-SC-100",
+    },
+    features: [
+      "Effective classical Ayurvedic medicine for treating cough, cold, fever, productive cough, asthma and allergic disorders.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Respiratory",
+      Description:
+        "Sitopiladi Churna is a traditional Ayurvedic powder used for centuries to treat various respiratory ailments. It is known for its sweet taste and effectiveness in clearing congestion.",
+      "How It Works":
+        "It acts as an expectorant, easing the removal of phlegm, and as a bronchodilator, relieving bronchial spasms. Its antipyretic properties help manage fever associated with respiratory issues.",
+      Indication:
+        "Cough, cold, fever, asthma, productive cough, and allergic disorders.",
+      Dosage:
+        "Adults: 1-3 grams twice daily with honey or warm water, or as directed by an Ayurvedic physician.",
+      Presentation: "Available in 100gm jar.",
+    },
+  },
+
+  // --- ID 202: Amalaki Churna ---
+  {
+    id: 202,
+    image: "../src/assets/img/amalaki_churna.jpg", // Placeholder path
+    title: "Amalaki Churna",
+    price: 9.5,
+    oldPrice: null,
+    bundleTag: "100gm Churna",
+    rating: 4,
+    reviewCount: 18,
+    category: "Classical Digestive", // Key for Related Products
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Classical Ayurvedic Medicine",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-AC-100",
+    },
+    features: ["Useful in digestive problems."],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Digestive / Antioxidant",
+      Description:
+        "Amalaki Churna, derived from Indian Gooseberry (Amla), is a natural powerhouse of Vitamin C and antioxidants. It is invaluable for promoting digestive health, boosting immunity, and rejuvenating the body.",
+      "How It Works":
+        "It balances stomach acid (Pitta dosha), making it useful for hyperacidity. It also acts as a mild laxative and detoxifier, aiding overall digestive function.",
+      Indication:
+        "Digestive problems, hyperacidity, general weakness, and as a strong antioxidant.",
+      Dosage:
+        "3-5 grams twice daily with water or milk, or as directed by the physician.",
+      Presentation: "Available in 100gm jar.",
+    },
+  },
+
+  // --- ID 203: Arjuna Churna ---
+  {
+    id: 203,
+    image: "../src/assets/img/arjuna_churna.jpg", // Placeholder path
+    title: "Arjuna Churna",
+    price: 11.0,
+    oldPrice: 13.0,
+    bundleTag: "100gm Churna",
+    rating: 5,
+    reviewCount: 30,
+    category: "Classical Cardiovascular", // Key for Related Products
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Classical Ayurvedic Medicine",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-ARJC-100",
+    },
+    features: ["Heart tonic."],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Cardiovascular",
+      Description:
+        "Arjuna Churna, made from the bark of the Terminalia arjuna tree, is revered in Ayurveda as a superior cardiac tonic. It strengthens the heart muscles and supports the circulatory system.",
+      "How It Works":
+        "It strengthens the cardiac muscles, helps reduce cholesterol levels, and maintains healthy blood pressure through its antioxidant and cardiotonic properties.",
+      Indication:
+        "Heart tonic, supportive therapy for angina, and for improving blood circulation.",
+      Dosage:
+        "3-6 grams twice daily with milk or water, or as advised by an Ayurvedic practitioner.",
+      Presentation: "Available in 100gm jar.",
+    },
+  },
+
+  // --- ID 204: Satavari ---
+  {
+    id: 204,
+    image: "../src/assets/img/satavari.jpg", // Placeholder path
+    title: "Satavari",
+    price: 15.0,
+    oldPrice: null,
+    bundleTag: "100gm Churna",
+    rating: 4,
+    reviewCount: 22,
+    category: "Classical Women's Health", // Key for Related Products
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Classical Ayurvedic Medicine",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-SATA-100",
+    },
+    features: [
+      "Helps support female reproductive health and acts as a natural galactagogue.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Women's Health / Galactagogue",
+      Description:
+        "Shatavari (Asparagus racemosus) is known as the 'Queen of Herbs' for female health. It supports the reproductive system and is especially valued for promoting lactation in nursing mothers.",
+      "How It Works":
+        "It acts as a potent adaptogen and rejuvenator (Rasayana). It nourishes and balances the female reproductive hormones, soothing stress and supporting optimal milk production.",
+      Indication:
+        "Supporting female reproductive health, menopausal symptoms, and as a natural galactagogue.",
+      Dosage: "3-5 grams twice daily with milk or warm water, or as directed.",
+      Presentation: "Available in 100gm jar.",
+    },
+  },
+
+  // --- ID 205: Triphala Churna ---
+  {
+    id: 205,
+    image: "../src/assets/img/triphala_churna.jpg", // Placeholder path
+    title: "Triphala Churna",
+    price: 8.0,
+    oldPrice: null,
+    bundleTag: "100gm Churna",
+    rating: 4,
+    reviewCount: 35,
+    category: "Classical Digestive", // Key for Related Products
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Classical Ayurvedic Medicine",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-TC-100",
+    },
+    features: [
+      "An effective combination of the three fruits that act as a mild laxative, carminative, digestive, and intestinal tonic.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Digestive / Detoxifier",
+      Description:
+        "Triphala is one of the most famous Ayurvedic formulations, combining three potent fruits: Amalaki, Bibhitaki, and Haritaki. It is renowned for gently cleansing and toning the entire digestive tract.",
+      "How It Works":
+        "The three fruits work synergistically to detoxify, promote regular bowel movements, and improve nutrient absorption without causing dependency.",
+      Indication:
+        "Constipation, indigestion, detoxification, and overall digestive health.",
+      Dosage:
+        "3-6 grams at bedtime with warm water, or as recommended by a physician.",
+      Presentation: "Available in 100gm jar.",
+    },
+  },
+
+  // --- ID 206: Rohitakadi Churna ---
+  {
+    id: 206,
+    image: "../src/assets/img/rohitakadi_churna.jpg", // Placeholder path
+    title: "Rohitakadi Churna",
+    price: 13.0,
+    oldPrice: null,
+    bundleTag: "100gm Churna",
+    rating: 3,
+    reviewCount: 10,
+    category: "Classical Liver/Spleen", // Key for Related Products
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Classical Ayurvedic Medicine",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-RC-100",
+    },
+    features: [
+      "Effective medicine for liver, spleen, digestion & liver disorders.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Liver/Spleen",
+      Description:
+        "Rohitakadi Churna is a potent formulation focused on maintaining the health of the spleen and liver. It is especially useful in conditions related to spleen enlargement and related digestive issues.",
+      "How It Works":
+        "The primary ingredient, Rohitaka, is known for its splenoprotective and hepatoprotective actions. It helps regulate bile flow and reduces enlargement of abdominal organs.",
+      Indication:
+        "Liver and spleen disorders, loss of appetite, and indigestion.",
+      Dosage: "1-3 grams twice daily with honey or warm water.",
+      Presentation: "Available in 100gm jar.",
+    },
+  },
+
+  // --- ID 207: Abhipattikar Churna ---
+  {
+    id: 207,
+    image: "../src/assets/img/abhipattikar_churna.jpg", // Placeholder path
+    title: "Abhipattikar Churna",
+    price: 14.0,
+    oldPrice: null,
+    bundleTag: "100gm Churna",
+    rating: 4,
+    reviewCount: 17,
+    category: "Classical Digestive", // Key for Related Products
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Classical Ayurvedic Medicine",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-ABC-100",
+    },
+    features: [
+      "Effective digestive, carminative, appetizing, and anti-flatulent.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Digestive / Antacid",
+      Description:
+        "Abhipattikar Churna is an established classical medicine used primarily to treat issues related to aggravated Pitta (heat/acid), particularly hyperacidity and dyspepsia.",
+      "How It Works":
+        "It neutralizes excess acid, soothes the stomach lining, relieves flatulence, and promotes the downward movement of Vata (air/gas), thereby easing digestive discomfort.",
+      Indication:
+        "Hyperacidity, heartburn, dyspepsia (indigestion), anorexia, and anti-flatulent action.",
+      Dosage:
+        "3-5 grams twice a day after meals, or as directed by a healthcare practitioner.",
+      Presentation: "Available in 100gm jar.",
+    },
+  },
+
+  // --- ID 208: Ashwagandha Churna ---
+  {
+    id: 208,
+    image: "../src/assets/img/ashwagandha_churna.jpg", // Placeholder path
+    title: "Ashwagandha Churna",
+    price: 16.0,
+    oldPrice: 19.0,
+    bundleTag: "100gm Churna",
+    rating: 5,
+    reviewCount: 40,
+    category: "Classical Adaptogen", // Key for Related Products
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Classical Ayurvedic Medicine",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-ASH-100",
+    },
+    features: [
+      "A powerful adaptogen that boosts muscle tone, boost energy, and improve vitality.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Adaptogen / Rejuvenator",
+      Description:
+        "Ashwagandha (Withania somnifera) is perhaps the most famous adaptogen in Ayurveda. It helps the body manage stress, promotes relaxation, and enhances physical and mental endurance.",
+      "How It Works":
+        "It acts on the neuro-endocrine system to stabilize the body's response to stress, reducing cortisol levels. It is also an effective tonic for muscle tone and vitality.",
+      Indication:
+        "Stress, anxiety, general weakness, fatigue, and to boost muscle tone and vitality.",
+      Dosage:
+        "3-6 grams twice daily with milk, or as recommended by a physician.",
+      Presentation: "Available in 100gm jar.",
+    },
+  },
+
+  // --- ID 209: Neem ---
+  {
+    id: 209,
+    image: "../src/assets/img/neem.jpg", // Placeholder path
+    title: "Neem",
+    price: 10.0,
+    oldPrice: null,
+    bundleTag: "60 Ct Capsule",
+    rating: 4,
+    reviewCount: 20,
+    category: "Classical Dermatological", // Key for Related Products
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Classical Herbal Capsule",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-NEEM-060",
+    },
+    features: [
+      "Known for its antiseptic, anti-fungal, and blood-purifying properties. Supports skin and immunity health.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Dermatological / Blood Purifier",
+      Description:
+        "Neem (Azadirachta indica) is one of nature's most powerful purifiers. The capsules contain the concentrated benefits of Neem leaves, used traditionally for detoxifying the blood and maintaining healthy skin.",
+      "How It Works":
+        "It works by purifying the blood, neutralizing toxins, and exerting strong antibacterial and antifungal actions, which are crucial for treating skin conditions like acne and eczema.",
+      Indication:
+        "Skin diseases, acne, eczema, blood purification, and immune support.",
+      Dosage:
+        "1-2 capsules twice daily after meals, or as directed by a healthcare professional.",
+      Presentation: "Available in 60 capsules bottle.",
+    },
+  },
+
+  // --- ID 210: Arjuna ---
+  {
+    id: 210,
+    image: "../src/assets/img/arjuna.jpg", // Placeholder path
+    title: "Arjuna",
+    price: 15.5,
+    oldPrice: 19.0,
+    bundleTag: "60 Ct Capsule",
+    rating: 5,
+    reviewCount: 35,
+    category: "Classical Cardiovascular", // Key for Related Products
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Classical Herbal Capsule",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-AJ-060",
+    },
+    features: [
+      "Supports cardiac health, strengthens heart muscles, and regulates blood pressure naturally.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Cardiovascular / Heart Tonic",
+      Description:
+        "Arjuna capsules provide a concentrated dose of the heart-supportive benefits of Terminalia arjuna bark, ideal for busy lifestyles. It is a powerful natural cardiotonic.",
+      "How It Works":
+        "Strengthens heart muscles (myocardium), helps maintain healthy cholesterol levels, and provides antioxidant protection to the cardiovascular system.",
+      Indication:
+        "Supports cardiac health, strengthens heart muscles, and regulates blood pressure.",
+      Dosage:
+        "1 capsule twice daily after meals, or as prescribed by a health professional.",
+      Presentation: "Available in 60 capsules bottle.",
+    },
+  },
+
+  // --- ID 211: Yasti Madhu Churna ---
+  {
+    id: 211,
+    image: "../src/assets/img/yasti_madhu_churna.jpg", // Placeholder path
+    title: "Yasti Madhu Churna",
+    price: 11.5,
+    oldPrice: null,
+    bundleTag: "100gm Churna",
+    rating: 4,
+    reviewCount: 15,
+    category: "Classical Respiratory", // Key for Related Products
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Classical Ayurvedic Medicine",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-YMC-100",
+    },
+    features: [
+      "Helps relieve sore throat, cough, chest, and respiratory disorders.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Respiratory / Throat Care",
+      Description:
+        "Yasti Madhu (Licorice/Mulethi) Churna is a soothing formulation widely used for throat and respiratory relief. It is sweet-tasting and acts as a demulcent.",
+      "How It Works":
+        "It forms a protective coat over the irritated mucosal lining of the throat and esophagus, reducing irritation, inflammation, and coughing. It also acts as an expectorant.",
+      Indication:
+        "Sore throat, cough, hoarseness, chest congestion, and respiratory disorders.",
+      Dosage:
+        "1-3 grams twice daily, mixed with honey or warm water, or as advised by a physician.",
+      Presentation: "Available in 100gm jar.",
+    },
+  },
+
+  // --- ID 212: Isabgol (Life Care) ---
+  {
+    id: 212,
+    image: "../src/assets/img/isabgol.jpg", // Placeholder path
+    title: "Isabgol (Life Care)",
+    price: 9.0,
+    oldPrice: null,
+    bundleTag: "100gm Powder",
+    rating: 4,
+    reviewCount: 28,
+    category: "Classical Digestive", // Key for Related Products
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Classical Fibre Supplement",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-ISAB-100",
+    },
+    features: ["Useful in habitual and chronic constipation."],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Digestive / Laxative",
+      Description:
+        "Isabgol, or Psyllium Husk, is a natural soluble fiber supplement highly effective for managing habitual and chronic constipation. It promotes regular, smooth bowel movements.",
+      "How It Works":
+        "The husks absorb water in the gut, forming a soft, bulky gel that stimulates bowel movement (peristalsis) and cleanses the intestinal walls gently.",
+      Indication:
+        "Habitual and chronic constipation, managing irritable bowel syndrome (IBS), and promoting a healthy colon.",
+      Dosage:
+        "5-10 grams (1-2 teaspoons) mixed in a glass of water, followed by another glass of water, preferably at bedtime.",
+      Presentation: "Available in 100gm powder jar.",
+    },
+  },
+
+  // --- ID 213: Gasher Churna ---
+  {
+    id: 213,
+    image: "../src/assets/img/gasher_churna.jpg", // Placeholder path
+    title: "Gasher Churna",
+    price: 10.5,
+    oldPrice: null,
+    bundleTag: "100gm Churna",
+    rating: 3,
+    reviewCount: 12,
+    category: "Classical Digestive", // Key for Related Products
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Classical Ayurvedic Medicine",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-GSC-100",
+    },
+    features: [
+      "Useful in hyperacidity, gastric, abdominal distension, and flatulence.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Digestive / Antiflatulent",
+      Description:
+        "Gasher Churna is a fast-acting Ayurvedic formulation designed to provide quick relief from common symptoms of poor digestion, particularly gas, bloating, and hyperacidity.",
+      "How It Works":
+        "It contains carminative herbs that help expel trapped gases from the stomach and intestines. It also helps in neutralizing excess stomach acid.",
+      Indication:
+        "Hyperacidity, gastric discomfort, abdominal distension (bloating), and flatulence.",
+      Dosage:
+        "2-4 grams after meals with water, or as needed for symptomatic relief.",
+      Presentation: "Available in 100gm jar.",
+    },
+  },
+
+  // --- ID 214: Shilajit Capsule ---
+  {
+    id: 214,
+    image: "../src/assets/img/shilajit_capsule.jpg", // Placeholder path
+    title: "Shilajit Capsule",
+    price: 24.0,
+    oldPrice: 29.0,
+    bundleTag: "30 Ct Capsule",
+    rating: 5,
+    reviewCount: 45,
+    category: "Classical Rejuvenator", // Key for Related Products
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Classical Mineral Capsule",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-SLJ-030",
+    },
+    features: [
+      "A natural rejuvenator that supports energy, stamina, and overall vitality.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Classical Rejuvenator / Energy",
+      Description:
+        "Shilajit is a potent mineral-rich natural substance found in the Himalayas. These capsules are a concentrated source of Fulvic acid and minerals, serving as an outstanding rejuvenator and energy booster.",
+      "How It Works":
+        "It acts on the mitochondria (cell powerhouses) to boost cellular energy production, which translates to improved stamina, muscle strength, and cognitive function. It also acts as an adaptogen.",
+      Indication:
+        "Low energy, chronic fatigue, low stamina, and male sexual weakness.",
+      Dosage:
+        "1 capsule once or twice daily with milk after meals, or as directed by a healthcare professional.",
+      Presentation: "Available in 30 capsules blister pack.",
+    },
+  },
+];
+
 export const veterinaryProductData = [
   // --- VET ID 1: Vet Kafher ---
   {

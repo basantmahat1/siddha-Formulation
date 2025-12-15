@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { productData, veterinaryProductData } from "../productdata.js";
+import {
+  classicalProductData,
+  productData,
+  veterinaryProductData,
+} from "../productdata.js";
 // Merge all products into a single searchable array
-const allProducts = [...productData, ...veterinaryProductData];
+const allProducts = [
+  ...productData,
+  ...veterinaryProductData,
+  ...classicalProductData,
+];
 // ----------------------------------------------------------------------
 // 1. CONTENT DATA DEFINITION (Unchanged)
 // ----------------------------------------------------------------------
@@ -160,19 +168,33 @@ const RelatedProductCard = ({ product }) => (
 );
 
 // ----------------------------------------------------------------------
-// 4. RELATED PRODUCTS SECTION (Unchanged)
+// 4. RELATED PRODUCTS SECTION (Updated)
 // ----------------------------------------------------------------------
 
 const RelatedProducts = ({ currentProductId }) => {
-  // Check which list the current product belongs to
+  // 1. Determine which list the current product belongs to
+  let sourceList = productData; // Default to human/Siddha products
+  let categoryTitle = "The herbal choice is a healthy choice.";
+
   const isVeterinaryProduct = veterinaryProductData.some(
     (item) => item.id === currentProductId
   );
+  const isClassicalProduct = classicalProductData.some(
+    (item) => item.id === currentProductId
+  );
 
-  // Select the correct source list
-  const sourceList = isVeterinaryProduct ? veterinaryProductData : productData;
+  if (isVeterinaryProduct) {
+    sourceList = veterinaryProductData;
+    categoryTitle = "More herbal solutions for animal care.";
+  } else if (isClassicalProduct) {
+    sourceList = classicalProductData;
+    categoryTitle = "Discover more from our Classical Ayurvedic range.";
+  } else {
+    sourceList = productData;
+    categoryTitle = "The herbal choice is a healthy choice.";
+  }
 
-  // Filter related products from the same list
+  // 2. Filter related products from the determined source list
   const relatedItems = sourceList
     .filter((item) => item.id !== currentProductId)
     .slice(0, 8); // limit to 8
@@ -180,15 +202,13 @@ const RelatedProducts = ({ currentProductId }) => {
   if (relatedItems.length === 0) return null;
 
   return (
-    <div className="mt-12 pt-6 border-t  border-gray-200 w-full">
+    <div className="mt-12 pt-6 border-t  border-gray-200 w-full">
       <div className="max-w-[1100px] mx-auto px-6 md:px-0">
         <h2 className="text-2xl font-bold text-gray-900 mb-1 uppercase tracking-wider text-center">
           RELATED PRODUCTS
         </h2>
         <p className="text-gray-500 text-sm mb-8 text-center">
-          {isVeterinaryProduct
-            ? "More herbal solutions for animal care."
-            : "The herbal choice is a healthy choice."}
+          {categoryTitle}
         </p>
 
         <div className="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-6">

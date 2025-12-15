@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { productData, veterinaryProductData } from "../productdata.js";
+import {
+  productData,
+  veterinaryProductData,
+  classicalProductData,
+} from "../productdata.js";
 
 const ProductSection = ({ title, products }) => {
   const getProductDescription = (product) =>
@@ -68,6 +72,13 @@ const ProductList = () => {
   return (
     <div className="p-6 md:p-10 max-w-6xl mx-auto min-h-screen bg-white">
       <ProductSection title="Patent Herbal Medicines" products={productData} />
+
+      <div className="mt-12 border-t-2 border-gray-100 pt-5">
+        <ProductSection
+          title="Classical Herbal Medicines"
+          products={classicalProductData}
+        />
+      </div>
 
       <div className="mt-12 border-t-2 border-gray-100 pt-5">
         <ProductSection
