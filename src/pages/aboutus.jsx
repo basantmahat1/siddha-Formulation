@@ -44,9 +44,9 @@ export default function AboutUs() {
     <div className="min-h-screen bg-gray-50 font-sans">
       {/* Hero Section (Slider with Background Image) */}
       <div
-        className="relative py-28 flex items-center justify-center text-center text-white overflow-hidden"
+        className="relative py-28 flex items-center justify-center  text-center text-white overflow-clip"
         style={{
-          backgroundImage: "url('/assets/img/herbal-medicine2020.jpg')",
+          backgroundImage: "url('/assets/img/aboutimg1.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -99,9 +99,9 @@ export default function AboutUs() {
                 <p className="text-gray-700 text-lg leading-relaxed mb-4">
                   Siddha Formulation was born with a vision to restore the
                   ancient healing wisdom of Ayurveda and integrate it with
-                  modern scientific standards. For over two decades, our
-                  journey has revolved around crafting high-quality herbal
-                  formulations that bring real wellness into people's lives.
+                  modern scientific standards. For over two decades, our journey
+                  has revolved around crafting high-quality herbal formulations
+                  that bring real wellness into people's lives.
                 </p>
 
                 <p className="text-gray-700 text-lg leading-relaxed mb-4">
@@ -147,7 +147,7 @@ export default function AboutUs() {
             </div>
 
             {/* Vision */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-blue-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
+            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
               <div className="text-6xl mb-6">🌱</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Our Vision
@@ -159,7 +159,7 @@ export default function AboutUs() {
             </div>
 
             {/* Values */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-purple-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
+            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
               <div className="text-6xl mb-6">💎</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Our Values
@@ -223,7 +223,7 @@ export default function AboutUs() {
         </section>
 
         {/* Call to Action */}
-        <section className="bg-gradient-to-r from-green-700 to-green-800 text-white rounded-3xl p-16 shadow-lg text-center">
+        <section className=" bg-green-700 text-white rounded-3xl p-16  text-center">
           <h2 className="text-4xl font-bold mb-6">
             Begin Your Natural Wellness Journey
           </h2>
@@ -235,13 +235,16 @@ export default function AboutUs() {
 
           <Link
             to="/products"
-            className="inline-block bg-white text-green-700 font-bold px-12 py-4 rounded-lg shadow-xl hover:bg-gray-100 transition transform hover:scale-105"
+            //   className="bg-green-700 text-white px-6 py-3 rounded-lg font-bold
+            // hover:bg-green-800 transition-all hover:shadow-lg transform hover:scale-105
+            // flex items-center gap-2 text-lg tracking-wider"
+            className="inline-block bg-white text-lg text-green-600  font-bold px-12 py-3  rounded-lg shadow-xl hover:bg-gray-100 transition-all transform hover:scale-105"
           >
             Explore Products
           </Link>
         </section>
       </div>
-      <ScrollUpButton/>
+      <ScrollUpButton />
     </div>
   );
 }

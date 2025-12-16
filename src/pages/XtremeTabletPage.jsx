@@ -395,21 +395,23 @@ const XtremeTabletPage = () => {
               viewport={{ once: true }}
               className="relative"
             >
-       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-  <img
-    src="/assets/img/xtreme.jpg"
-    alt="Xtreme Tablet"
-    className="w-full h-auto max-h-[600px] object-contain"
-  />
-  <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
-  <div className="absolute bottom-6 left-6 text-white">
-    <p className="text-sm opacity-90">Xtreme Tablet</p>
-    <p className="text-xl font-bold">100% Natural & Safe Ayurvedic Formula</p>
-  </div>
-</div>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/assets/img/xtreme.jpg"
+                  alt="Xtreme Tablet"
+                  className="w-full h-auto max-h-[600px] object-contain"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
+                <div className="absolute bottom-6 left-20 md:left-24 text-white">
+                  <p className="text-sm opacity-90">Xtreme Tablet</p>
+                  <p className="text-xl font-bold">
+                    100% Natural & Safe Ayurvedic Formula
+                  </p>
+                </div>
+              </div>
 
               {/* Floating stats */}
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+              <div className="absolute -bottom-15 -left-6 bg-white p-4 rounded-xl shadow-lg">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-green-700">10+</div>
                   <div className="text-sm text-gray-600">Active Herbs</div>
@@ -417,7 +419,7 @@ const XtremeTabletPage = () => {
               </div>
 
               {/* Customer Satisfaction */}
-              <div className="absolute -bottom-6 -right-6 bg-green-700 text-white p-6 rounded-xl shadow-lg">
+              <div className="absolute -bottom-15 -right-6 bg-green-700 text-white p-4 rounded-xl shadow-lg">
                 <div className="text-center">
                   <div className="text-3xl font-bold">10,000+</div>
                   <div className="text-sm opacity-90">Satisfied Customers</div>
@@ -556,7 +558,7 @@ const XtremeTabletPage = () => {
 
           {/* Product Image Section */}
           <div className="mt-12 text-center">
-            <img 
+            <img
               src="/assets/img/naturalhearb.webp"
               alt="Herbal Ingredients"
               className="w-full max-w-3xl mx-auto rounded-2xl shadow-xl"
@@ -872,7 +874,7 @@ const XtremeTabletPage = () => {
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/3 mb-6 md:mb-0">
                 <div className="relative w-40 h-40 mx-auto">
-                  <img 
+                  <img
                     src="/assets/img/suman_poudel.jpeg"
                     alt="Suman Poudel"
                     className="w-full h-full object-cover rounded-full border-4 border-green-500 shadow-lg"
