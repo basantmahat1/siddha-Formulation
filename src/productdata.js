@@ -50,14 +50,20 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-BR-100",
     },
-    features: ["An Ayurvedic formulation effective in treating chronic constipation and digestive discomfort by promoting natural bowel movements."],
+    features: [
+      "An Ayurvedic formulation effective in treating chronic constipation and digestive discomfort by promoting natural bowel movements.",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Patent",
-      Description: "An Ayurvedic formulation effective in treating chronic constipation and digestive discomfort by promoting natural bowel movements.",
-      "How It Works": "Cassia angustifolia: Acts as a gentle laxative to relieve constipation. Apium leptophyllum: Provides antispasmodic effect to ease abdominal discomfort. Operculina turpethum: A purgative herb that supports detoxification and gut cleansing.",
-      Indication: "Chronic constipation, Flatulence, Digestive issues, Gastritis",
-      Dosage: "1-2 teaspoonfuls with lukewarm water at bedtime or as directed by the physician.",
+      Description:
+        "An Ayurvedic formulation effective in treating chronic constipation and digestive discomfort by promoting natural bowel movements.",
+      "How It Works":
+        "Cassia angustifolia: Acts as a gentle laxative to relieve constipation. Apium leptophyllum: Provides antispasmodic effect to ease abdominal discomfort. Operculina turpethum: A purgative herb that supports detoxification and gut cleansing.",
+      Indication:
+        "Chronic constipation, Flatulence, Digestive issues, Gastritis",
+      Dosage:
+        "1-2 teaspoonfuls with lukewarm water at bedtime or as directed by the physician.",
       Presentation: "100 gm",
     },
   },
@@ -78,14 +84,22 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-AJ-030",
     },
-    features: ["Cardioprotective properties", "Supports healthy heart function", "Helps manage blood pressure naturally"],
+    features: [
+      "Cardioprotective properties",
+      "Supports healthy heart function",
+      "Helps manage blood pressure naturally",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Patent",
-      Description: "Arjuna Capsule is an Ayurvedic formulation made from Terminalia arjuna, known for its cardioprotective properties. It supports healthy heart function and helps manage blood pressure naturally.",
-      "How It Works": "Terminalia Arjuna: Strengthens cardiac muscles and improves the efficiency of heart pumping. Supports healthy blood circulation and normal blood pressure levels. Acts as an antioxidant and reduces oxidative stress on the heart.",
-      Indication: "Cardiac weakness, Mild hypertension, Palpitation, Chest discomfort due to anxiety or stress",
-      Dosage: "1-2 capsules twice daily with water or as directed by the physician.",
+      Description:
+        "Arjuna Capsule is an Ayurvedic formulation made from Terminalia arjuna, known for its cardioprotective properties. It supports healthy heart function and helps manage blood pressure naturally.",
+      "How It Works":
+        "Terminalia Arjuna: Strengthens cardiac muscles and improves the efficiency of heart pumping. Supports healthy blood circulation and normal blood pressure levels. Acts as an antioxidant and reduces oxidative stress on the heart.",
+      Indication:
+        "Cardiac weakness, Mild hypertension, Palpitation, Chest discomfort due to anxiety or stress",
+      Dosage:
+        "1-2 capsules twice daily with water or as directed by the physician.",
       Presentation: "30 Capsules",
     },
   },
@@ -106,14 +120,20 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-TG-120",
     },
-    features: ["Anti Hypertensive and Cardioprotective", "Tension relief and support for balancing blood pressure"],
+    features: [
+      "Anti Hypertensive and Cardioprotective",
+      "Tension relief and support for balancing blood pressure",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Anti Hypertensive and Cardioprotective",
       Description: "Tension relief and support for balancing blood pressure.",
-      "How It Works": "Rauvolfia serpentina: reduces blood pressure. Terminalia arjuna: heart tonic.",
-      Indication: "Hypolipidemic action, Stabilizes blood pressure, Reduces oxidative stress, Strengthens the heart muscle",
-      Dosage: "Please consult your physician for appropriate dosage instructions.",
+      "How It Works":
+        "Rauvolfia serpentina: reduces blood pressure. Terminalia arjuna: heart tonic.",
+      Indication:
+        "Hypolipidemic action, Stabilizes blood pressure, Reduces oxidative stress, Strengthens the heart muscle",
+      Dosage:
+        "Please consult your physician for appropriate dosage instructions.",
       Presentation: "1 pack: 30 tablets × 4 strips",
     },
   },
@@ -134,13 +154,19 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-TZ-MULTI",
     },
-    features: ["Digestive enzymes", "A safe & effective treatment to radically improve and repair the digestive system"],
+    features: [
+      "Digestive enzymes",
+      "A safe & effective treatment to radically improve and repair the digestive system",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Digestive enzymes",
-      Description: "A safe & effective treatment to radically improve and repair the digestive system with carminative properties.",
-      "How It Works": "Satpuspa: Helps relieve hiccups, digestive, and uterine pain. Ajwain: Acts as an antihelminthic. Shunthi: Stimulates appetite and prevents vomiting (antiemetic). Pudina: Promotes digestion and soothes the gut.",
-      Indication: "Chronic Constipation, Dyspepsia, Anorexia, Gastro colitis, Colicky pains & Flatulence, Anti-spasmodic properties, Abdominal discomfort",
+      Description:
+        "A safe & effective treatment to radically improve and repair the digestive system with carminative properties.",
+      "How It Works":
+        "Satpuspa: Helps relieve hiccups, digestive, and uterine pain. Ajwain: Acts as an antihelminthic. Shunthi: Stimulates appetite and prevents vomiting (antiemetic). Pudina: Promotes digestion and soothes the gut.",
+      Indication:
+        "Chronic Constipation, Dyspepsia, Anorexia, Gastro colitis, Colicky pains & Flatulence, Anti-spasmodic properties, Abdominal discomfort",
       Dosage: "2 teaspoonful twice a day or as directed by the physician.",
       Presentation: "60ml, 100ml, 200ml, 1×10×10 capsules",
     },
@@ -162,14 +188,21 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-SRO-MULTI",
     },
-    features: ["Anti-inflammatory herbal oil", "Reduces pain, swelling, and stiffness in joints and muscles"],
+    features: [
+      "Anti-inflammatory herbal oil",
+      "Reduces pain, swelling, and stiffness in joints and muscles",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Anti-inflammatory herbal oil",
-      Description: "Siddha Race Oil is a 100% natural formulation with potent anti-inflammatory and analgesic properties. It helps reduce pain, swelling, and stiffness in joints and muscles, enhancing flexibility and mobility.",
-      "How It Works": "Erandmool: Acts as a natural pain reliever and anti-inflammatory agent. Rasna: Provides relief in osteoarthritis and muscle stiffness. Kapoor: Promotes local blood flow and soothes pain. Nilgiri Oil: Eases joint discomfort and relaxes sore muscles.",
-      Indication: "Rheumatoid arthritis, Osteoarthritis, Sciatica, Spondylitis, Muscular pain, Backache, Joint stiffness",
-      Dosage: "Apply sufficient quantity over affected area and massage gently for topical application. Use twice a day or as directed by physician.",
+      Description:
+        "Siddha Race Oil is a 100% natural formulation with potent anti-inflammatory and analgesic properties. It helps reduce pain, swelling, and stiffness in joints and muscles, enhancing flexibility and mobility.",
+      "How It Works":
+        "Erandmool: Acts as a natural pain reliever and anti-inflammatory agent. Rasna: Provides relief in osteoarthritis and muscle stiffness. Kapoor: Promotes local blood flow and soothes pain. Nilgiri Oil: Eases joint discomfort and relaxes sore muscles.",
+      Indication:
+        "Rheumatoid arthritis, Osteoarthritis, Sciatica, Spondylitis, Muscular pain, Backache, Joint stiffness",
+      Dosage:
+        "Apply sufficient quantity over affected area and massage gently for topical application. Use twice a day or as directed by physician.",
       Presentation: "60ml, 100ml, 200ml",
     },
   },
@@ -190,14 +223,21 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-KPD-100",
     },
-    features: ["Cough Expectorant with Bronchodilator For Child", "Naturally cares for pediatric cough with a honey-based formula"],
+    features: [
+      "Cough Expectorant with Bronchodilator For Child",
+      "Naturally cares for pediatric cough with a honey-based formula",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Cough Expectorant with Bronchodilator For Child",
-      Description: "Naturally cares for pediatric cough with a honey-based formula.",
-      "How It Works": "Vanafsha: RTI, dry and sore throat, tuberculosis cough. Mulethi: Common cough relief. Kantakari: Supports respiratory disorders. Talispatra: Anti-tussive property. Vasaka: Bronchial antiseptic & bronchodilator. Pippali: Helpful in respiratory infections.",
-      Indication: "Common cold & cough, Acute & chronic bronchitis, Bronchial asthma, Nasal congestion, Whooping cough",
-      Dosage: "Children: 1 teaspoonful 2–3 times a day or as directed by the physician.",
+      Description:
+        "Naturally cares for pediatric cough with a honey-based formula.",
+      "How It Works":
+        "Vanafsha: RTI, dry and sore throat, tuberculosis cough. Mulethi: Common cough relief. Kantakari: Supports respiratory disorders. Talispatra: Anti-tussive property. Vasaka: Bronchial antiseptic & bronchodilator. Pippali: Helpful in respiratory infections.",
+      Indication:
+        "Common cold & cough, Acute & chronic bronchitis, Bronchial asthma, Nasal congestion, Whooping cough",
+      Dosage:
+        "Children: 1 teaspoonful 2–3 times a day or as directed by the physician.",
       Presentation: "100 ml",
     },
   },
@@ -218,13 +258,18 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-AH-MULTI",
     },
-    features: ["Anti Diarrhoeal & Amoebic Dysentery", "Perfect solution for Diarrhea & Dysentery with enzyme"],
+    features: [
+      "Anti Diarrhoeal & Amoebic Dysentery",
+      "Perfect solution for Diarrhea & Dysentery with enzyme",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Anti Diarrhoeal & Amoebic Dysentery",
       Description: "Perfect solution for Diarrhea & Dysentery with enzyme.",
-      "How It Works": "Kutaj – Amoebicider, Hemorrhoids, Antispasmodic. Bel (Bela) – Anti-inflammatory. Dhataki – Improves bulk of faeces. Satpuspa – Digestive.",
-      Indication: "Acute & chronic diarrhea, Amoebic dysentery, Chronic colitis, Indigestion & loss of appetite, Irritable bowel syndrome (IBS)",
+      "How It Works":
+        "Kutaj – Amoebicider, Hemorrhoids, Antispasmodic. Bel (Bela) – Anti-inflammatory. Dhataki – Improves bulk of faeces. Satpuspa – Digestive.",
+      Indication:
+        "Acute & chronic diarrhea, Amoebic dysentery, Chronic colitis, Indigestion & loss of appetite, Irritable bowel syndrome (IBS)",
       Dosage: "2 teaspoonful twice a day or as directed by the physician.",
       Presentation: "60ml, 100ml, 200ml, Tablet",
     },
@@ -246,14 +291,20 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-AP-200",
     },
-    features: ["Natural appetite stimulant", "Naturally treats your loss of appetite"],
+    features: [
+      "Natural appetite stimulant",
+      "Naturally treats your loss of appetite",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Natural appetite stimulant",
       Description: "Naturally treats your loss of appetite.",
-      "How It Works": "Chitrak: Reduces hepatic disorders. Souf: Carminative and digestive. Pittapapda: Analgesic and hepatoprotective. Bhumi Amla: Supports liver function and treats hepatic issues.",
-      Indication: "Improves appetite and digestion, Helps in jaundice, anorexia, and impaired bile secretion, Relieves constipation, hyperacidity, and excessive thirst, Prevents colic pain",
-      Dosage: "1–2 teaspoonfuls, 2–3 times daily or as directed by the physician.",
+      "How It Works":
+        "Chitrak: Reduces hepatic disorders. Souf: Carminative and digestive. Pittapapda: Analgesic and hepatoprotective. Bhumi Amla: Supports liver function and treats hepatic issues.",
+      Indication:
+        "Improves appetite and digestion, Helps in jaundice, anorexia, and impaired bile secretion, Relieves constipation, hyperacidity, and excessive thirst, Prevents colic pain",
+      Dosage:
+        "1–2 teaspoonfuls, 2–3 times daily or as directed by the physician.",
       Presentation: "200 ml",
     },
   },
@@ -274,13 +325,19 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-PY-MULTI",
     },
-    features: ["Anti-inflammatory and antimicrobial properties", "Recommended formula for Acute & chronic Piles (External & Internal)"],
+    features: [
+      "Anti-inflammatory and antimicrobial properties",
+      "Recommended formula for Acute & chronic Piles (External & Internal)",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Anti-inflammatory and antimicrobial properties",
-      Description: "Recommended formula for Acute & chronic Piles (External & Internal).",
-      "How It Works": "Neem: Anti Inflammatory. Kutaj: Relieves itching / Toning of anus. Mahanembha (Bakain): Analgesic / Anti Inflammatory. Kachnar: Anti Inflammatory / Wound Healing.",
-      Indication: "Rapid relief & controls bleeding, Helps in checking secondary infections, Offers comfortable excretion, Arrests hemorrhage & Anal fissures, Lumps start shrinking & vanish completely",
+      Description:
+        "Recommended formula for Acute & chronic Piles (External & Internal).",
+      "How It Works":
+        "Neem: Anti Inflammatory. Kutaj: Relieves itching / Toning of anus. Mahanembha (Bakain): Analgesic / Anti Inflammatory. Kachnar: Anti Inflammatory / Wound Healing.",
+      Indication:
+        "Rapid relief & controls bleeding, Helps in checking secondary infections, Offers comfortable excretion, Arrests hemorrhage & Anal fissures, Lumps start shrinking & vanish completely",
       Dosage: "2 teaspoonful twice a day or as directed by the physician.",
       Presentation: "200ml, 450ml, 1x30x10 tablets",
     },
@@ -302,13 +359,19 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-SM-450",
     },
-    features: ["Adaptogenic, Antioxidant, Immunity booster, and also a hematinic", "An ayurvedic honey-based tonic & appetizer"],
+    features: [
+      "Adaptogenic, Antioxidant, Immunity booster, and also a hematinic",
+      "An ayurvedic honey-based tonic & appetizer",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Adaptogenic, Antioxidant, Immunity booster, and also a hematinic",
+      "Therapeutic Category":
+        "Adaptogenic, Antioxidant, Immunity booster, and also a hematinic",
       Description: "An ayurvedic honey-based tonic & appetizer.",
-      "How It Works": "Bala – Asthma / TB. Sanayapatri: Laxative. Kapikachhu: Anti-parkinsonism / Anti-inflammatory. Barahikanda: Antioxidant / Anti-diabetic / Anti-cancer. Bidari Kanda: Restorative tonic / Anti-ageing / Spermatogenic / Immune booster / Infertility disorder.",
-      Indication: "Best appetizer, General debility, Anaemic patients, Malnutrition, Protects the body from oxidative stress, Post-operative care, During pregnancy & lactation",
+      "How It Works":
+        "Bala – Asthma / TB. Sanayapatri: Laxative. Kapikachhu: Anti-parkinsonism / Anti-inflammatory. Barahikanda: Antioxidant / Anti-diabetic / Anti-cancer. Bidari Kanda: Restorative tonic / Anti-ageing / Spermatogenic / Immune booster / Infertility disorder.",
+      Indication:
+        "Best appetizer, General debility, Anaemic patients, Malnutrition, Protects the body from oxidative stress, Post-operative care, During pregnancy & lactation",
       Dosage: "2 TSF thrice a day after meals.",
       Presentation: "450 gm",
     },
@@ -330,14 +393,22 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-PS-MULTI",
     },
-    features: ["Anti-inflammatory, Postpartum recovery, Wound healing", "A desired hematinic supplement for overall support during pregnancy and lactation"],
+    features: [
+      "Anti-inflammatory, Postpartum recovery, Wound healing",
+      "A desired hematinic supplement for overall support during pregnancy and lactation",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Anti-inflammatory, Postpartum recovery, Wound healing",
-      Description: "A desired hematinic supplement for overall support during pregnancy and lactation.",
-      "How It Works": "Pasanabheda: Anti-inflammatory, postpartum recovery, wound healing. Dashmool: Anti-inflammatory and pain relief, reduces fluid retention. Ashwagandha: Boosts fertility and reduces inflammation. Shatavari: Immunomodulatory support. Dhataki: Fertility enhancer and uterine sedative.",
-      Indication: "Supports sufficient lactation, Corrects analgesic, anti-inflammatory & diuretic conditions, Treats pre & post-delivery anemia and helps normalize body and uterus size, Helps restore a taut and slim figure",
-      Dosage: "2 teaspoonfuls twice daily after meals or as directed by the physician.",
+      "Therapeutic Category":
+        "Anti-inflammatory, Postpartum recovery, Wound healing",
+      Description:
+        "A desired hematinic supplement for overall support during pregnancy and lactation.",
+      "How It Works":
+        "Pasanabheda: Anti-inflammatory, postpartum recovery, wound healing. Dashmool: Anti-inflammatory and pain relief, reduces fluid retention. Ashwagandha: Boosts fertility and reduces inflammation. Shatavari: Immunomodulatory support. Dhataki: Fertility enhancer and uterine sedative.",
+      Indication:
+        "Supports sufficient lactation, Corrects analgesic, anti-inflammatory & diuretic conditions, Treats pre & post-delivery anemia and helps normalize body and uterus size, Helps restore a taut and slim figure",
+      Dosage:
+        "2 teaspoonfuls twice daily after meals or as directed by the physician.",
       Presentation: "Available in 200 ml and 450 ml bottles",
     },
   },
@@ -358,13 +429,19 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-LV-MULTI",
     },
-    features: ["Hepatoprotective and Rejuvenator", "The liver is one of the most metabolically active organs in the body"],
+    features: [
+      "Hepatoprotective and Rejuvenator",
+      "The liver is one of the most metabolically active organs in the body",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Hepatoprotective and Rejuvenator",
-      Description: "The liver is one of the most metabolically active organs in the body. Livherb is designed to care for and protect this vital organ.",
-      "How It Works": "Kutki: Hepatoprotective, supports liver cirrhosis, immune modulation, antioxidant. Punarnava: Hepatoprotective, anti-inflammatory. Makov: Relieves stomach ache and worms, anti-inflammatory. Rohitak: Liver and spleen disorders, hepatoprotective. Bhumi Amla: Effective liver protector.",
-      Indication: "Corrects anaemia, dyspepsia, and constipation, Improves liver function and promotes appetite, Manages early cirrhotic conditions, Protects liver against hepatotoxic conditions and jaundice",
+      Description:
+        "The liver is one of the most metabolically active organs in the body. Livherb is designed to care for and protect this vital organ.",
+      "How It Works":
+        "Kutki: Hepatoprotective, supports liver cirrhosis, immune modulation, antioxidant. Punarnava: Hepatoprotective, anti-inflammatory. Makov: Relieves stomach ache and worms, anti-inflammatory. Rohitak: Liver and spleen disorders, hepatoprotective. Bhumi Amla: Effective liver protector.",
+      Indication:
+        "Corrects anaemia, dyspepsia, and constipation, Improves liver function and promotes appetite, Manages early cirrhotic conditions, Protects liver against hepatotoxic conditions and jaundice",
       Dosage: "2 teaspoonfuls twice a day or as directed by the physician.",
       Presentation: "Available in 60ml, 100ml, and 200ml bottles.",
     },
@@ -386,14 +463,22 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-GH-MULTI",
     },
-    features: ["Hyperacidity, GERD, constipation, flatulence, and abdominal gas", "The herbal choice for antacid with enzyme for quick, lasting results"],
+    features: [
+      "Hyperacidity, GERD, constipation, flatulence, and abdominal gas",
+      "The herbal choice for antacid with enzyme for quick, lasting results",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Hyperacidity, GERD, constipation, flatulence, and abdominal gas",
-      Description: "The herbal choice for antacid with enzyme for quick, lasting results in 'Hyper Acidity Syndrome'.",
-      "How It Works": "Chitrak: Digestive and caminative. Yawani: Anti-esopagmotive. Sunthi: Reduces flatulence. Muktasukti Bhasma: Acts as an antacid.",
-      Indication: "Dyspepsia & Constipation, Acute & Chronic Gastritis, Faster relief for burning stomach, Excellent remedy for Gastro-coilitis, Gastroesophageal reflux syndrome, Relief from heartburn & epigastric pain",
-      Dosage: "2 teaspoonful twice daily after meals or as directed by the physician.",
+      "Therapeutic Category":
+        "Hyperacidity, GERD, constipation, flatulence, and abdominal gas",
+      Description:
+        "The herbal choice for antacid with enzyme for quick, lasting results in 'Hyper Acidity Syndrome'.",
+      "How It Works":
+        "Chitrak: Digestive and caminative. Yawani: Anti-esopagmotive. Sunthi: Reduces flatulence. Muktasukti Bhasma: Acts as an antacid.",
+      Indication:
+        "Dyspepsia & Constipation, Acute & Chronic Gastritis, Faster relief for burning stomach, Excellent remedy for Gastro-coilitis, Gastroesophageal reflux syndrome, Relief from heartburn & epigastric pain",
+      Dosage:
+        "2 teaspoonful twice daily after meals or as directed by the physician.",
       Presentation: "200ml, 450ml, 1x50 tablets, 1x30x10 tablets",
     },
   },
@@ -414,14 +499,21 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-KH-MULTI",
     },
-    features: ["Cough Expectorant with Bronchodilator", "Kafher is a non-addictive, non-sedative, and non-narcotic cough expectorant"],
+    features: [
+      "Cough Expectorant with Bronchodilator",
+      "Kafher is a non-addictive, non-sedative, and non-narcotic cough expectorant",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Cough Expectorant with Bronchodilator",
-      Description: "Kafher is a non-addictive, non-sedative, and non-narcotic cough expectorant.",
-      "How It Works": "Vanafsha: RTI, dry and sore throat, tuberculosis cough. Mulethi: Common cough relief. Kantakari: Respiratory disorders. Talispatra: Antitussive action. Vasaka: Bronchial antiseptic, bronchodilator. Pippali: Respiratory infections.",
-      Indication: "Prompt relief from cough and cold, Acute and chronic bronchitis and asthma, Laryngitis and whooping cough (pertussis), Bronchial asthma, Allergic cough",
-      Dosage: "Adults: 2 teaspoonfuls, 2–3 times a day. Children: 1 teaspoonful, 2–3 times a day",
+      Description:
+        "Kafher is a non-addictive, non-sedative, and non-narcotic cough expectorant.",
+      "How It Works":
+        "Vanafsha: RTI, dry and sore throat, tuberculosis cough. Mulethi: Common cough relief. Kantakari: Respiratory disorders. Talispatra: Antitussive action. Vasaka: Bronchial antiseptic, bronchodilator. Pippali: Respiratory infections.",
+      Indication:
+        "Prompt relief from cough and cold, Acute and chronic bronchitis and asthma, Laryngitis and whooping cough (pertussis), Bronchial asthma, Allergic cough",
+      Dosage:
+        "Adults: 2 teaspoonfuls, 2–3 times a day. Children: 1 teaspoonful, 2–3 times a day",
       Presentation: "Available in: 100 ml & 200 ml bottles",
     },
   },
@@ -442,14 +534,21 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-BS-300",
     },
-    features: ["Weight Loss Formula", "The scientific and authentic formula to help you lose excess weight"],
+    features: [
+      "Weight Loss Formula",
+      "The scientific and authentic formula to help you lose excess weight",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Weight Loss Formula",
-      Description: "The scientific and authentic formula to help you lose excess weight.",
-      "How It Works": "Kutki: Anti-inflammatory, supports weight management and healthy elimination of excess fat and cholesterol. Bayobiden: Anti-inflammatory and anti-hyperlipidemic, boosts overall metabolism. Sanna: Laxative. Shilajit: Anti-inflammatory and rejuvenative.",
-      Indication: "Colon cleanser and tonifier to eliminate toxins and deposits, Helps reduce obesity and manage fat metabolism, Balances cholesterol and lipid profiles, Burns extra calories and fat, improves digestion and excretion system, Reduces desire for sugar and sweet foods",
-      Dosage: "Please consult your healthcare professional for appropriate dosage instructions.",
+      Description:
+        "The scientific and authentic formula to help you lose excess weight.",
+      "How It Works":
+        "Kutki: Anti-inflammatory, supports weight management and healthy elimination of excess fat and cholesterol. Bayobiden: Anti-inflammatory and anti-hyperlipidemic, boosts overall metabolism. Sanna: Laxative. Shilajit: Anti-inflammatory and rejuvenative.",
+      Indication:
+        "Colon cleanser and tonifier to eliminate toxins and deposits, Helps reduce obesity and manage fat metabolism, Balances cholesterol and lipid profiles, Burns extra calories and fat, improves digestion and excretion system, Reduces desire for sugar and sweet foods",
+      Dosage:
+        "Please consult your healthcare professional for appropriate dosage instructions.",
       Presentation: "1 pack: 30 tablets × 10 strips",
     },
   },
@@ -470,14 +569,22 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-GW-130",
     },
-    features: ["Anti-spasmodic, carminative, digestive and stomachic", "Gives instant relief from common GI problems like colic, flatulence and indigestion"],
+    features: [
+      "Anti-spasmodic, carminative, digestive and stomachic",
+      "Gives instant relief from common GI problems like colic, flatulence and indigestion",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Anti-spasmodic, carminative, digestive and stomachic",
-      Description: "Gives instant relief from common GI problems like colic, flatulence and indigestion.",
-      "How It Works": "It contains jeera, ajwain, saunf, soya and pudina sat, which prevent the nausea and discomfort caused by stomach gas and other colic symptoms. It also helps to minimize problems associated with teeth eruption.",
-      Indication: "Indigestion, Anorexia, Colic pain & flatulence, Digestive disorders associated with teeth eruption",
-      Dosage: "1-6 month: 1 tsf thrice a day. 6month – 1year: 2 tsf thrice a day. 1–2 year: 2–3 tsf thrice a day or as directed by the physician.",
+      "Therapeutic Category":
+        "Anti-spasmodic, carminative, digestive and stomachic",
+      Description:
+        "Gives instant relief from common GI problems like colic, flatulence and indigestion.",
+      "How It Works":
+        "It contains jeera, ajwain, saunf, soya and pudina sat, which prevent the nausea and discomfort caused by stomach gas and other colic symptoms. It also helps to minimize problems associated with teeth eruption.",
+      Indication:
+        "Indigestion, Anorexia, Colic pain & flatulence, Digestive disorders associated with teeth eruption",
+      Dosage:
+        "1-6 month: 1 tsf thrice a day. 6month – 1year: 2 tsf thrice a day. 1–2 year: 2–3 tsf thrice a day or as directed by the physician.",
       Presentation: "130 MI",
     },
   },
@@ -498,13 +605,19 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-IC-200",
     },
-    features: ["Immunity Booster", "Enhance the body's own defense — either physically or mentally — by supporting our immune system"],
+    features: [
+      "Immunity Booster",
+      "Enhance the body's own defense — either physically or mentally — by supporting our immune system",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Immunity Booster",
-      Description: "Enhance the body's own defense — either physically or mentally — by supporting our immune system.",
-      "How It Works": "Amrita: Immunity enhancer / Anti-allergic. Tulasi: Antioxidant / Antipyretic. Haridra: Platelet enhancer.",
-      Indication: "As an immunomodulator, Scavenging the free radicals, Early recovery in post-operative conditions, As an adjuvant to anti-infective therapy, Resistance to antibiotic therapy",
+      Description:
+        "Enhance the body's own defense — either physically or mentally — by supporting our immune system.",
+      "How It Works":
+        "Amrita: Immunity enhancer / Anti-allergic. Tulasi: Antioxidant / Antipyretic. Haridra: Platelet enhancer.",
+      Indication:
+        "As an immunomodulator, Scavenging the free radicals, Early recovery in post-operative conditions, As an adjuvant to anti-infective therapy, Resistance to antibiotic therapy",
       Dosage: "2 teaspoonful twice a day.",
       Presentation: "200 ml",
     },
@@ -526,13 +639,20 @@ export const productData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-LH-MULTI",
     },
-    features: ["Uterine Sedative, Anti-inflammatory & Menstrual Regulator", "A safe, non-hormonal uterine tonic that addresses women's health needs from menarche to menopause"],
+    features: [
+      "Uterine Sedative, Anti-inflammatory & Menstrual Regulator",
+      "A safe, non-hormonal uterine tonic that addresses women's health needs from menarche to menopause",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Uterine Sedative, Anti-inflammatory & Menstrual Regulator",
-      Description: "A safe, non-hormonal uterine tonic that addresses women's health needs from menarche to menopause.",
-      "How It Works": "Ashok: Reduces freckles, anti-inflammatory. Dhataki: Fertility agent, uterine sedative. Lodh: Anti-inflammatory, stops bleeding, normalizes hormones. Lajjawati: Effective for urogenital disorders.",
-      Indication: "Regularizes menstrual cycle, Relieves painful periods, Manages pre & post-menopausal syndrome, Treats dysfunctional uterine bleeding, Effective for leucorrhea, Useful in metrorrhagia, amenorrhea, dysmenorrhea, Supports in habitual abortion cases, Relieves symptoms like stress, anxiety & general debility",
+      "Therapeutic Category":
+        "Uterine Sedative, Anti-inflammatory & Menstrual Regulator",
+      Description:
+        "A safe, non-hormonal uterine tonic that addresses women's health needs from menarche to menopause.",
+      "How It Works":
+        "Ashok: Reduces freckles, anti-inflammatory. Dhataki: Fertility agent, uterine sedative. Lodh: Anti-inflammatory, stops bleeding, normalizes hormones. Lajjawati: Effective for urogenital disorders.",
+      Indication:
+        "Regularizes menstrual cycle, Relieves painful periods, Manages pre & post-menopausal syndrome, Treats dysfunctional uterine bleeding, Effective for leucorrhea, Useful in metrorrhagia, amenorrhea, dysmenorrhea, Supports in habitual abortion cases, Relieves symptoms like stress, anxiety & general debility",
       Dosage: "2 teaspoonfuls twice a day or as directed by the physician.",
       Presentation: "200ml, 450ml",
     },
@@ -592,14 +712,20 @@ export const classicalProductData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-AC-100",
     },
-    features: ["Useful in treating digestive problems, boosts immunity, and acts as a rejuvenator"],
+    features: [
+      "Useful in treating digestive problems, boosts immunity, and acts as a rejuvenator",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Classical",
-      Description: "Useful in treating digestive problems, boosts immunity, and acts as a rejuvenator.",
-      "How It Works": "Emblica officinalis (Amalaki) – Acts as an antioxidant, promotes digestion, and supports liver function.",
-      Indication: "Hyperacidity, Gastritis, Loss of Appetite, Indigestion, Liver Disorders",
-      Dosage: "1 to 2 grams twice daily with warm water or as directed by the physician.",
+      Description:
+        "Useful in treating digestive problems, boosts immunity, and acts as a rejuvenator.",
+      "How It Works":
+        "Emblica officinalis (Amalaki) – Acts as an antioxidant, promotes digestion, and supports liver function.",
+      Indication:
+        "Hyperacidity, Gastritis, Loss of Appetite, Indigestion, Liver Disorders",
+      Dosage:
+        "1 to 2 grams twice daily with warm water or as directed by the physician.",
       Presentation: "100 gm",
     },
   },
@@ -626,7 +752,8 @@ export const classicalProductData = [
     details: {
       "Therapeutic Category": "Classical",
       Description: "Heart tonic, Terminalia Arjuna",
-      "How It Works": "Helps in managing hyperlipidemia, cardiovascular complications, hypertension, and provides cardioprotective support.",
+      "How It Works":
+        "Helps in managing hyperlipidemia, cardiovascular complications, hypertension, and provides cardioprotective support.",
       Indication: "Cardiac disorder",
       Dosage: "3–6 grams or as directed by the physician.",
       Presentation: "100 gm | 1x60 capsule",
@@ -684,13 +811,18 @@ export const classicalProductData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-TC-100",
     },
-    features: ["An effective combination of three fruits that act as a mild laxative, carminative, and empower the digestive system"],
+    features: [
+      "An effective combination of three fruits that act as a mild laxative, carminative, and empower the digestive system",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Classical",
-      Description: "An effective combination of three fruits that act as a mild laxative, carminative, and empower the digestive system.",
-      "How It Works": "Haritaki – Antispasmodic, colon cleanser. Bibhitak – Supports active digestion. Amla – Appetizer and digestive tonic.",
-      Indication: "Constipation, Eye disease, Impaired digestive fire, Hair fall, Anemia",
+      Description:
+        "An effective combination of three fruits that act as a mild laxative, carminative, and empower the digestive system.",
+      "How It Works":
+        "Haritaki – Antispasmodic, colon cleanser. Bibhitak – Supports active digestion. Amla – Appetizer and digestive tonic.",
+      Indication:
+        "Constipation, Eye disease, Impaired digestive fire, Hair fall, Anemia",
       Dosage: "3–6 grams or as prescribed by the physician.",
       Presentation: "100g, 250g",
     },
@@ -747,13 +879,19 @@ export const classicalProductData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-ABC-100",
     },
-    features: ["An effective herbal formulation for managing hyperacidity", "Acts as a digestive, carminative, mild laxative, and appetite stimulant"],
+    features: [
+      "An effective herbal formulation for managing hyperacidity",
+      "Acts as a digestive, carminative, mild laxative, and appetite stimulant",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Classical",
-      Description: "An effective herbal formulation for managing hyperacidity. Acts as a digestive, carminative, mild laxative, and appetite stimulant.",
-      "How It Works": "Nisotha – Relieves constipation. Haritaki – Natural colon cleanser, antispasmodic. Shunthi – Reduces flatulence and aids digestion.",
-      Indication: "Hyperacidity, Digestive impairment, Gastric and duodenal ulcers, Dyspepsia, Constipation, Piles, Urinary disorders",
+      Description:
+        "An effective herbal formulation for managing hyperacidity. Acts as a digestive, carminative, mild laxative, and appetite stimulant.",
+      "How It Works":
+        "Nisotha – Relieves constipation. Haritaki – Natural colon cleanser, antispasmodic. Shunthi – Reduces flatulence and aids digestion.",
+      Indication:
+        "Hyperacidity, Digestive impairment, Gastric and duodenal ulcers, Dyspepsia, Constipation, Piles, Urinary disorders",
       Dosage: "3–6 grams twice daily or as directed by the physician.",
       Presentation: "Available in: 100 gm, 200 gm packs",
     },
@@ -776,12 +914,16 @@ export const classicalProductData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-ASH-100",
     },
-    features: ["Ashwagandha Churna is a traditional herbal remedy derived from Withania somnifera, known for its adaptogenic and rejuvenating properties"],
+    features: [
+      "Ashwagandha Churna is a traditional herbal remedy derived from Withania somnifera, known for its adaptogenic and rejuvenating properties",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Classical",
-      Description: "Ashwagandha Churna is a traditional herbal remedy derived from Withania somnifera, known for its adaptogenic and rejuvenating properties.",
-      "How It Works": "Boosts immune function and stamina. Adaptogenic effects help the body manage stress. Improves sleep quality and libido. Contains Withania somnifera as the active ingredient. Helpful in managing insomnia.",
+      Description:
+        "Ashwagandha Churna is a traditional herbal remedy derived from Withania somnifera, known for its adaptogenic and rejuvenating properties.",
+      "How It Works":
+        "Boosts immune function and stamina. Adaptogenic effects help the body manage stress. Improves sleep quality and libido. Contains Withania somnifera as the active ingredient. Helpful in managing insomnia.",
       Indication: "Neurological disorders, General weakness and fatigue",
       Dosage: "3-6 grams daily or as directed by the physician.",
       Presentation: "100 gm Powder, 10x10 Capsules, 1x60 Tablets",
@@ -805,14 +947,20 @@ export const classicalProductData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-NEEM-100",
     },
-    features: ["Neem is a powerful herb traditionally used in Ayurveda for its broad therapeutic effects including immune support and skin health"],
+    features: [
+      "Neem is a powerful herb traditionally used in Ayurveda for its broad therapeutic effects including immune support and skin health",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Classical",
-      Description: "Neem is a powerful herb traditionally used in Ayurveda for its broad therapeutic effects including immune support and skin health.",
-      "How It Works": "Immune stimulatory, adaptogenic properties, helps balance metabolism, and promotes detoxification.",
-      Indication: "Dyspnea (difficulty breathing), Cough, Burning sensation in palms and feet, Low digestive power, Loss of sensation in tongue, Abdominal pain, anorexia, fever, and nosebleeds",
-      Dosage: "1–3 grams twice a day with ghee or honey, or as directed by the physician.",
+      Description:
+        "Neem is a powerful herb traditionally used in Ayurveda for its broad therapeutic effects including immune support and skin health.",
+      "How It Works":
+        "Immune stimulatory, adaptogenic properties, helps balance metabolism, and promotes detoxification.",
+      Indication:
+        "Dyspnea (difficulty breathing), Cough, Burning sensation in palms and feet, Low digestive power, Loss of sensation in tongue, Abdominal pain, anorexia, fever, and nosebleeds",
+      Dosage:
+        "1–3 grams twice a day with ghee or honey, or as directed by the physician.",
       Presentation: "100 gm pack",
     },
   },
@@ -904,14 +1052,20 @@ export const classicalProductData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-ISAB-100",
     },
-    features: ["Ishabgol Life Care Churna is a natural herbal formulation known for its effective laxative and stool softening properties"],
+    features: [
+      "Ishabgol Life Care Churna is a natural herbal formulation known for its effective laxative and stool softening properties",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Laxative and stool softener",
-      Description: "Ishabgol Life Care Churna is a natural herbal formulation known for its effective laxative and stool softening properties, helping ease constipation and promote regular bowel movements.",
-      "How It Works": "Isabgol: Increases fecal bulk and promotes bowel movement. Haritaki: Antispasmodic and colon cleanser. Ajwain: Hypolipidemic and digestive aid. Saunf (Fennel): Carminative and digestive enhancer. Surgikhar: Helps with hyperacidity and flatulence.",
-      Indication: "Chronic constipation of varied etiology, Regulates disturbed bowel function and eases evacuation, Hemorrhoids (piles), Ulcerative colitis",
-      Dosage: "2 teaspoons with lukewarm water at bedtime, or as directed by the physician.",
+      Description:
+        "Ishabgol Life Care Churna is a natural herbal formulation known for its effective laxative and stool softening properties, helping ease constipation and promote regular bowel movements.",
+      "How It Works":
+        "Isabgol: Increases fecal bulk and promotes bowel movement. Haritaki: Antispasmodic and colon cleanser. Ajwain: Hypolipidemic and digestive aid. Saunf (Fennel): Carminative and digestive enhancer. Surgikhar: Helps with hyperacidity and flatulence.",
+      Indication:
+        "Chronic constipation of varied etiology, Regulates disturbed bowel function and eases evacuation, Hemorrhoids (piles), Ulcerative colitis",
+      Dosage:
+        "2 teaspoons with lukewarm water at bedtime, or as directed by the physician.",
       Presentation: "Available in 100 gm packaging",
     },
   },
@@ -938,7 +1092,8 @@ export const classicalProductData = [
     details: {
       "Therapeutic Category": "Classical / Patents",
       Description: "Useful in hyperacidity, gastritis, and abdominal pain.",
-      "How It Works": "Zingiber officinale (Ginger) - Appetizer, relieves indigestion. Emblica ribes (Indian Gooseberry) - Carminative. Plumbago zeylanica (Ceylon Leadwort) - Effective for dyspepsia.",
+      "How It Works":
+        "Zingiber officinale (Ginger) - Appetizer, relieves indigestion. Emblica ribes (Indian Gooseberry) - Carminative. Plumbago zeylanica (Ceylon Leadwort) - Effective for dyspepsia.",
       Indication: "Gastritis, Dyspepsia, Indigestion",
       Dosage: "3-5 grams or as directed by the physician.",
       Presentation: "100 gm, 200 gm",
@@ -948,7 +1103,7 @@ export const classicalProductData = [
   // --- ID 214: Shilajit Capsule --- (Updated to match text)
   {
     id: 214,
-    image: "/assets/img/shilajit_capsule.jpg",
+    image: "/assets/img/shilajit_cap.png",
     title: "Shilajit Capsule",
     price: 24.0,
     oldPrice: 29.0,
@@ -962,14 +1117,21 @@ export const classicalProductData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-SLJ-030",
     },
-    features: ["Shilajit Capsule is a powerful Ayurvedic supplement that supports stamina, strength, and overall vitality"],
+    features: [
+      "Shilajit Capsule is a powerful Ayurvedic supplement that supports stamina, strength, and overall vitality",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Rasayana (Rejuvenator) / General Tonic / Adaptogen",
-      Description: "Shilajit Capsule is a powerful Ayurvedic supplement that supports stamina, strength, and overall vitality. Rich in fulvic acid and minerals, it helps improve energy levels, mental clarity, and immune function.",
-      "How It Works": "Boosts mitochondrial function for enhanced energy. Improves testosterone levels and reproductive health. Supports detoxification and antioxidant defense.",
-      Indication: "Low energy or fatigue, Male infertility, Immune system support, Anti-aging support",
-      Dosage: "1 capsule twice daily with lukewarm water or as directed by the physician.",
+      "Therapeutic Category":
+        "Rasayana (Rejuvenator) / General Tonic / Adaptogen",
+      Description:
+        "Shilajit Capsule is a powerful Ayurvedic supplement that supports stamina, strength, and overall vitality. Rich in fulvic acid and minerals, it helps improve energy levels, mental clarity, and immune function.",
+      "How It Works":
+        "Boosts mitochondrial function for enhanced energy. Improves testosterone levels and reproductive health. Supports detoxification and antioxidant defense.",
+      Indication:
+        "Low energy or fatigue, Male infertility, Immune system support, Anti-aging support",
+      Dosage:
+        "1 capsule twice daily with lukewarm water or as directed by the physician.",
       Presentation: "Bottle of 30 Capsules",
     },
   },
@@ -992,12 +1154,16 @@ export const veterinaryProductData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-VK-100",
     },
-    features: ["Vet Kafher is an herbal formulation that supports lung and throat health in livestock"],
+    features: [
+      "Vet Kafher is an herbal formulation that supports lung and throat health in livestock",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Respiratory Support in Animals",
-      Description: "Vet Kafher is an herbal formulation that supports lung and throat health in livestock.",
-      "How It Works": "Clears the respiratory tract, soothes inflammation, and enhances immunity in animals.",
+      Description:
+        "Vet Kafher is an herbal formulation that supports lung and throat health in livestock.",
+      "How It Works":
+        "Clears the respiratory tract, soothes inflammation, and enhances immunity in animals.",
       Indication: "Animal Cough & Cold, Allergic Respiratory Conditions",
       Dosage: "As directed by the veterinary physician.",
       Presentation: "100ml Liquid",
@@ -1020,14 +1186,20 @@ export const veterinaryProductData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-VL-MULTI",
     },
-    features: ["Vet Livherb is a herbal formulation used to improve liver health and digestion in livestock"],
+    features: [
+      "Vet Livherb is a herbal formulation used to improve liver health and digestion in livestock",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Liver Tonic and Hepato-Protective",
-      Description: "Vet Livherb is a herbal formulation used to improve liver health and digestion in livestock. It supports detoxification and enhances metabolic efficiency.",
-      "How It Works": "Stimulates bile secretion, improves appetite, detoxifies the liver, and prevents hepatic damage.",
-      Indication: "Liver dysfunction, Anorexia and digestive issues, Support during hepatotoxic drug use",
-      Dosage: "As prescribed by the veterinary doctor depending on species and condition.",
+      Description:
+        "Vet Livherb is a herbal formulation used to improve liver health and digestion in livestock. It supports detoxification and enhances metabolic efficiency.",
+      "How It Works":
+        "Stimulates bile secretion, improves appetite, detoxifies the liver, and prevents hepatic damage.",
+      Indication:
+        "Liver dysfunction, Anorexia and digestive issues, Support during hepatotoxic drug use",
+      Dosage:
+        "As prescribed by the veterinary doctor depending on species and condition.",
       Presentation: "100ml and 500ml bottles",
     },
   },
@@ -1048,14 +1220,20 @@ export const veterinaryProductData = [
       "PRODUCT VENDOR": "Siddha Formulation",
       "PRODUCT SKU": "SF-VSM-100",
     },
-    features: ["Vet Siddhamol Malt is a non-addictive, non-sedative & non-narcotic cough expectorant"],
+    features: [
+      "Vet Siddhamol Malt is a non-addictive, non-sedative & non-narcotic cough expectorant",
+    ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Cough Expectorant with Bronchodilator",
-      Description: "Vet Siddhamol Malt is a non-addictive, non-sedative & non-narcotic cough expectorant. It is sugar-free, safe, and effective with no side effects like sedation, drowsiness, or gastrointestinal disturbance.",
-      "How It Works": "Adhatoda vasica acts as an expectorant and bronchodilator. Glycyrrhiza glabra provides demulcent and expectorant effects. Clerodendrum serratum and Tulsi offer anti-allergic and immunomodulatory properties.",
-      Indication: "Allergic cough, Infective cough, Asthmatic cough, Rhinitis, Bronchitis, Running nose due to common cold",
-      Dosage: "2 teaspoonfuls (TSF) thrice daily or as directed by the veterinarian.",
+      Description:
+        "Vet Siddhamol Malt is a non-addictive, non-sedative & non-narcotic cough expectorant. It is sugar-free, safe, and effective with no side effects like sedation, drowsiness, or gastrointestinal disturbance.",
+      "How It Works":
+        "Adhatoda vasica acts as an expectorant and bronchodilator. Glycyrrhiza glabra provides demulcent and expectorant effects. Clerodendrum serratum and Tulsi offer anti-allergic and immunomodulatory properties.",
+      Indication:
+        "Allergic cough, Infective cough, Asthmatic cough, Rhinitis, Bronchitis, Running nose due to common cold",
+      Dosage:
+        "2 teaspoonfuls (TSF) thrice daily or as directed by the veterinarian.",
       Presentation: "100ml liquid bottle",
     },
   },
