@@ -48,10 +48,17 @@ export default function Navbar() {
 
         {/* CONTACT + HAMBURGER */}
         <div className="flex items-center gap-4">
-          <div className="hidden md:block text-sm text-gray-700 font-medium">
-            <Phone className="inline-block mr-2 h-5 w-5 text-green-800" />
-            Contact Us : <span className="text-green-800">9857030665 / 9851214257</span>
-          </div>
+        <div className="hidden md:block text-sm text-gray-700 font-medium">
+  <Phone className="inline-block mr-2 h-5 w-5 text-green-800" />
+  Contact Us :{" "}
+  {/* <a href="tel:9857030665" className="text-green-800 hover:underline">
+    9857030665
+  </a>
+  {" / "} */}
+  <a href="tel:9851214257" className="text-green-800 hover:underline">
+    9851214257
+  </a>
+</div>
 
           <button
             className="md:hidden p-2 text-xl"

@@ -54,10 +54,10 @@ export default function Banner() {
         </section>
 
         {/* NEW CALL TO ACTION BANNER: Ready to Experience Natural Healing? (Placed at the end/bottom) */}
-        <section className="py-8 px-4 bg-gradient-to-r  from-green-800 to-green-700 text-white text-center">
+        <section className="py-8 px-4 bg-gradient-to-r h-100  from-green-800 to-green-700 text-white text-center">
   
             {/* GET IN TOUCH CTA */}
-            <div className="inline-block px-6 py-2 mb-4 text-sm font-semibold tracking-wider uppercase bg-yellow-400 text-gray-800 rounded-full shadow-md">
+            <div className="inline-block px-8 py-4 mb-6 text-sm font-semibold tracking-wider uppercase bg-yellow-400 text-gray-800 rounded-full shadow-md">
               GET IN TOUCH
             </div>
             
