@@ -6,11 +6,31 @@ import React, { useState } from "react";
 const getContentData = (product) => [
   { title: "Therapeutic Category", content: <p>{product.details["Therapeutic Category"]}</p> },
   { title: "Description", content: <p>{product.details.Description}</p> },
-  { title: "How It Works", content: <p>{product.details["How It Works"]}</p> },
-  { title: "Indication", content: <p>{product.details.Indication}</p> },
+  {
+    title: "How It Works",
+    content: (
+      <ul className="list-disc pl-5">
+        {product.details["How It Works"]
+          ?.split(". ") // String बाट array मा split
+          .map((point, idx) => point.trim() && <li key={idx}>{point}.</li>)}
+      </ul>
+    ),
+  },
+   {
+    title: "Indiction",
+    content: (
+      <ul className="list-disc pl-5">
+        {product.details["Indication"]
+          ?.split(". ") // String बाट array मा split
+          .map((point, idx) => point.trim() && <li key={idx}>{point}.</li>)}
+      </ul>
+    ),
+  },
+  
   { title: "Dosage", content: <p>{product.details.Dosage}</p> },
   { title: "Presentation", content: <p>{product.details.Presentation}</p> },
 ];
+
 
 // ----------------------------------------------------------------------
 // PRODUCT DESCRIPTION (SCROLL ONLY HERE)
@@ -22,12 +42,12 @@ const ProductDescription = ({ product }) => {
   return (
     <div className="my-4 border-t border-gray-200">
       {/* Tabs */}
-      <div className="bg-gray-50 border-b border-gray-200 flex overflow-hidden rounded-t-md mx-4 mt-3">
+      <div className="bg-gray-50 border-b border-gray-200 flex overflow-x-auto rounded-t-md mx-4 mt-3 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
         {contentData.map((tab, index) => (
           <button
             key={index}
             onClick={() => setActiveTabIndex(index)}
-            className={`py-2 px-4 text-1xl  rounded-2xl font-semibold transition whitespace-nowrap ${
+            className={`py-2 px-4 text-1xl rounded-2xl font-semibold transition whitespace-nowrap flex-shrink-0 ${
               index === activeTabIndex
                 ? "bg-green-700 text-white"
                 : "text-gray-700 hover:bg-gray-100"
@@ -51,6 +71,7 @@ const ProductDescription = ({ product }) => {
     </div>
   );
 };
+
 
 // ----------------------------------------------------------------------
 // MAIN PRODUCT MODAL

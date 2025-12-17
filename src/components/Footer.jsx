@@ -38,10 +38,8 @@ const socialIcons = [
   return (
     <footer className="bg-[#0f1720] text-gray-300 pt-16 pb-8 mt-10">
       <div className="max-w-7xl mx-auto px-6">
-
         {/* TOP */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 pb-14 border-b border-gray-700">
-
           {/* BRAND */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
@@ -62,16 +60,13 @@ const socialIcons = [
 
             <p className="text-base text-gray-400 leading-relaxed max-w-xl">
               Pioneering the future of herbal healthcare in Nepal with
-              innovative, sustainable, and effective natural medicine
-              solutions.
+              innovative, sustainable, and effective natural medicine solutions.
             </p>
           </div>
 
           {/* PRODUCTS */}
           <div>
-            <h4 className="text-white text-lg font-semibold mb-5">
-              Products
-            </h4>
+            <h4 className="text-white text-lg font-semibold mb-5">Products</h4>
             <ul className="space-y-4 text-base">
               <li>
                 <button
@@ -94,25 +89,63 @@ const socialIcons = [
 
           {/* COMPANY */}
           <div>
-            <h4 className="text-white text-lg font-semibold mb-5">
-              Company
-            </h4>
+            <h4 className="text-white text-lg font-semibold mb-5">Company</h4>
             <ul className="space-y-4 text-base">
-              <li><button onClick={() => handleNavClick("/about")} className="hover:text-green-400">About Us</button></li>
-              <li><button onClick={() => handleNavClick("/board-of-directors")} className="hover:text-green-400">Leadership</button></li>
-              <li><button onClick={() => handleNavClick("/about")} className="hover:text-green-400">Jobs & Careers</button></li>
+              <li>
+                <button
+                  onClick={() => handleNavClick("/about")}
+                  className="hover:text-green-400"
+                >
+                  About Us
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleNavClick("/board-of-directors")}
+                  className="hover:text-green-400"
+                >
+                  Leadership
+                </button>
+              </li>
+              {/* <li>
+                <button
+                  onClick={() => handleNavClick("/about")}
+                  className="hover:text-green-400"
+                >
+                  Jobs & Careers
+                </button>
+              </li> */}
             </ul>
           </div>
 
           {/* SUPPORT */}
           <div>
-            <h4 className="text-white text-lg font-semibold mb-5">
-              Support
-            </h4>
+            <h4 className="text-white text-lg font-semibold mb-5">Support</h4>
             <ul className="space-y-4 text-base">
-              <li><button onClick={() => handleNavClick("/contact")} className="hover:text-green-400">Contact</button></li>
-              <li><button onClick={() => handleNavClick("/about")} className="hover:text-green-400">FAQ</button></li>
-              <li><button onClick={() => handleNavClick("/about")} className="hover:text-green-400">Privacy Policy</button></li>
+              <li>
+                <button
+                  onClick={() => handleNavClick("/contact")}
+                  className="hover:text-green-400"
+                >
+                  Contact
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleNavClick("/about")}
+                  className="hover:text-green-400"
+                >
+                  FAQ
+                </button>
+              </li>
+              <li>
+                {/* <button
+                  onClick={() => handleNavClick("/about")}
+                  className="hover:text-green-400"
+                >
+                  Privacy Policy
+                </button> */}
+              </li>
             </ul>
           </div>
         </div>
@@ -132,14 +165,17 @@ const socialIcons = [
                 rel="noopener noreferrer"
                 className="w-11 h-11 bg-gray-800 hover:bg-green-600 rounded-full flex items-center justify-center transition"
               >
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path d={icon.path} />
                 </svg>
               </a>
             ))}
           </div>
         </div>
-
       </div>
     </footer>
   );

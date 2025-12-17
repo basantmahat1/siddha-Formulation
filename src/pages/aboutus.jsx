@@ -8,18 +8,22 @@ const slides = [
     title: "About Siddha Formulation",
     subtitle:
       "A legacy of Ayurveda dedicated to transforming lives through pure, natural, and scientifically crafted herbal wellness.",
+    bgImage: "/assets/img/aboutimg1.png",
   },
   {
     title: "Rooted in Ancient Ayurveda",
     subtitle:
       "Bridging the wisdom of traditional healing with the assurance of modern scientific research and quality control.",
+    bgImage: "/assets/img/about_banner2.png",
   },
   {
     title: "Committed to Pure Ingredients",
     subtitle:
       "Ethically sourced, potent, and 100% natural ingredients from the finest regions, ensuring maximum efficacy.",
+    bgImage: "/assets/img/about_banner3.png",
   },
 ];
+
 
 export default function AboutUs() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -36,54 +40,53 @@ export default function AboutUs() {
 
   // Automatic slide transition effect
   useEffect(() => {
-    const timer = setTimeout(nextSlide, 5000); // Change slide every 5 seconds
+    const timer = setTimeout(nextSlide, 2000); // Change slide every 5 seconds
     return () => clearTimeout(timer); // Clear timeout if component unmounts or state changes
   }, [currentSlide]);
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
-      {/* Hero Section (Slider with Background Image) */}
-      <div
-        className="relative py-28 flex items-center justify-center text-center text-white overflow-hidden"
-        style={{
-          backgroundImage: "url('/assets/img/herbal-medicine2020.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black opacity-30"></div>
+    <div
+  className="relative py-28 flex items-center justify-center text-center text-white overflow-clip"
+  style={{
+    backgroundImage: `url('${slides[currentSlide].bgImage}')`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black opacity-30"></div>
 
-        {/* Content - ADDED 'key' PROP HERE for smooth transition */}
+  {/* Content */}
+  <div
+    key={currentSlide}
+    className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out"
+  >
+    <h1 className="text-4xl md:text-5xl text-green-300 font-extrabold mb-6 drop-shadow-lg">
+      {slides[currentSlide].title}
+    </h1>
+
+    <p className="text-lg md:text-xl text-green-100 leading-relaxed max-w-3xl mx-auto">
+      {slides[currentSlide].subtitle}
+    </p>
+
+    {/* Slider Indicators */}
+    <div className="flex justify-center gap-2 mt-8">
+      {slides.map((_, index) => (
         <div
-          key={currentSlide}
-          className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out"
-        >
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-            {slides[currentSlide].title}
-          </h1>
-
-          <p className="text-lg md:text-xl text-green-100 leading-relaxed max-w-3xl mx-auto">
-            {slides[currentSlide].subtitle}
-          </p>
-
-          {/* Slider Indicators */}
-          <div className="flex justify-center gap-2 mt-8">
-            {slides.map((_, index) => (
-              <div
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
-                  currentSlide === index
-                    ? "bg-white scale-110"
-                    : "bg-green-300 hover:bg-white/70"
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
+          key={index}
+          onClick={() => goToSlide(index)}
+          className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
+            currentSlide === index
+              ? "bg-white scale-110"
+              : "bg-green-300 hover:bg-white/70"
+          }`}
+          aria-label={`Go to slide ${index + 1}`}
+        />
+      ))}
+    </div>
+  </div>
+</div>
 
       {/* Story Section */}
       <div className="max-w-6xl mx-auto px-6 py-20">
@@ -99,9 +102,9 @@ export default function AboutUs() {
                 <p className="text-gray-700 text-lg leading-relaxed mb-4">
                   Siddha Formulation was born with a vision to restore the
                   ancient healing wisdom of Ayurveda and integrate it with
-                  modern scientific standards. For over two decades, our
-                  journey has revolved around crafting high-quality herbal
-                  formulations that bring real wellness into people's lives.
+                  modern scientific standards. For over two decades, our journey
+                  has revolved around crafting high-quality herbal formulations
+                  that bring real wellness into people's lives.
                 </p>
 
                 <p className="text-gray-700 text-lg leading-relaxed mb-4">
@@ -147,7 +150,7 @@ export default function AboutUs() {
             </div>
 
             {/* Vision */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-blue-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
+            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
               <div className="text-6xl mb-6">🌱</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Our Vision
@@ -159,7 +162,7 @@ export default function AboutUs() {
             </div>
 
             {/* Values */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-purple-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
+            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
               <div className="text-6xl mb-6">💎</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Our Values
@@ -223,7 +226,7 @@ export default function AboutUs() {
         </section>
 
         {/* Call to Action */}
-        <section className="bg-gradient-to-r from-green-700 to-green-800 text-white rounded-3xl p-16 shadow-lg text-center">
+        <section className=" bg-green-700 text-white rounded-3xl p-16  text-center">
           <h2 className="text-4xl font-bold mb-6">
             Begin Your Natural Wellness Journey
           </h2>
@@ -235,13 +238,16 @@ export default function AboutUs() {
 
           <Link
             to="/products"
-            className="inline-block bg-white text-green-700 font-bold px-12 py-4 rounded-lg shadow-xl hover:bg-gray-100 transition transform hover:scale-105"
+            //   className="bg-green-700 text-white px-6 py-3 rounded-lg font-bold
+            // hover:bg-green-800 transition-all hover:shadow-lg transform hover:scale-105
+            // flex items-center gap-2 text-lg tracking-wider"
+            className="inline-block bg-white text-lg text-green-600  font-bold px-12 py-3  rounded-lg shadow-xl hover:bg-gray-100 transition-all transform hover:scale-105"
           >
             Explore Products
           </Link>
         </section>
       </div>
-      <ScrollUpButton/>
+      <ScrollUpButton />
     </div>
   );
 }
