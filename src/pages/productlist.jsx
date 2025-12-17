@@ -277,14 +277,13 @@
 // };
 
 // export default ProductList;
-
 import React, { useState, useMemo, useRef, useEffect } from "react";
 import {
   productData,
   veterinaryProductData,
   classicalProductData,
 } from "../productdata.js";
-import { Leaf, PawPrint, Filter, X } from "lucide-react";
+import { Leaf, PawPrint, Filter, X, ArrowLeft, ArrowRight } from "lucide-react";
 import ScrollUpButton from "../common/ScrollUpButton.jsx";
 import ProductDetailModal from "./ProductDetailModel.jsx";
 
@@ -374,20 +373,23 @@ const ProductList = () => {
   const [activeMainFilter, setActiveMainFilter] = useState("all");
   const [activeHerbalFilter, setActiveHerbalFilter] = useState("all");
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [showAll, setShowAll] = useState(false);
+
+  // Pagination State
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 8;
 
   const toggleFilter = () => setIsFilterOpen((v) => !v);
 
   const handleMainFilterChange = (filter) => {
     setActiveMainFilter(filter);
-    setShowAll(false);
+    setCurrentPage(1); // Reset to first page when changing filters
     if (filter !== "herbal") setActiveHerbalFilter("all");
   };
 
   const handleHerbalFilterChange = (filter) => {
     setActiveHerbalFilter(filter);
     setActiveMainFilter("herbal");
-    setShowAll(false);
+    setCurrentPage(1);
   };
 
   const filteredProducts = useMemo(() => {
@@ -412,7 +414,14 @@ const ProductList = () => {
     return products;
   }, [activeMainFilter, activeHerbalFilter]);
 
-  // Grouped logic for specific filters
+  // Pagination Logic
+  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+  const displayProductsAll = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    return filteredProducts.slice(startIndex, startIndex + itemsPerPage);
+  }, [filteredProducts, currentPage]);
+
+  // Section Filters
   const patentFiltered = filteredProducts.filter((p) =>
     productData.includes(p)
   );
@@ -422,12 +431,6 @@ const ProductList = () => {
   const veterinaryFiltered = filteredProducts.filter((p) =>
     veterinaryProductData.includes(p)
   );
-
-  // Limit display to 8 items (approx 2 rows) when "All" is active and not expanded
-  const displayProductsAll =
-    activeMainFilter === "all" && !showAll
-      ? filteredProducts.slice(0, 8)
-      : filteredProducts;
 
   const filterRef = useRef(null);
   useEffect(() => {
@@ -442,7 +445,7 @@ const ProductList = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white relative">
-      {/* Filter Button */}
+      {/* Filter Header */}
       <div className="p-2 md:p-2 max-w-7xl mx-auto">
         <div className="flex justify-end mb-2 relative" ref={filterRef}>
           <button
@@ -483,7 +486,6 @@ const ProductList = () => {
                     ))}
                   </div>
                 </div>
-
                 {activeMainFilter === "herbal" && (
                   <div className="pt-3 border-t">
                     <label className="block text-green-700 font-semibold mb-2">
@@ -512,10 +514,9 @@ const ProductList = () => {
         </div>
       </div>
 
-      {/* Product Content */}
-      <div className="p-2 md:p-2 max-w-7xl mx-auto">
+      {/* Main Content */}
+      <div className="p-2 md:p-2 max-w-7xl  mx-auto">
         {activeMainFilter === "all" ? (
-          /* View for "All Products" - One Section, No sub-headings, "See More" button */
           <>
             <ProductSection
               title="All Products"
@@ -523,19 +524,70 @@ const ProductList = () => {
               onProductClick={setSelectedProduct}
               showTitle={true}
             />
-            {!showAll && filteredProducts.length > 8 && (
-              <div className="flex justify-center -mt-4 mb-12">
+
+            {/* --- NUMBERED PAGINATION (Styled from image_a18b59.png) --- */}
+            {totalPages > 1 && (
+              <div className="flex items-center justify-center gap-2 md:gap-6 py-2 bg-white rounded-lg  ">
+                {/* PREV Button */}
                 <button
-                  onClick={() => setShowAll(true)}
-                  className="px-10 py-3 bg-white border-2 border-green-700 text-green-700 font-bold rounded-full hover:bg-green-700 hover:text-white transition-all duration-300 shadow-md uppercase tracking-wider text-sm"
+                  disabled={currentPage === 1}
+                  onClick={() => {
+                    setCurrentPage((p) => p - 1);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className={`flex items-center gap-2 px-4 py-2 text-xs font-bold tracking-widest transition-colors ${
+                    currentPage === 1
+                      ? "text-gray-300 cursor-not-allowed"
+                      : "text-green-700 hover:text-gray-600"
+                  }`}
                 >
-                  See More Products
+                  <ArrowLeft className="w-4 h-4" /> PREV
+                </button>
+
+                {/* Page Numbers */}
+                <div className="flex items-center gap-1">
+                  {[...Array(totalPages)].map((_, i) => {
+                    const pageNum = i + 1;
+                    const isActive = currentPage === pageNum;
+                    return (
+                      <button
+                        key={pageNum}
+                        onClick={() => {
+                          setCurrentPage(pageNum);
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
+                        className={`w-8 h-8 flex items-center justify-center rounded-full text-sm font-semibold transition-all duration-200 ${
+                          isActive
+                            ? "bg-green-700 text-white shadow-md scale-110"
+                            : "text-gray-500 hover:bg-green-100"
+                        }`}
+                      >
+                        {pageNum}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* NEXT Button */}
+                <button
+                  disabled={currentPage === totalPages}
+                  onClick={() => {
+                    setCurrentPage((p) => p + 1);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className={`flex items-center gap-2 px-4 py-2 text-xs font-bold tracking-widest transition-colors ${
+                    currentPage === totalPages
+                      ? "text-gray-300 cursor-not-allowed"
+                      : "text-green-700 hover:text-gray-600"
+                  }`}
+                >
+                  NEXT <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             )}
           </>
         ) : (
-          /* Grouped View for specific filters */
+          /* Grouped Categories (when filtered) */
           <>
             {patentFiltered.length > 0 && (
               <ProductSection
@@ -571,7 +623,6 @@ const ProductList = () => {
         )}
       </div>
 
-      {/* Modal and Scroll Button */}
       {selectedProduct && (
         <ProductDetailModal
           product={selectedProduct}
