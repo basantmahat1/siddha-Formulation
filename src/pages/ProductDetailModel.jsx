@@ -4,7 +4,10 @@ import React, { useState } from "react";
 // CONTENT DATA
 // ----------------------------------------------------------------------
 const getContentData = (product) => [
-  { title: "Therapeutic Category", content: <p>{product.details["Therapeutic Category"]}</p> },
+  {
+    title: "Therapeutic Category",
+    content: <p>{product.details["Therapeutic Category"]}</p>,
+  },
   { title: "Description", content: <p>{product.details.Description}</p> },
   { title: "How It Works", content: <p>{product.details["How It Works"]}</p> },
   { title: "Indication", content: <p>{product.details.Indication}</p> },
@@ -70,7 +73,10 @@ const ProductDetailModal = ({ product, onClose }) => {
           ✕
         </button>
 
-        <div className="bg-white rounded-lg border" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="bg-white rounded-lg border"
+          onClick={(e) => e.stopPropagation()}
+        >
           {/* TOP SECTION */}
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="bg-gray-50 p-6 flex justify-center">
@@ -87,7 +93,9 @@ const ProductDetailModal = ({ product, onClose }) => {
               </h1>
 
               <div className="mt-6">
-                <h3 className="font-bold text-green-600 text-lg mb-2">Key Benefits</h3>
+                <h3 className="font-bold text-green-600 text-lg mb-2">
+                  Key Benefits
+                </h3>
                 <ul className="list-disc pl-5 space-y-1">
                   {product.features?.map((f, i) => (
                     <li key={i}>{f}</li>

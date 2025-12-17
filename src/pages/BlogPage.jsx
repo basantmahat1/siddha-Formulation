@@ -186,7 +186,7 @@ const BlogPage = () => {
         "Kidney failure means one or both kidneys stop functioning properly. This condition can be acute or chronic and needs early diagnosis and care...",
       imageSrc: "/assets/img/crystomin_tab.png",
       imageAlt: "Crystomin Tablets",
-      buttonText: "Keep Reading",
+      // buttonText: "Keep Reading",
       buttonTo: "/kidney-failure",
     },
     {
@@ -195,7 +195,7 @@ const BlogPage = () => {
         "A premium Ayurvedic formulation used to improve sexual performance, stamina, erectile dysfunction, and overall male vitality...",
       imageSrc: "/assets/img/xtreme.jpg",
       imageAlt: "Xtreme Tablet",
-      buttonText: "Keep Reading",
+      // buttonText: "Keep Reading",
       buttonTo: "/xtreme-tablet",
     },
   ];

@@ -27,13 +27,244 @@ export const productData = [
       "How It Works":
         "Exhibits spermatogenic activity and increases serum hormone levels. Improves sperm motility and total sperm count in infertile males. Enhances semen quality by combating oxidative stress. Improves blood circulation to genital organs.",
       Indication:
-        "Low sperm count, loss of libido, erectile dysfunction, and poor sexual performance.",
+        "Oligospermia, Male infertility, Loss of Libido, Spermatorrhoea, Premature Ejaculation, Erectile Dysfunction",
+      Dosage: "1 cap twice a day",
+      Presentation: "1×10×10",
+    },
+  },
+  {
+    id: 2,
+    image: "/assets/img/balamrit.png",
+    title: "Bal Amrit Syrup",
+    price: 14.5,
+    oldPrice: null,
+    bundleTag: "100ml Syrup",
+    rating: 5,
+    reviewCount: 15,
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Ayurvedic Syrup",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-BA-200",
+    },
+    features: [
+      "Nontoxic herbal formulation for indigestion.",
+      "Relief from abdominal cramp.",
+    ],
+    paymentMethods: ["Visa", "MasterCard"], // --- NEW DETAILED TABS DATA ---
+    details: {
+      "Therapeutic Category": "Immunity Booster",
+      Description:
+        "Bal Amrit is an immunity booster for children that supports digestion and overall health. It enhances the body's resistance against common infections and contributes to better growth and vitality.",
+      "How It Works":
+        "Boosts immune system function, Improves appetite and digestion, Strengthens overall physical development, Prevents frequent illness in children",
+      Indication:
+        "Low immunity, Poor appetite, Frequent cold and cough, Delayed physical growth",
       Dosage:
-        "Take 1 tablet twice a day with warm water or with a cup of milk or as directed by the physician. Follow a 90-day course for maximum benefit.",
-      Presentation: "Available in 30 tablets blister pack.",
+        "1-2 tsp twice daily with lukewarm water or as directed by the physician.",
+      Presentation: "200 ml bottle",
     },
   },
 
+  // --- ID 3: Amherb --- (Updated to match text)
+  {
+    id: 3,
+    image: "/assets/img/amherb.jpg",
+    title: "Amherb",
+    price: 16.0,
+    oldPrice: null,
+    bundleTag: "Multiple sizes",
+    rating: 4,
+    reviewCount: 12,
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Ayurvedic Syrup/Tablet",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-AH-MULTI",
+    },
+    features: [
+      "Anti Diarrhoeal & Amoebic Dysentery",
+      "Perfect solution for Diarrhea & Dysentery with enzyme",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Anti Diarrhoeal & Amoebic Dysentery",
+      Description: "Perfect solution for Diarrhea & Dysentery with enzyme.",
+      "How It Works":
+        "Kutaj – Amoebicider, Hemorrhoids, Antispasmodic. Bel (Bela) – Anti-inflammatory. Dhataki – Improves bulk of faeces. Satpuspa – Digestive.",
+      Indication:
+        "Acute & chronic diarrhea, Amoebic dysentery, Chronic colitis, Indigestion & loss of appetite, Irritable bowel syndrome (IBS)",
+      Dosage: "2 teaspoonful twice a day or as directed by the physician.",
+      Presentation: "60ml, 100ml, 200ml, Tablet",
+    },
+  },
+
+  // --- ID 4: Topzyme --- (Updated to match text)
+  {
+    id: 4,
+    image: "/assets/img/topzyme.jpg",
+    title: "Topzyme",
+    price: 11.0,
+    oldPrice: 14.0,
+    bundleTag: "Multiple sizes",
+    rating: 5,
+    reviewCount: 30,
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Digestive Enzymes",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-TZ-MULTI",
+    },
+    features: [
+      "Digestive enzymes",
+      "A safe & effective treatment to radically improve and repair the digestive system",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Digestive enzymes",
+      Description:
+        "A safe & effective treatment to radically improve and repair the digestive system with carminative properties.",
+      "How It Works":
+        "Satpuspa: Helps relieve hiccups, digestive, and uterine pain. Ajwain: Acts as an antihelminthic. Shunthi: Stimulates appetite and prevents vomiting (antiemetic). Pudina: Promotes digestion and soothes the gut.",
+      Indication:
+        "Chronic Constipation, Dyspepsia, Anorexia, Gastro colitis, Colicky pains & Flatulence, Anti-spasmodic properties, Abdominal discomfort",
+      Dosage: "2 teaspoonful twice a day or as directed by the physician.",
+      Presentation: "60ml, 100ml, 200ml, 1×10×10 capsules",
+    },
+  },
+  {
+    id: 5,
+    image: "/assets/img/raktamrit.jpg",
+    title: "Raktamrit",
+    price: 17.5,
+    oldPrice: null,
+    bundleTag: "450ml Syrup",
+    rating: 4,
+    reviewCount: 25,
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Ayurvedic Syrup",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-RA-200",
+    },
+    features: ["Blood purifier, antibacterial, antifungal, anti-allergic."],
+    paymentMethods: ["Visa", "MasterCard"], // --- NEW DETAILED TABS DATA ---
+    details: {
+      "Therapeutic Category":
+        "Blood purifier, antibacterial, antifungal, anti-allergic",
+      Description:
+        "Raktamrit is a natural blood purifier syrup for healthy & glowing skin.",
+      "How It Works":
+        "Manjistha, Sariva, Neem and other herbs exhibit antibacterial, antifungal, anti-allergic, and anti-inflammatory properties. They help purify blood and relieve skin problems.",
+      Indication:
+        "Skin diseases like acne vulgaris (pimples), Skin rashes, Urticaria, Blemishes, Improper skin complexion, Dark spots, Hyperpigmentation",
+      Dosage: "2 teaspoonfuls twice a day or as directed by the physician.",
+      Presentation: "100 ml, 200 ml, 450 ml",
+    },
+  },
+  // --- ID 6: Pylonil --- (Updated to match text)
+  {
+    id: 6,
+    image: "/assets/img/pylonil.jpg",
+    title: "Pylonii",
+    price: 19.0,
+    oldPrice: 21.0,
+    bundleTag: "Multiple sizes",
+    rating: 3,
+    reviewCount: 18,
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Ayurvedic Syrup/Tablet",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-PY-MULTI",
+    },
+    features: [
+      "Anti-inflammatory and antimicrobial properties",
+      "Recommended formula for Acute & chronic Piles (External & Internal)",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Anti-inflammatory and antimicrobial properties",
+      Description:
+        "Recommended formula for Acute & chronic Piles (External & Internal).",
+      "How It Works":
+        "Neem: Anti Inflammatory. Kutaj: Relieves itching / Toning of anus. Mahanembha (Bakain): Analgesic / Anti Inflammatory. Kachnar: Anti Inflammatory / Wound Healing.",
+      Indication:
+        "Rapid relief & controls bleeding, Helps in checking secondary infections, Offers comfortable excretion, Arrests hemorrhage & Anal fissures, Lumps start shrinking & vanish completely",
+      Dosage: "2 teaspoonful twice a day or as directed by the physician.",
+      Presentation: "200ml, 450ml, 1x30x10 tablets",
+    },
+  },
+  // --- ID 7: Sidda Race Oil --- (Updated to match text)
+  {
+    id: 7,
+    image: "/assets/img/sidda_race_oil.jpg",
+    title: "Siddha Race Oil",
+    price: 25.0,
+    oldPrice: null,
+    bundleTag: "Multiple sizes",
+    rating: 5,
+    reviewCount: 40,
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Anti-inflammatory herbal oil",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-SRO-MULTI",
+    },
+    features: [
+      "Anti-inflammatory herbal oil",
+      "Reduces pain, swelling, and stiffness in joints and muscles",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Anti-inflammatory herbal oil",
+      Description:
+        "Siddha Race Oil is a 100% natural formulation with potent anti-inflammatory and analgesic properties. It helps reduce pain, swelling, and stiffness in joints and muscles, enhancing flexibility and mobility.",
+      "How It Works":
+        "Erandmool: Acts as a natural pain reliever and anti-inflammatory agent. Rasna: Provides relief in osteoarthritis and muscle stiffness. Kapoor: Promotes local blood flow and soothes pain. Nilgiri Oil: Eases joint discomfort and relaxes sore muscles.",
+      Indication:
+        "Rheumatoid arthritis, Osteoarthritis, Sciatica, Spondylitis, Muscular pain, Backache, Joint stiffness",
+      Dosage:
+        "Apply sufficient quantity over affected area and massage gently for topical application. Use twice a day or as directed by physician.",
+      Presentation: "60ml, 100ml, 200ml",
+    },
+  },
+
+  // --- ID 8: Prasuta Sajjavani --- (Updated to match text)
+  {
+    id: 8,
+    image: "/assets/img/prasuta_sajjavani.jpg",
+    title: "Prasuta Saijavani",
+    price: 21.0,
+    oldPrice: 25.0,
+    bundleTag: "Multiple sizes",
+    rating: 4,
+    reviewCount: 22,
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Ayurvedic Syrup",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-PS-MULTI",
+    },
+    features: [
+      "Anti-inflammatory, Postpartum recovery, Wound healing",
+      "A desired hematinic supplement for overall support during pregnancy and lactation",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category":
+        "Anti-inflammatory, Postpartum recovery, Wound healing",
+      Description:
+        "A desired hematinic supplement for overall support during pregnancy and lactation.",
+      "How It Works":
+        "Pasanabheda: Anti-inflammatory, postpartum recovery, wound healing. Dashmool: Anti-inflammatory and pain relief, reduces fluid retention. Ashwagandha: Boosts fertility and reduces inflammation. Shatavari: Immunomodulatory support. Dhataki: Fertility enhancer and uterine sedative.",
+      Indication:
+        "Supports sufficient lactation, Corrects analgesic, anti-inflammatory & diuretic conditions, Treats pre & post-delivery anemia and helps normalize body and uterus size, Helps restore a taut and slim figure",
+      Dosage:
+        "2 teaspoonfuls twice daily after meals or as directed by the physician.",
+      Presentation: "Available in 200 ml and 450 ml bottles",
+    },
+  },
   // --- ID 9: Birechani --- (Updated to match text)
   {
     id: 9,
@@ -103,110 +334,41 @@ export const productData = [
       Presentation: "30 Capsules",
     },
   },
-
-  // --- ID 22: Tensguard Tablet --- (Updated to match text)
+  // --- ID 11: Gripe Water --- (Updated to match text)
   {
-    id: 22,
-    image: "/assets/img/tensgaurd_tablet.jpg",
-    title: "Tensguard Tablet",
-    price: 20.0,
-    oldPrice: 26.0,
-    bundleTag: "120 Tablets",
+    id: 11,
+    image: "/assets/img/gripe_water.jpg",
+    title: "Gripe Water",
+    price: 9.0,
+    oldPrice: null,
+    bundleTag: "130 MI",
     rating: 4,
-    reviewCount: 23,
-    meta: {
-      Availability: "In Stock",
-      "PRODUCT TYPE": "Herbal Tablet",
-      "PRODUCT VENDOR": "Siddha Formulation",
-      "PRODUCT SKU": "SF-TG-120",
-    },
-    features: [
-      "Anti Hypertensive and Cardioprotective",
-      "Tension relief and support for balancing blood pressure",
-    ],
-    paymentMethods: ["Visa", "MasterCard"],
-    details: {
-      "Therapeutic Category": "Anti Hypertensive and Cardioprotective",
-      Description: "Tension relief and support for balancing blood pressure.",
-      "How It Works":
-        "Rauvolfia serpentina: reduces blood pressure. Terminalia arjuna: heart tonic.",
-      Indication:
-        "Hypolipidemic action, Stabilizes blood pressure, Reduces oxidative stress, Strengthens the heart muscle",
-      Dosage:
-        "Please consult your physician for appropriate dosage instructions.",
-      Presentation: "1 pack: 30 tablets × 4 strips",
-    },
-  },
-
-  // --- ID 4: Topzyme --- (Updated to match text)
-  {
-    id: 4,
-    image: "/assets/img/topzyme.jpg",
-    title: "Topzyme",
-    price: 11.0,
-    oldPrice: 14.0,
-    bundleTag: "Multiple sizes",
-    rating: 5,
-    reviewCount: 30,
+    reviewCount: 28,
     meta: {
       Availability: "Available",
-      "PRODUCT TYPE": "Digestive Enzymes",
+      "PRODUCT TYPE": "Pediatric Syrup",
       "PRODUCT VENDOR": "Siddha Formulation",
-      "PRODUCT SKU": "SF-TZ-MULTI",
+      "PRODUCT SKU": "SF-GW-130",
     },
     features: [
-      "Digestive enzymes",
-      "A safe & effective treatment to radically improve and repair the digestive system",
+      "Anti-spasmodic, carminative, digestive and stomachic",
+      "Gives instant relief from common GI problems like colic, flatulence and indigestion",
     ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Digestive enzymes",
+      "Therapeutic Category":
+        "Anti-spasmodic, carminative, digestive and stomachic",
       Description:
-        "A safe & effective treatment to radically improve and repair the digestive system with carminative properties.",
+        "Gives instant relief from common GI problems like colic, flatulence and indigestion.",
       "How It Works":
-        "Satpuspa: Helps relieve hiccups, digestive, and uterine pain. Ajwain: Acts as an antihelminthic. Shunthi: Stimulates appetite and prevents vomiting (antiemetic). Pudina: Promotes digestion and soothes the gut.",
+        "It contains jeera, ajwain, saunf, soya and pudina sat, which prevent the nausea and discomfort caused by stomach gas and other colic symptoms. It also helps to minimize problems associated with teeth eruption.",
       Indication:
-        "Chronic Constipation, Dyspepsia, Anorexia, Gastro colitis, Colicky pains & Flatulence, Anti-spasmodic properties, Abdominal discomfort",
-      Dosage: "2 teaspoonful twice a day or as directed by the physician.",
-      Presentation: "60ml, 100ml, 200ml, 1×10×10 capsules",
-    },
-  },
-
-  // --- ID 7: Sidda Race Oil --- (Updated to match text)
-  {
-    id: 7,
-    image: "/assets/img/sidda_race_oil.jpg",
-    title: "Siddha Race Oil",
-    price: 25.0,
-    oldPrice: null,
-    bundleTag: "Multiple sizes",
-    rating: 5,
-    reviewCount: 40,
-    meta: {
-      Availability: "In Stock",
-      "PRODUCT TYPE": "Anti-inflammatory herbal oil",
-      "PRODUCT VENDOR": "Siddha Formulation",
-      "PRODUCT SKU": "SF-SRO-MULTI",
-    },
-    features: [
-      "Anti-inflammatory herbal oil",
-      "Reduces pain, swelling, and stiffness in joints and muscles",
-    ],
-    paymentMethods: ["Visa", "MasterCard"],
-    details: {
-      "Therapeutic Category": "Anti-inflammatory herbal oil",
-      Description:
-        "Siddha Race Oil is a 100% natural formulation with potent anti-inflammatory and analgesic properties. It helps reduce pain, swelling, and stiffness in joints and muscles, enhancing flexibility and mobility.",
-      "How It Works":
-        "Erandmool: Acts as a natural pain reliever and anti-inflammatory agent. Rasna: Provides relief in osteoarthritis and muscle stiffness. Kapoor: Promotes local blood flow and soothes pain. Nilgiri Oil: Eases joint discomfort and relaxes sore muscles.",
-      Indication:
-        "Rheumatoid arthritis, Osteoarthritis, Sciatica, Spondylitis, Muscular pain, Backache, Joint stiffness",
+        "Indigestion, Anorexia, Colic pain & flatulence, Digestive disorders associated with teeth eruption",
       Dosage:
-        "Apply sufficient quantity over affected area and massage gently for topical application. Use twice a day or as directed by physician.",
-      Presentation: "60ml, 100ml, 200ml",
+        "1-6 month: 1 tsf thrice a day. 6month – 1year: 2 tsf thrice a day. 1–2 year: 2–3 tsf thrice a day or as directed by the physician.",
+      Presentation: "130 MI",
     },
   },
-
   // --- ID 12: Kafher PD --- (Updated to match text)
   {
     id: 12,
@@ -241,108 +403,6 @@ export const productData = [
       Presentation: "100 ml",
     },
   },
-
-  // --- ID 3: Amherb --- (Updated to match text)
-  {
-    id: 3,
-    image: "/assets/img/amherb.jpg",
-    title: "Amherb",
-    price: 16.0,
-    oldPrice: null,
-    bundleTag: "Multiple sizes",
-    rating: 4,
-    reviewCount: 12,
-    meta: {
-      Availability: "Available",
-      "PRODUCT TYPE": "Ayurvedic Syrup/Tablet",
-      "PRODUCT VENDOR": "Siddha Formulation",
-      "PRODUCT SKU": "SF-AH-MULTI",
-    },
-    features: [
-      "Anti Diarrhoeal & Amoebic Dysentery",
-      "Perfect solution for Diarrhea & Dysentery with enzyme",
-    ],
-    paymentMethods: ["Visa", "MasterCard"],
-    details: {
-      "Therapeutic Category": "Anti Diarrhoeal & Amoebic Dysentery",
-      Description: "Perfect solution for Diarrhea & Dysentery with enzyme.",
-      "How It Works":
-        "Kutaj – Amoebicider, Hemorrhoids, Antispasmodic. Bel (Bela) – Anti-inflammatory. Dhataki – Improves bulk of faeces. Satpuspa – Digestive.",
-      Indication:
-        "Acute & chronic diarrhea, Amoebic dysentery, Chronic colitis, Indigestion & loss of appetite, Irritable bowel syndrome (IBS)",
-      Dosage: "2 teaspoonful twice a day or as directed by the physician.",
-      Presentation: "60ml, 100ml, 200ml, Tablet",
-    },
-  },
-
-  // --- ID 14: Apticome --- (Updated to match text)
-  {
-    id: 14,
-    image: "/assets/img/apticome.jpg",
-    title: "Apticome Syrup",
-    price: 14.0,
-    oldPrice: null,
-    bundleTag: "200 ml",
-    rating: 4,
-    reviewCount: 19,
-    meta: {
-      Availability: "In Stock",
-      "PRODUCT TYPE": "Appetite Stimulant Syrup",
-      "PRODUCT VENDOR": "Siddha Formulation",
-      "PRODUCT SKU": "SF-AP-200",
-    },
-    features: [
-      "Natural appetite stimulant",
-      "Naturally treats your loss of appetite",
-    ],
-    paymentMethods: ["Visa", "MasterCard"],
-    details: {
-      "Therapeutic Category": "Natural appetite stimulant",
-      Description: "Naturally treats your loss of appetite.",
-      "How It Works":
-        "Chitrak: Reduces hepatic disorders. Souf: Carminative and digestive. Pittapapda: Analgesic and hepatoprotective. Bhumi Amla: Supports liver function and treats hepatic issues.",
-      Indication:
-        "Improves appetite and digestion, Helps in jaundice, anorexia, and impaired bile secretion, Relieves constipation, hyperacidity, and excessive thirst, Prevents colic pain",
-      Dosage:
-        "1–2 teaspoonfuls, 2–3 times daily or as directed by the physician.",
-      Presentation: "200 ml",
-    },
-  },
-
-  // --- ID 6: Pylonil --- (Updated to match text)
-  {
-    id: 6,
-    image: "/assets/img/pylonil.jpg",
-    title: "Pylonii",
-    price: 19.0,
-    oldPrice: 21.0,
-    bundleTag: "Multiple sizes",
-    rating: 3,
-    reviewCount: 18,
-    meta: {
-      Availability: "Available",
-      "PRODUCT TYPE": "Ayurvedic Syrup/Tablet",
-      "PRODUCT VENDOR": "Siddha Formulation",
-      "PRODUCT SKU": "SF-PY-MULTI",
-    },
-    features: [
-      "Anti-inflammatory and antimicrobial properties",
-      "Recommended formula for Acute & chronic Piles (External & Internal)",
-    ],
-    paymentMethods: ["Visa", "MasterCard"],
-    details: {
-      "Therapeutic Category": "Anti-inflammatory and antimicrobial properties",
-      Description:
-        "Recommended formula for Acute & chronic Piles (External & Internal).",
-      "How It Works":
-        "Neem: Anti Inflammatory. Kutaj: Relieves itching / Toning of anus. Mahanembha (Bakain): Analgesic / Anti Inflammatory. Kachnar: Anti Inflammatory / Wound Healing.",
-      Indication:
-        "Rapid relief & controls bleeding, Helps in checking secondary infections, Offers comfortable excretion, Arrests hemorrhage & Anal fissures, Lumps start shrinking & vanish completely",
-      Dosage: "2 teaspoonful twice a day or as directed by the physician.",
-      Presentation: "200ml, 450ml, 1x30x10 tablets",
-    },
-  },
-
   // --- ID 13: Siddhamol Malt --- (Updated to match text)
   {
     id: 13,
@@ -376,40 +436,71 @@ export const productData = [
       Presentation: "450 gm",
     },
   },
-
-  // --- ID 8: Prasuta Sajjavani --- (Updated to match text)
+  // --- ID 14: Apticome --- (Updated to match text)
   {
-    id: 8,
-    image: "/assets/img/prasuta_sajjavani.jpg",
-    title: "Prasuta Saijavani",
-    price: 21.0,
-    oldPrice: 25.0,
-    bundleTag: "Multiple sizes",
+    id: 14,
+    image: "/assets/img/apticome.jpg",
+    title: "Apticome Syrup",
+    price: 14.0,
+    oldPrice: null,
+    bundleTag: "200 ml",
     rating: 4,
-    reviewCount: 22,
+    reviewCount: 19,
     meta: {
-      Availability: "Available",
-      "PRODUCT TYPE": "Ayurvedic Syrup",
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Appetite Stimulant Syrup",
       "PRODUCT VENDOR": "Siddha Formulation",
-      "PRODUCT SKU": "SF-PS-MULTI",
+      "PRODUCT SKU": "SF-AP-200",
     },
     features: [
-      "Anti-inflammatory, Postpartum recovery, Wound healing",
-      "A desired hematinic supplement for overall support during pregnancy and lactation",
+      "Natural appetite stimulant",
+      "Naturally treats your loss of appetite",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Natural appetite stimulant",
+      Description: "Naturally treats your loss of appetite.",
+      "How It Works":
+        "Chitrak: Reduces hepatic disorders. Souf: Carminative and digestive. Pittapapda: Analgesic and hepatoprotective. Bhumi Amla: Supports liver function and treats hepatic issues.",
+      Indication:
+        "Improves appetite and digestion, Helps in jaundice, anorexia, and impaired bile secretion, Relieves constipation, hyperacidity, and excessive thirst, Prevents colic pain",
+      Dosage:
+        "1–2 teaspoonfuls, 2–3 times daily or as directed by the physician.",
+      Presentation: "200 ml",
+    },
+  },
+  // --- ID 15: Leucoherb --- (Updated to match text)
+  {
+    id: 15,
+    image: "/assets/img/leucoherb.jpg",
+    title: "Leucoherb Syrup",
+    price: 18.0,
+    oldPrice: null,
+    bundleTag: "Multiple sizes",
+    rating: 4,
+    reviewCount: 16,
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "Women's Health Syrup",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-LH-MULTI",
+    },
+    features: [
+      "Uterine Sedative, Anti-inflammatory & Menstrual Regulator",
+      "A safe, non-hormonal uterine tonic that addresses women's health needs from menarche to menopause",
     ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category":
-        "Anti-inflammatory, Postpartum recovery, Wound healing",
+        "Uterine Sedative, Anti-inflammatory & Menstrual Regulator",
       Description:
-        "A desired hematinic supplement for overall support during pregnancy and lactation.",
+        "A safe, non-hormonal uterine tonic that addresses women's health needs from menarche to menopause.",
       "How It Works":
-        "Pasanabheda: Anti-inflammatory, postpartum recovery, wound healing. Dashmool: Anti-inflammatory and pain relief, reduces fluid retention. Ashwagandha: Boosts fertility and reduces inflammation. Shatavari: Immunomodulatory support. Dhataki: Fertility enhancer and uterine sedative.",
+        "Ashok: Reduces freckles, anti-inflammatory. Dhataki: Fertility agent, uterine sedative. Lodh: Anti-inflammatory, stops bleeding, normalizes hormones. Lajjawati: Effective for urogenital disorders.",
       Indication:
-        "Supports sufficient lactation, Corrects analgesic, anti-inflammatory & diuretic conditions, Treats pre & post-delivery anemia and helps normalize body and uterus size, Helps restore a taut and slim figure",
-      Dosage:
-        "2 teaspoonfuls twice daily after meals or as directed by the physician.",
-      Presentation: "Available in 200 ml and 450 ml bottles",
+        "Regularizes menstrual cycle, Relieves painful periods, Manages pre & post-menopausal syndrome, Treats dysfunctional uterine bleeding, Effective for leucorrhea, Useful in metrorrhagia, amenorrhea, dysmenorrhea, Supports in habitual abortion cases, Relieves symptoms like stress, anxiety & general debility",
+      Dosage: "2 teaspoonfuls twice a day or as directed by the physician.",
+      Presentation: "200ml, 450ml",
     },
   },
 
@@ -482,6 +573,99 @@ export const productData = [
       Presentation: "200ml, 450ml, 1x50 tablets, 1x30x10 tablets",
     },
   },
+  {
+    id: 18,
+    image: "/assets/img/crystomin.jpg",
+    title: "Crystomin Syrup",
+    price: 18.0,
+    oldPrice: 22.0,
+    bundleTag: "450ml Syrup",
+    rating: 4,
+    reviewCount: 19,
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Kidney Care Syrup",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-CM-200",
+    },
+    features: ["Lithotriptic, antibacterial, diuretic and other activities."],
+    paymentMethods: ["Visa", "MasterCard"], // --- NEW DETAILED TABS DATA ---
+    details: {
+      "Therapeutic Category":
+        "Lithotriptic, antibacterial, diuretic and other supportive urinary tract actions.",
+      Description:
+        "A herbal formulation for dissolving kidney stones and treating urinary tract infections (UTIs).",
+      "How It Works":
+        "Pashanbhed: Carminative, effective against hyperacidity, and anti-urolithic, Punarnava: Helps with urinary retention and promotes healthy urination, Varuna: Hepatoprotective, reduces chances of stone formation in kidneys, Gokshura: Possesses anti-inflammatory and soothing properties.",
+      Indication:
+        "Helps dissolve kidney stones, especially calcium oxalate types, Supports relief from uric acid stones through diuretic action, Possesses antimicrobial properties for urinary tract infection (UTI) support, Reduces inflammation in the urinary system, Helps relieve pain in the back, abdomen, or sides caused by kidney stones.",
+      Dosage: "1–2 tablets twice daily, or as directed by the physician.",
+      Presentation: "Box of 30 x 10 tablets (blister packed).",
+    },
+  }, // --- ID 19: Shakti Herb --- (Existing data)
+
+  {
+    id: 19,
+    image: "/assets/img/shakti_herb.jpg",
+    title: "Shakti Herb",
+    price: 22.0,
+    oldPrice: null,
+    bundleTag: "200ml Syrup",
+    rating: 5,
+    reviewCount: 38,
+    meta: {
+      Availability: "Available",
+      "PRODUCT TYPE": "General Tonic Syrup",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-SH-200",
+    },
+    features: ["Boosts strength and stamina."],
+    paymentMethods: ["Visa", "MasterCard"], // --- NEW DETAILED TABS DATA ---
+    details: {
+      "Therapeutic Category": "General Tonic / Rejuvenator",
+      Description:
+        "Shakti Herb is a general tonic syrup focused on boosting physical strength and stamina. It is an ideal supplement for athletes, those recovering from illness, or individuals experiencing general weakness.",
+      "How It Works":
+        "The tonic contains rich natural ingredients that replenish vital energy stores, improve muscle tone, and enhance the body's ability to resist fatigue, thereby boosting overall strength and vitality.",
+      Indication:
+        "General weakness, fatigue, and to boost strength and stamina.",
+      Dosage: "Take 10 ml twice a day.",
+      Presentation: "Available in 200ml Syrup bottle.",
+    },
+  },
+  // --- ID 20: Immu Care --- (Updated to match text)
+  {
+    id: 20,
+    image: "/assets/img/immu_care.jpg",
+    title: "Immu Care Syrup",
+    price: 17.0,
+    oldPrice: 19.5,
+    bundleTag: "200 ml",
+    rating: 4,
+    reviewCount: 45,
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Immunity Booster Syrup",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-IC-200",
+    },
+    features: [
+      "Immunity Booster",
+      "Enhance the body's own defense — either physically or mentally — by supporting our immune system",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Immunity Booster",
+      Description:
+        "Enhance the body's own defense — either physically or mentally — by supporting our immune system.",
+      "How It Works":
+        "Amrita: Immunity enhancer / Anti-allergic. Tulasi: Antioxidant / Antipyretic. Haridra: Platelet enhancer.",
+      Indication:
+        "As an immunomodulator, Scavenging the free radicals, Early recovery in post-operative conditions, As an adjuvant to anti-infective therapy, Resistance to antibiotic therapy",
+      Dosage: "2 teaspoonful twice a day.",
+      Presentation: "200 ml",
+    },
+  },
 
   // --- ID 21: Kafher Syrup --- (Updated to match text)
   {
@@ -518,6 +702,39 @@ export const productData = [
     },
   },
 
+  // --- ID 22: Tensguard Tablet --- (Updated to match text)
+  {
+    id: 22,
+    image: "/assets/img/tensgaurd_tablet.jpg",
+    title: "Tensguard Tablet",
+    price: 20.0,
+    oldPrice: 26.0,
+    bundleTag: "120 Tablets",
+    rating: 4,
+    reviewCount: 23,
+    meta: {
+      Availability: "In Stock",
+      "PRODUCT TYPE": "Herbal Tablet",
+      "PRODUCT VENDOR": "Siddha Formulation",
+      "PRODUCT SKU": "SF-TG-120",
+    },
+    features: [
+      "Anti Hypertensive and Cardioprotective",
+      "Tension relief and support for balancing blood pressure",
+    ],
+    paymentMethods: ["Visa", "MasterCard"],
+    details: {
+      "Therapeutic Category": "Anti Hypertensive and Cardioprotective",
+      Description: "Tension relief and support for balancing blood pressure.",
+      "How It Works":
+        "Rauvolfia serpentina: reduces blood pressure. Terminalia arjuna: heart tonic.",
+      Indication:
+        "Hypolipidemic action, Stabilizes blood pressure, Reduces oxidative stress, Strengthens the heart muscle",
+      Dosage:
+        "Please consult your physician for appropriate dosage instructions.",
+      Presentation: "1 pack: 30 tablets × 4 strips",
+    },
+  },
   // --- ID 23: Bslim Tablet --- (Updated to match text)
   {
     id: 23,
@@ -550,111 +767,6 @@ export const productData = [
       Dosage:
         "Please consult your healthcare professional for appropriate dosage instructions.",
       Presentation: "1 pack: 30 tablets × 10 strips",
-    },
-  },
-
-  // --- ID 11: Gripe Water --- (Updated to match text)
-  {
-    id: 11,
-    image: "/assets/img/gripe_water.jpg",
-    title: "Gripe Water",
-    price: 9.0,
-    oldPrice: null,
-    bundleTag: "130 MI",
-    rating: 4,
-    reviewCount: 28,
-    meta: {
-      Availability: "Available",
-      "PRODUCT TYPE": "Pediatric Syrup",
-      "PRODUCT VENDOR": "Siddha Formulation",
-      "PRODUCT SKU": "SF-GW-130",
-    },
-    features: [
-      "Anti-spasmodic, carminative, digestive and stomachic",
-      "Gives instant relief from common GI problems like colic, flatulence and indigestion",
-    ],
-    paymentMethods: ["Visa", "MasterCard"],
-    details: {
-      "Therapeutic Category":
-        "Anti-spasmodic, carminative, digestive and stomachic",
-      Description:
-        "Gives instant relief from common GI problems like colic, flatulence and indigestion.",
-      "How It Works":
-        "It contains jeera, ajwain, saunf, soya and pudina sat, which prevent the nausea and discomfort caused by stomach gas and other colic symptoms. It also helps to minimize problems associated with teeth eruption.",
-      Indication:
-        "Indigestion, Anorexia, Colic pain & flatulence, Digestive disorders associated with teeth eruption",
-      Dosage:
-        "1-6 month: 1 tsf thrice a day. 6month – 1year: 2 tsf thrice a day. 1–2 year: 2–3 tsf thrice a day or as directed by the physician.",
-      Presentation: "130 MI",
-    },
-  },
-
-  // --- ID 20: Immu Care --- (Updated to match text)
-  {
-    id: 20,
-    image: "/assets/img/immu_care.jpg",
-    title: "Immu Care Syrup",
-    price: 17.0,
-    oldPrice: 19.5,
-    bundleTag: "200 ml",
-    rating: 4,
-    reviewCount: 45,
-    meta: {
-      Availability: "In Stock",
-      "PRODUCT TYPE": "Immunity Booster Syrup",
-      "PRODUCT VENDOR": "Siddha Formulation",
-      "PRODUCT SKU": "SF-IC-200",
-    },
-    features: [
-      "Immunity Booster",
-      "Enhance the body's own defense — either physically or mentally — by supporting our immune system",
-    ],
-    paymentMethods: ["Visa", "MasterCard"],
-    details: {
-      "Therapeutic Category": "Immunity Booster",
-      Description:
-        "Enhance the body's own defense — either physically or mentally — by supporting our immune system.",
-      "How It Works":
-        "Amrita: Immunity enhancer / Anti-allergic. Tulasi: Antioxidant / Antipyretic. Haridra: Platelet enhancer.",
-      Indication:
-        "As an immunomodulator, Scavenging the free radicals, Early recovery in post-operative conditions, As an adjuvant to anti-infective therapy, Resistance to antibiotic therapy",
-      Dosage: "2 teaspoonful twice a day.",
-      Presentation: "200 ml",
-    },
-  },
-
-  // --- ID 15: Leucoherb --- (Updated to match text)
-  {
-    id: 15,
-    image: "/assets/img/leucoherb.jpg",
-    title: "Leucoherb Syrup",
-    price: 18.0,
-    oldPrice: null,
-    bundleTag: "Multiple sizes",
-    rating: 4,
-    reviewCount: 16,
-    meta: {
-      Availability: "Available",
-      "PRODUCT TYPE": "Women's Health Syrup",
-      "PRODUCT VENDOR": "Siddha Formulation",
-      "PRODUCT SKU": "SF-LH-MULTI",
-    },
-    features: [
-      "Uterine Sedative, Anti-inflammatory & Menstrual Regulator",
-      "A safe, non-hormonal uterine tonic that addresses women's health needs from menarche to menopause",
-    ],
-    paymentMethods: ["Visa", "MasterCard"],
-    details: {
-      "Therapeutic Category":
-        "Uterine Sedative, Anti-inflammatory & Menstrual Regulator",
-      Description:
-        "A safe, non-hormonal uterine tonic that addresses women's health needs from menarche to menopause.",
-      "How It Works":
-        "Ashok: Reduces freckles, anti-inflammatory. Dhataki: Fertility agent, uterine sedative. Lodh: Anti-inflammatory, stops bleeding, normalizes hormones. Lajjawati: Effective for urogenital disorders.",
-      Indication:
-        "Regularizes menstrual cycle, Relieves painful periods, Manages pre & post-menopausal syndrome, Treats dysfunctional uterine bleeding, Effective for leucorrhea, Useful in metrorrhagia, amenorrhea, dysmenorrhea, Supports in habitual abortion cases, Relieves symptoms like stress, anxiety & general debility",
-      Dosage: "2 teaspoonfuls twice a day or as directed by the physician.",
-      Presentation: "200ml, 450ml",
     },
   },
 ];
