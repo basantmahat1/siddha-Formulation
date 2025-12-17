@@ -1,36 +1,36 @@
 import React, { useState } from "react";
 
 // ----------------------------------------------------------------------
-// CONTENT DATA
-// ----------------------------------------------------------------------
 const getContentData = (product) => [
-  { title: "Therapeutic Category", content: <p>{product.details["Therapeutic Category"]}</p> },
-  { title: "Description", content: <p>{product.details.Description}</p> },
+  { title: "Therapeutic Category", content: <p>{product.details?.["Therapeutic Category"]}</p> },
+  { title: "Description", content: <p>{product.details?.Description}</p> },
   {
     title: "How It Works",
     content: (
       <ul className="list-disc pl-5">
-        {product.details["How It Works"]
-          ?.split(". ") // String बाट array मा split
-          .map((point, idx) => point.trim() && <li key={idx}>{point}.</li>)}
+        {typeof product.details?.["How It Works"] === "string" 
+          ? product.details["How It Works"].split(". ").map((point, idx) => point.trim() && <li key={idx}>{point}.</li>)
+          : <li>{product.details?.["How It Works"]}</li>}
       </ul>
     ),
   },
-   {
-    title: "Indiction",
+  {
+    title: "Indication",
     content: (
       <ul className="list-disc pl-5">
-        {product.details["Indication"]
-          ?.split(". ") // String बाट array मा split
-          .map((point, idx) => point.trim() && <li key={idx}>{point}.</li>)}
+        {/* Check if it's a string before splitting */}
+        {typeof product.details?.["Indication"] === "string" 
+          ? product.details["Indication"].split(". ").map((point, idx) => point.trim() && <li key={idx}>{point}.</li>)
+          : Array.isArray(product.details?.["Indication"])
+            ? product.details["Indication"].map((point, idx) => <li key={idx}>{point}</li>)
+            : <li>{product.details?.["Indication"]}</li>
+        }
       </ul>
     ),
   },
-  
-  { title: "Dosage", content: <p>{product.details.Dosage}</p> },
-  { title: "Presentation", content: <p>{product.details.Presentation}</p> },
+  { title: "Dosage", content: <p>{product.details?.Dosage}</p> },
+  { title: "Presentation", content: <p>{product.details?.Presentation}</p> },
 ];
-
 
 // ----------------------------------------------------------------------
 // PRODUCT DESCRIPTION (SCROLL ONLY HERE)

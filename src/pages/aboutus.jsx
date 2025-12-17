@@ -40,7 +40,7 @@ export default function AboutUs() {
 
   // Automatic slide transition effect
   useEffect(() => {
-    const timer = setTimeout(nextSlide, 2000); // Change slide every 5 seconds
+    const timer = setTimeout(nextSlide, 3000); // Change slide every 5 seconds
     return () => clearTimeout(timer); // Clear timeout if component unmounts or state changes
   }, [currentSlide]);
 
