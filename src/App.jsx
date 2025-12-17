@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import "./App.css";
 import Home from "./pages/Home";
-import ProductDetail from "./pages/productdetail";
 import ProductList from "./pages/productlist";
 
 import Contact from "./pages/contact";
@@ -18,6 +17,7 @@ import Finance from "./pages/departments/Finance";
 import BlogPage from "./pages/BlogPage";
 import XtremeTabletPage from "./pages/XtremeTabletPage";
 import KidneyFailureGuide from "./pages/KidneyFailureGuide";
+import ProductsPage from "./pages/ProductsPage";
 // import Products from "./pages/Products";
 // import ProductDetail from "./pages/ProductDetail";
 
@@ -37,7 +37,7 @@ function AppInner() {
         <Route path="/products" element={<ProductList />} />
 
         {/* Product detail route */}
-        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/products" element={<ProductsPage />} />
 
         {/* Contact route */}
         <Route path="/contact" element={<Contact />} />

@@ -27,20 +27,20 @@ export default function Navbar() {
     <header className="w-full bg-white shadow-sm relative z-50">
 
       {/* ================= TOP BAR ================= */}
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-2 py-2 flex items-center justify-between">
 
         {/* LOGO */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1">
           <img
             src="/assets/img/siddha.png"
             alt="Siddha Formulation"
-            className="h-14 object-contain"
+            className="h-20  object-contain"
           />
           <div>
             <h1 className="text-xl md:text-2xl font-bold text-green-800">
               Siddha Formulation
             </h1>
-            <p className="text-xs md:text-sm text-gray-500">
+            <p className="text-1xl  md:text-1xl text-gray-700">
               Herbal Excellence
             </p>
           </div>
@@ -48,10 +48,17 @@ export default function Navbar() {
 
         {/* CONTACT + HAMBURGER */}
         <div className="flex items-center gap-4">
-          <div className="hidden md:block text-sm text-gray-700 font-medium">
-            <Phone className="inline-block mr-2 h-5 w-5 text-green-800" />
-            Contact Us : <span className="text-green-800">9857030665 / 9851214257</span>
-          </div>
+        <div className="hidden md:block text-sm text-gray-700 font-medium">
+  <Phone className="inline-block mr-2 h-5 w-5 text-green-800" />
+  Contact Us :{" "}
+  {/* <a href="tel:9857030665" className="text-green-800 hover:underline">
+    9857030665
+  </a>
+  {" / "} */}
+  <a href="tel:9851214257" className="text-green-800 hover:underline">
+    9851214257
+  </a>
+</div>
 
           <button
             className="md:hidden p-2 text-xl"

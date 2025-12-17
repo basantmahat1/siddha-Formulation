@@ -2,7 +2,12 @@ import React from "react";
 // import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 // import { FaPhoneAlt } from "react-icons/fa"; // Using react-icons for the call icon
-
+import {
+  Microscope,
+  BadgeCheck,
+  ShieldCheck,
+  ThumbsUp,
+} from "lucide-react";
 export default function Banner() {
   return (
     <div className="w-full font-sans">
@@ -52,17 +57,101 @@ export default function Banner() {
             ))}
           </div>
         </section>
+{/* WHY TO CHOOSE US SECTION */}
+<section className="py-20 bg-white shadow-amber-50">
+  <div className="max-w-7xl mx-auto px-4 text-center">
+
+    {/* Top Badge */}
+    <div className="inline-block px-6 py-2 mb-6 text-xs font-semibold tracking-widest uppercase bg-yellow-400 text-gray-900 rounded-full">
+      WHY TO CHOOSE US
+    </div>
+
+    {/* Heading */}
+    <h2 className="text-3xl md:text-3xl font-serif font-semibold text-green-800 mb-6">
+      Fusing Ancient Wisdom with Modern Science
+    </h2>
+
+    {/* Description */}
+    <p className="text-gray-600 max-w-3xl mx-auto mb-16">
+      At Siddha Formulation, our dedication lies in creating authentic, safe,
+      and effective wellness solutions by blending time-tested Ayurvedic
+      principles with scientific innovation and global standards.
+    </p>
+
+    {/* Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      {/* Card 1 */}
+      <div className=" bg-gray-100 hover:bg-green-50 border border-gray-100 hover:border-green-300 p-4 md:p-5 rounded-lg ">
+           
+        <div className="flex justify-center  mb-6">
+          <img src="/assets/img/microscope-icon.svg" alt="" className="h-12" />
+        </div>
+        <h3 className="text-xl text-green-800 font-serif font-semibold mb-3">
+          Latest Technologies
+        </h3>
+        <p className="text-gray-600 text-sm">
+          We use modern technology to create herbal products.
+        </p>
+      </div>
+
+      {/* Card 2 */}
+      <div className=" bg-gray-100 hover:bg-green-50 border border-gray-100 hover:border-green-300 p-4 md:p-5 rounded-lg ">
+           
+        <div className="flex justify-center mb-6">
+          <img src="/assets/img/quality-icon.svg" alt="" className="h-12" />
+        </div>
+        <h3 className="text-xl text-green-800 font-serif font-semibold mb-3">
+          Quality Assured
+        </h3>
+        <p className="text-gray-600 text-sm">
+          Each product goes through a stringent quality control process.
+        </p>
+      </div>
+
+      {/* Card 3 */}
+      <div className=" bg-gray-100 hover:bg-green-50 border border-gray-100 hover:border-green-300 p-4 md:p-5 rounded-lg ">
+           
+        <div className="flex justify-center mb-6">
+          <img src="/assets/img/safe-icon.svg" alt="" className="h-12" />
+        </div>
+        <h3 className="text-xl font-serif text-green-800 font-semibold mb-3">
+          Safe & Efficacy
+        </h3>
+        <p className="text-gray-600 text-sm">
+          All the products are based on strong R&amp;D test and approval.
+        </p>
+      </div>
+
+      {/* Card 4 */}
+      <div className=" bg-gray-100 hover:bg-green-50 border border-gray-100 hover:border-green-300 p-4 md:p-5 rounded-lg ">
+           
+        <div className="flex justify-center mb-6">
+          <img src="/assets/img/product-range-icon.svg" alt="" className="h-12" />
+        </div>
+        <h3 className="text-xl font-serif text-green-800 font-semibold mb-3">
+          Product Range
+        </h3>
+        <p className="text-gray-600 text-sm">
+          We address wide range of problems in humans and animals.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
         {/* NEW CALL TO ACTION BANNER: Ready to Experience Natural Healing? (Placed at the end/bottom) */}
-        <section className="py-8 px-4 bg-gradient-to-r  from-green-800 to-green-700 text-white text-center">
+        <section className="py-8 px-4 bg-gradient-to-r h-100  from-green-800 to-green-700 text-white text-center">
   
             {/* GET IN TOUCH CTA */}
-            <div className="inline-block px-6 py-2 mb-4 text-sm font-semibold tracking-wider uppercase bg-yellow-400 text-gray-800 rounded-full shadow-md">
+            <div className="inline-block px-8 py-4 mb-6 text-sm font-semibold tracking-wider uppercase bg-yellow-400 text-gray-800 rounded-full shadow-md">
               GET IN TOUCH
             </div>
             
             {/* Main Heading */}
-            <h2 className="text-4xl md:text-5xl font-serif font-light mb-4">
+            <h2 className="text-4xl md:text-4xl font-serif font-light mb-4">
               Ready to Experience Natural Healing?
             </h2>
             

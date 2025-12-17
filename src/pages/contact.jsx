@@ -1,186 +1,205 @@
-import React, { useState } from 'react'; // 1. Import useState
-import ScrollUpButton from '../common/ScrollUpButton';
+import React, { useState } from "react";
+import {
+  MapPin,
+  Clock,
+  Mail,
+  Phone,
+} from "lucide-react";
+import ScrollUpButton from "../common/ScrollUpButton";
 
-
-/**
- * A responsive Contact Us form component styled with Tailwind CSS.
- * It now includes state management to capture form data and logs it to the console on submit.
- */
 const Contact = () => {
-  
-  // 2. Initialize State for all form fields
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    help: '',
-    address: '',
-    phone: '',
-    country: '',
+    name: "",
+    email: "",
+    help: "",
+    address: "",
+    phone: "",
+    country: "",
   });
 
-  // 3. Handler for updating state when inputs change
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value, // Update the specific field using its 'name' attribute
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // 4. Handler for form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Log the entire form data object to the console
-    console.log('Form Data Captured:', formData); 
-    
-    // Optional: Reset form fields after submission
-    // setFormData({
-    //   name: '', email: '', help: '', address: '', phone: '', country: '',
-    // });
-    
-    // Placeholder for actual submission logic (e.g., sending data to an API)
-    alert('Form submitted! Check your browser console for the data.');
+    console.log("Form Data Captured:", formData);
+    alert("Form submitted! Check console for data.");
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-      {/* Main Container */}
-      <div className="w-full max-w-6xl bg-white shadow-xl rounded-lg overflow-hidden">
-        
-        {/* Header Section */}
-        <header className="px-6 py-6 border-b border-gray-200">
-          <p className="text-sm uppercase tracking-wider text-gray-500 font-medium">
-            Contact Us
-          </p>
-          <h1 className="text-3xl font-bold text-gray-800 mt-1">
-            Reach Out Anytime, Anywhere
-          </h1>
-        </header>
+    <div className="bg-gray-100 min-h-screen p-6">
+      <div className="max-w-6xl mx-auto space-y-10">
 
-        {/* Content Grid (Image and Form) */}
-        <div className="grid grid-cols-1 lg:grid-cols-2">
-          
-          {/* Image Section */}
-          <div className="p-6">
-            <div className="h-full w-full rounded-lg overflow-hidden">
-              <img 
+     
+
+        {/* ================= CONTACT FORM ================= */}
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <header className="px-6 py-4">
+            <p className="text-sm uppercase tracking-wider text-gray-700 font-medium">
+              Contact Us
+            </p>
+            <h1 className="text-3xl font-bold text-green-800 mt-1">
+              Reach Out Anytime
+            </h1>
+          </header>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            {/* Image */}
+            <div className="p-8 flex justify-center items-center">
+              <img
                 src="/assets/img/herbal-medicine2020.jpg"
-                alt="A collection of Ayurvedic ingredients, including powders, herbs, and a dark paste in a bowl." 
-                className="w-full h-full object-cover"
-                style={{ minHeight: '300px' }} 
+                alt="Ayurvedic ingredients"
+                className="w-full h-full object-cover rounded-lg max-h-[400px]"
               />
             </div>
-          </div>
 
-          {/* Form Section */}
-          <div className="p-6 sm:p-8 lg:p-10">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              
-              {/* NOTE: Each input now has a 'name', a 'value', and an 'onChange' handler. */}
-              
-              {/* Name */}
-              <div>
-                <label htmlFor="name" className="sr-only">Name</label> 
-                <input
-                  type="text"
-                  id="name"
-                  name="name" // <--- CRITICAL: Matches state key
-                  required
-                  placeholder="Name"
-                  value={formData.name} // <--- CRITICAL: Controlled input
-                  onChange={handleChange} // <--- CRITICAL: Updates state on change
-                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 transition duration-150 ease-in-out"
-                />
-              </div>
+            {/* Form */}
+            <div className="p-8">
+              <form onSubmit={handleSubmit} className="space-y-4">
+                {["name", "email", "address", "phone", "country"].map(
+                  (field) => (
+                    <input
+                      key={field}
+                      type={
+                        field === "email"
+                          ? "email"
+                          : field === "phone"
+                          ? "tel"
+                          : "text"
+                      }
+                      name={field}
+                      placeholder={
+                        field.charAt(0).toUpperCase() + field.slice(1)
+                      }
+                      value={formData[field]}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 text-sm"
+                    />
+                  )
+                )}
 
-              {/* Email */}
-              <div>
-                <label htmlFor="email" className="sr-only">Email</label> 
-                <input
-                  type="email"
-                  id="email"
-                  name="email" // <--- CRITICAL
-                  required
-                  placeholder="Email"
-                  value={formData.email} // <--- CRITICAL
-                  onChange={handleChange} // <--- CRITICAL
-                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 transition duration-150 ease-in-out"
-                />
-              </div>
-              
-              {/* How can we help? (Textarea) */}
-              <div>
-                <label htmlFor="help" className="sr-only">How can we help?</label> 
                 <textarea
-                  id="help"
-                  name="help" // <--- CRITICAL
-                  rows="1"
+                  name="help"
+                  rows="3"
                   placeholder="How can we help?"
-                  value={formData.help} // <--- CRITICAL
-                  onChange={handleChange} // <--- CRITICAL
-                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 resize-none transition duration-150 ease-in-out"
-                ></textarea>
-              </div>
+                  value={formData.help}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 text-sm resize-none"
+                />
 
-              {/* Address */}
-              <div>
-                <label htmlFor="address" className="sr-only">Address</label> 
-                <input
-                  type="text"
-                  id="address"
-                  name="address" // <--- CRITICAL
-                  placeholder="Address"
-                  value={formData.address} // <--- CRITICAL
-                  onChange={handleChange} // <--- CRITICAL
-                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 transition duration-150 ease-in-out"
-                />
-              </div>
-              
-              {/* Phone */}
-              <div>
-                <label htmlFor="phone" className="sr-only">Phone</label> 
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone" // <--- CRITICAL
-                  placeholder="Phone"
-                  value={formData.phone} // <--- CRITICAL
-                  onChange={handleChange} // <--- CRITICAL
-                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 transition duration-150 ease-in-out"
-                />
-              </div>
-
-              {/* Country */}
-              <div>
-                <label htmlFor="country" className="sr-only">Country</label> 
-                <input
-                  type="text"
-                  id="country"
-                  name="country" // <--- CRITICAL
-                  placeholder="Country"
-                  value={formData.country} // <--- CRITICAL
-                  onChange={handleChange} // <--- CRITICAL
-                  className="w-full px-0 py-3 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 placeholder-gray-500 transition duration-150 ease-in-out"
-                />
-              </div>
-              
-              {/* Submit Button */}
-              <div className="pt-4">
                 <button
                   type="submit"
-                  className="w-auto px-6 py-2.5 bg-green-500 text-white font-semibold rounded-md shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-200 ease-in-out"
+                  className="w-full px-4 py-2 rounded-md font-bold bg-green-700
+                  hover:bg-green-800 text-white transition-all hover:shadow-lg
+                  transform hover:scale-105 text-lg tracking-wider"
                 >
                   Submit
                 </button>
-              </div>
-
-            </form>
+              </form>
+            </div>
           </div>
         </div>
+{/* ================= LOCATION + OFFICE HOURS ================= */}
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+  {/* Location Card */}
+  <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+    <h2 className="text-2xl font-serif font-semibold text-green-900 flex items-center gap-3 mb-4">
+      <MapPin className="w-6 h-6 text-green-800" />
+      Siddha Formulation Location
+    </h2>
+
+    <p className="text-gray-700 mb-4">
+      All of our offices are open Sunday through Friday
+      (except on major holidays).
+    </p>
+
+    {/* <p className="text-gray-700 mb-4">
+      Want to grow with us? Visit our{" "}
+      <a
+        className="text-green-700 font-semibold underline hover:text-green-900"
+      >
+        Careers page
+      </a>.
+    </p> */}
+
+    <div className="space-y-3 text-gray-800">
+      <p className="flex items-center gap-2">
+        <Mail className="w-5 h-5 text-green-700" />
+        <span className="font-semibold">Email:</span>
+        <a
+          href="mailto:siddha.formulation@gmail.com"
+          className="text-green-700 hover:text-green-900 "
+        >
+          siddha.formulation@gmail.com
+        </a>
+      </p>
+
+      <p className="flex items-start gap-2">
+        <Phone className="w-5 h-5 text-green-700 mt-1" />
+        <span>
+          <span className="font-semibold">Phone:</span>
+          <br />
+          External Relation / Marketing:{" "}
+          <a
+            href="tel:+9779857030665"
+            className="text-green-700 hover:text-green-900  ml-1"
+          >
+            9857030665
+          </a>
+          <br />
+          Admin:{" "}
+          <a
+            href="tel:+9779851214257"
+            className="text-green-700 hover:text-green-900  ml-1"
+          >
+            9851214257
+          </a>
+        </span>
+      </p>
+    </div>
+  </div>
+
+  {/* Office Hours Card */}
+  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+    <h2 className="text-xl font-serif font-semibold text-green-900 flex items-center gap-3 mb-6">
+      <Clock className="w-6 h-6 text-green-800" />
+      Office Hours
+    </h2>
+
+    <div className="space-y-6 text-gray-800">
+      <div>
+        <h3 className="font-semibold text-lg mb-1">Main Office</h3>
+        <p className="text-sm flex items-center gap-2">
+          <MapPin className="w-4 h-4 text-green-700" />
+          Tilottama-15, Rupandehi, Nepal
+        </p>
+        <p className="text-sm flex items-center gap-2">
+          <Clock className="w-4 h-4 text-green-700" />
+          10:00 AM – 6:00 PM
+        </p>
       </div>
-      
-   <ScrollUpButton />
+
+      <div>
+        <h3 className="font-semibold text-lg mb-1">Factory Office</h3>
+        <p className="text-sm flex items-center gap-2">
+          <MapPin className="w-4 h-4 text-green-700" />
+          Tilottama-15, Rupandehi, Nepal
+        </p>
+        <p className="text-sm flex items-center gap-2">
+          <Clock className="w-4 h-4 text-green-700" />
+          10:00 AM – 6:00 PM
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <ScrollUpButton />
     </div>
   );
 };

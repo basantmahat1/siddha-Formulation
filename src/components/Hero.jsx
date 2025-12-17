@@ -21,10 +21,10 @@ export default function Hero() {
 
     {/* Left Text Section */}
     <div className="animate-fadeIn">
-      <h1 className="text-4xl md:text-6xl font-bold text-[#096e3b]  mb-4">
+      <h1 className="text-4xl italic md:text-6xl font-bold text-[#096e3b]  mb-4">
         Siddha
         <br />
-        <span className="text-[#00A651]">
+        <span className="text-[#00A651] italic">
           Formulation Pvt.Ltd
         </span>
       </h1>
@@ -66,9 +66,9 @@ export default function Hero() {
 </section>
 
 {/* Bottom Ayurvedic Info Section */}
-<section className="relative w-full mt-0">
+<section className="relative w-full mt-0  border-2  ">
   <div
-    className="relative w-full h-[450px] md:h-[320px] bg-cover bg-center flex items-center justify-center px-6"
+    className="relative w-full h-[550px] md:h-[420px] bg-cover bg-center flex items-center justify-center px-6"
     style={{
       backgroundImage: "url('/assets/img/Herbal-Medicine.jpg')",
     }}
@@ -83,7 +83,9 @@ Ancient Wisdom, Modern Healing
       </h2>
 
       <p className="text-base md:text-lg leading-relaxed text-gray-100">
-Blending 3000 years of Ayurvedic tradition with cutting-edge research to bring you the purest herbal formulations
+Blending 3000 years of Ayurvedic tradition with cutting-edge
+<br />
+ research to bring you the purest herbal formulations.
         
       </p>
     </div>
