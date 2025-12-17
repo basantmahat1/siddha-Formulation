@@ -9,10 +9,10 @@ export default function Patron_Adviser() {
       <section className="py-4">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-50 rounded-full mb-6">
-            <UsersRound className="h-10 w-10 text-blue-600" />
+            <UsersRound className="h-10 w-10 text-green-700" />
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-3xl font-bold text-[#096e3b] mb-4">
             Patron and Adviser
           </h2>
 
@@ -28,7 +28,7 @@ export default function Patron_Adviser() {
         <div className="max-w-7xl mx-auto px-4">
 
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-800 mb-2">
+            <h3 className="text-3xl font-bold text-[#096e3b] mb-2">
               Patron / Founding Member
             </h3>
             <p className="text-gray-600">
@@ -55,7 +55,7 @@ export default function Patron_Adviser() {
             ].map((member, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-10 text-center"
+                className="bg-white  transition p-10 text-center  hover:bg-green-50 border border-gray-100 hover:border-green-300 rounded-lg "
               >
                 <div className="flex justify-center mb-6">
                   <img
@@ -69,7 +69,7 @@ export default function Patron_Adviser() {
                   {member.name}
                 </h4>
 
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-sm font-medium text-blue-600 bg-blue-50 rounded-full">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-sm font-medium text-green-700 bg-blue-50 rounded-full">
                   <Crown className="w-4 h-4" />
                   {member.role}
                 </span>
@@ -88,7 +88,7 @@ export default function Patron_Adviser() {
         <div className="max-w-7xl mx-auto px-4">
 
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-800 mb-2">
+            <h3 className="text-3xl font-bold text-[#096e3b] mb-2">
               Adviser Committee
             </h3>
             <p className="text-gray-600">
@@ -122,7 +122,7 @@ export default function Patron_Adviser() {
             ].map((member, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-8 text-center"
+                className="bg-white transition p-8 text-center hover:bg-green-50 border border-gray-100 hover:border-green-300 rounded-lg"
               >
                 <div className="flex justify-center mb-5">
                   <img
@@ -136,7 +136,7 @@ export default function Patron_Adviser() {
                   {member.name}
                 </h4>
 
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-sm font-medium text-blue-600 bg-blue-50 rounded-full">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-sm font-medium text-green-700 bg-blue-50 rounded-full">
                   <UsersRound className="w-4 h-4" />
                   {member.role}
                 </span>
@@ -155,7 +155,7 @@ export default function Patron_Adviser() {
         <div className="max-w-7xl mx-auto px-4">
 
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-800 mb-2">
+            <h3 className="text-3xl font-bold text-[#096e3b] mb-2">
               Audit Committee
             </h3>
             <p className="text-gray-600">
@@ -189,7 +189,7 @@ export default function Patron_Adviser() {
             ].map((member, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-8 text-center"
+                className="bg-white  transition p-8 text-center  hover:bg-green-50 border border-gray-100 hover:border-green-300 rounded-lg"
               >
                 <div className="flex justify-center mb-5">
                   <img
@@ -203,7 +203,7 @@ export default function Patron_Adviser() {
                   {member.name}
                 </h4>
 
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-sm font-medium text-blue-600 bg-blue-50 rounded-full">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-sm font-medium text-green-700 bg-blue-50 rounded-full">
                   <Users className="w-4 h-4" />
                   {member.role}
                 </span>

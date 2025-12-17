@@ -21,10 +21,10 @@ export default function Hero() {
 
     {/* Left Text Section */}
     <div className="animate-fadeIn">
-      <h1 className="text-4xl md:text-6xl font-bold text-[#096e3b]  mb-4">
+      <h1 className="text-4xl italic md:text-6xl font-bold text-[#096e3b]  mb-4">
         Siddha
         <br />
-        <span className="text-[#00A651]">
+        <span className="text-[#00A651] italic">
           Formulation Pvt.Ltd
         </span>
       </h1>

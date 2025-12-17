@@ -23,7 +23,7 @@ export const productData = [
     details: {
       "Therapeutic Category": "Non-hormonal and safe sex stimulant for men",
       Description:
-        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbIt improves sperm count, hormonal level, corrects morphology of sperms, improves motility of sperms, prevents oxidative stress and therefore improves male fertility.",
+        "It improves sperm count, hormonal level, corrects morphology of sperms, improves motility of sperms, prevents oxidative stress and therefore improves male fertility.",
       "How It Works":
         "Exhibits spermatogenic activity and increases serum hormone levels. Improves sperm motility and total sperm count in infertile males. Enhances semen quality by combating oxidative stress. Improves blood circulation to genital organs.",
       Indication:

@@ -44,14 +44,14 @@ const socialIcons = [
 
           {/* BRAND */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center gap-2 mb-4">
               <img
                 src="/assets/img/siddha.png"
                 alt="Siddha Formulation"
-                className="h-14 w-14 rounded-full bg-white/10 p-1"
+                className="h-25 w-25 rounded-full p-1"
               />
               <div>
-                <h3 className="text-green-500 text-2xl font-bold tracking-wide">
+                <h3 className="text-green-600 text-2xl font-bold tracking-wide">
                   Siddha Formulation
                 </h3>
                 <p className="text-gray-400 text-base mt-1">

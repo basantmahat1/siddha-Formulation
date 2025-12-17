@@ -68,14 +68,14 @@ const boardMembers = {
 const BoardOfDirectors = () => {
   return (
     <section className="py-6 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 ">
 
         {/* ===== HEADER ===== */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 ">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-50 rounded-full mb-6">
             <UsersRound className="h-10 w-10 text-green-900" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-3xl font-bold text-[#096e3b] mb-4">
             Board of Directors
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
@@ -85,9 +85,9 @@ const BoardOfDirectors = () => {
         </div>
 
         {/* ===== LEADERSHIP ===== */}
-        <div className="mb-20">
+        <div className="mb-20 ">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-800 mb-2">
+            <h3 className="text-3xl font-bold text-[#096e3b] mb-2">
               Chairperson & Managing Director
             </h3>
             <p className="text-gray-600">
@@ -99,13 +99,13 @@ const BoardOfDirectors = () => {
             {boardMembers.leadership.map((member, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-10 text-center"
+                className="bg-white  transition p-10 text-center   hover:bg-green-50 border border-gray-100 hover:border-green-300 rounded-lg"
               >
                 <div className="flex justify-center mb-6">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-32 h-32 rounded-full object-cover border-4 border-white shadow"
+                    className="w-32 h-32 rounded-full object-cover border-4 border-white"
                   />
                 </div>
 
@@ -113,7 +113,7 @@ const BoardOfDirectors = () => {
                   {member.name}
                 </h4>
 
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-sm font-medium text-blue-600 bg-blue-50 rounded-full">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-sm font-medium text-green-700 bg-blue-50 rounded-full">
                   <Star className="w-4 h-4" />
                   {member.position}
                 </span>
@@ -129,7 +129,7 @@ const BoardOfDirectors = () => {
         {/* ===== DIRECTORS ===== */}
         <div>
           <div className="text-center mb-14">
-            <h3 className="text-3xl font-bold text-gray-800 mb-2">
+            <h3 className="text-3xl font-bold text-[#096e3b] mb-2">
               Board of Directors
             </h3>
             <p className="text-gray-600">
@@ -141,7 +141,7 @@ const BoardOfDirectors = () => {
             {boardMembers.directors.map((member, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-8 text-center"
+                className="bg-white  transition p-8 text-center  hover:bg-green-50 border border-gray-100 hover:border-green-300 rounded-lg"
               >
                 <div className="flex justify-center mb-5">
                   <img
@@ -155,7 +155,7 @@ const BoardOfDirectors = () => {
                   {member.name}
                 </h4>
 
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-sm font-medium text-green-600 bg-blue-50 rounded-full">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-sm font-medium text-green-700 bg-blue-50 rounded-full">
                   <Award className="w-4 h-4" />
                   {member.position}
                 </span>
