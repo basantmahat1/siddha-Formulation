@@ -49,7 +49,7 @@ const Contact = () => {
             {/* Image */}
             <div className="p-8 flex justify-center items-center">
               <img
-                src="/assets/img/herbal-medicine2020.jpg"
+                src="/assets/img/herbal-medicine2020.png"
                 alt="Ayurvedic ingredients"
                 className="w-full h-full object-cover rounded-lg max-h-[400px]"
               />

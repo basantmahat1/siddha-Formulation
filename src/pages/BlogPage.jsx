@@ -156,20 +156,20 @@ const BlogPostCard = ({
       className="flex flex-col lg:flex-row bg-white border border-gray-200 rounded-lg p-4 lg:p-6 shadow-md transition duration-300 hover:shadow-lg hover:border-[#a3e6b7] group cursor-pointer"
     >
       {/* Image */}
-      <div className="w-full h-40 lg:w-1/5 flex-shrink-0 mb-4 lg:mb-0 order-1 lg:order-2 flex justify-center items-center">
+      <div className="w-full h-50 lg:w-1/5 flex-shrink-0 mb-4 lg:mb-0 order-1 lg:order-2 flex justify-center items-center">
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="w-full max-w-[120px] h-auto rounded-md object-contain transition duration-300 group-hover:scale-105"
+          className="w-full max-w-[158px] h-45 rounded-md object-contain transition duration-300 group-hover:scale-105"
         />
       </div>
 
       {/* Text */}
       <div className="flex-1 lg:pr-6 order-2 lg:order-1">
-        <h3 className="text-xl font-semibold text-[#1e462d] mb-2 transition duration-300 group-hover:text-[#153421]">
+        <h3 className="text-2xl pt-8 font-semibold text-green-700 mb-2 transition duration-300 group-hover:text-green-900">
           {title}
         </h3>
-        <p className="text-gray-700 mb-0 text-sm lg:text-base">{description}</p>
+        <p className="text-gray-700  mb-0 text-lg ">{description}</p>
       </div>
     </Link>
   );
@@ -205,7 +205,7 @@ const BlogPage = () => {
       <div className="max-w-5xl mx-auto p-6 lg:p-8 rounded-lg ">
         {/* Header */}
         <div className="mb-6">
-          <h2 className="text-3xl font-serif font-light text-[#1e462d] tracking-wide text-center">
+          <h2 className="text-3xl  font-bold  text-green-800 tracking-wide text-center">
             Latest from Our Blog
           </h2>
         </div>

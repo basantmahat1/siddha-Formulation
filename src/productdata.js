@@ -984,15 +984,20 @@ export const classicalProductData = [
     features: [
       "Effective classical Ayurvedic medicine for treating cough, cold, fever, productive cough, asthma and allergic disorders.",
     ],
-    paymentMethods: ["Visa", "MasterCard"],
+       paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Classical Respiratory",
+      "Therapeutic Category": "Classical",
       Description:
         "Sitopiladi Churna is a traditional Ayurvedic powder used for centuries to treat various respiratory ailments. It is known for its sweet taste and effectiveness in clearing congestion.",
-      "How It Works":
-        "It acts as an expectorant, easing the removal of phlegm, and as a bronchodilator, relieving bronchial spasms. Its antipyretic properties help manage fever associated with respiratory issues.",
+      "How It Works": [
+        "Has kashara (antitussive), kaphnisaraka (expectorant), and anti-inflammatory properties that work together to soothe cough",
+        "Restores lung capacity, improves pulmonary performance, and boosts immunity",
+        "Reduces pharyngeal and chest congestion by liquefying thick mucus in the airways",
+        "Keeps the body healthy by balancing the Vata (air) and Pitta (fire and air) Doshas and effectively removes AMA doshas (harmful toxins) from the body"
+      ],
       Indication:
-        "Cough, cold, fever, asthma, productive cough, and allergic disorders.",
+        "Dyspnea",
+
       Dosage:
         "Adults: 1-3 grams twice daily with honey or warm water, or as directed by an Ayurvedic physician.",
       Presentation: "Available in 100gm jar.",
@@ -1468,7 +1473,9 @@ export const veterinaryProductData = [
         "Vet Kafher is an herbal formulation that supports lung and throat health in livestock.",
       "How It Works":
         "Clears the respiratory tract, soothes inflammation, and enhances immunity in animals.",
-      Indication: "Animal Cough & Cold, Allergic Respiratory Conditions",
+      Indication: ["Animal Cough & Cold",
+                   "Allergic Respiratory Conditions"],
+
       Dosage: "As directed by the veterinary physician.",
       Presentation: "100ml Liquid",
     },
@@ -1501,7 +1508,9 @@ export const veterinaryProductData = [
       "How It Works":
         "Stimulates bile secretion, improves appetite, detoxifies the liver, and prevents hepatic damage.",
       Indication:
-        "Liver dysfunction, Anorexia and digestive issues, Support during hepatotoxic drug use",
+        ["Liver dysfunction", 
+          "Anorexia and digestive issues",
+           "Support during hepatotoxic drug use"],
       Dosage:
         "As prescribed by the veterinary doctor depending on species and condition.",
       Presentation: "100ml and 500ml bottles",
@@ -1535,7 +1544,12 @@ export const veterinaryProductData = [
       "How It Works":
         "Adhatoda vasica acts as an expectorant and bronchodilator. Glycyrrhiza glabra provides demulcent and expectorant effects. Clerodendrum serratum and Tulsi offer anti-allergic and immunomodulatory properties.",
       Indication:
-        "Allergic cough, Infective cough, Asthmatic cough, Rhinitis, Bronchitis, Running nose due to common cold",
+       ["Allergic cough", 
+        "Infective cough", 
+        "Asthmatic cough",
+         "Rhinitis", 
+         "Bronchitis",
+         "Running nose due to common cold"],
       Dosage:
         "2 teaspoonfuls (TSF) thrice daily or as directed by the veterinarian.",
       Presentation: "100ml liquid bottle",

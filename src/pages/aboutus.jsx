@@ -8,18 +8,22 @@ const slides = [
     title: "About Siddha Formulation",
     subtitle:
       "A legacy of Ayurveda dedicated to transforming lives through pure, natural, and scientifically crafted herbal wellness.",
+    bgImage: "/assets/img/aboutimg1.png",
   },
   {
     title: "Rooted in Ancient Ayurveda",
     subtitle:
       "Bridging the wisdom of traditional healing with the assurance of modern scientific research and quality control.",
+    bgImage: "/assets/img/about_banner2.png",
   },
   {
     title: "Committed to Pure Ingredients",
     subtitle:
       "Ethically sourced, potent, and 100% natural ingredients from the finest regions, ensuring maximum efficacy.",
+    bgImage: "/assets/img/about_banner3.png",
   },
 ];
+
 
 export default function AboutUs() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -36,54 +40,53 @@ export default function AboutUs() {
 
   // Automatic slide transition effect
   useEffect(() => {
-    const timer = setTimeout(nextSlide, 5000); // Change slide every 5 seconds
+    const timer = setTimeout(nextSlide, 3000); // Change slide every 5 seconds
     return () => clearTimeout(timer); // Clear timeout if component unmounts or state changes
   }, [currentSlide]);
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
-      {/* Hero Section (Slider with Background Image) */}
-      <div
-        className="relative py-28 flex items-center justify-center  text-center text-white overflow-clip"
-        style={{
-          backgroundImage: "url('/assets/img/aboutimg1.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black opacity-30"></div>
+    <div
+  className="relative py-28 flex items-center justify-center text-center text-white overflow-clip"
+  style={{
+    backgroundImage: `url('${slides[currentSlide].bgImage}')`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black opacity-30"></div>
 
-        {/* Content - ADDED 'key' PROP HERE for smooth transition */}
+  {/* Content */}
+  <div
+    key={currentSlide}
+    className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out"
+  >
+    <h1 className="text-4xl md:text-5xl text-green-300 font-extrabold mb-6 drop-shadow-lg">
+      {slides[currentSlide].title}
+    </h1>
+
+    <p className="text-lg md:text-xl text-green-100 leading-relaxed max-w-3xl mx-auto">
+      {slides[currentSlide].subtitle}
+    </p>
+
+    {/* Slider Indicators */}
+    <div className="flex justify-center gap-2 mt-8">
+      {slides.map((_, index) => (
         <div
-          key={currentSlide}
-          className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out"
-        >
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-            {slides[currentSlide].title}
-          </h1>
-
-          <p className="text-lg md:text-xl text-green-100 leading-relaxed max-w-3xl mx-auto">
-            {slides[currentSlide].subtitle}
-          </p>
-
-          {/* Slider Indicators */}
-          <div className="flex justify-center gap-2 mt-8">
-            {slides.map((_, index) => (
-              <div
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
-                  currentSlide === index
-                    ? "bg-white scale-110"
-                    : "bg-green-300 hover:bg-white/70"
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
+          key={index}
+          onClick={() => goToSlide(index)}
+          className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
+            currentSlide === index
+              ? "bg-white scale-110"
+              : "bg-green-300 hover:bg-white/70"
+          }`}
+          aria-label={`Go to slide ${index + 1}`}
+        />
+      ))}
+    </div>
+  </div>
+</div>
 
       {/* Story Section */}
       <div className="max-w-6xl mx-auto px-6 py-20">
