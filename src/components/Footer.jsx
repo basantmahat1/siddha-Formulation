@@ -36,7 +36,7 @@ const socialIcons = [
 
 
   return (
-    <footer className="bg-[#0f1720] text-gray-300 pt-16 pb-8 mt-10">
+    <footer className="bg-[#0f1720] text-gray-300 pt-16 pb-8 mt-18">
       <div className="max-w-7xl mx-auto px-6">
         {/* TOP */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 pb-14 border-b border-gray-700">
