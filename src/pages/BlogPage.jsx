@@ -165,7 +165,7 @@ const BlogPostCard = ({
       </div>
 
       {/* Text */}
-      <div className="flex-1 lg:pr-6 order-2 lg:order-1">
+      <div className="font-serif flex-1 lg:pr-6 order-2 lg:order-1">
         <h3 className="text-2xl pt-8 font-semibold text-green-700 mb-2 transition duration-300 group-hover:text-green-900">
           {title}
         </h3>
@@ -201,7 +201,7 @@ const BlogPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 lg:p-8">
+    <div className="min-h-screen bg-gray-50 p-4 lg:p-8 font-serif">
       <div className="max-w-5xl mx-auto p-6 lg:p-8 rounded-lg ">
         {/* Header */}
         <div className="mb-6">

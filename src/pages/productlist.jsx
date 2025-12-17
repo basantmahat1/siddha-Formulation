@@ -44,10 +44,10 @@ const ProductSection = ({ title, products, onProductClick }) => {
 
               <div className="flex flex-col flex-grow justify-between w-full">
                 <div>
-                  <h3 className="text-base md:text-lg font-bold text-gray-900 line-clamp-2 mb-2 transition group-hover:text-green-700">
+                  <h3 className="text-base md:text-lg font-bold text-gray-900 line-clamp-2 mb-1 transition group-hover:text-green-700">
                     {product.title}
                   </h3>
-                  <p className="text-xs md:text-[14px] text-black line-clamp-2 h-10 mb-4 leading-relaxed group-hover:text-gray-800">
+                  <p className="text-xs md:text-[15px] text-black line-clamp-2 h-12  mb-2 leading-relaxed group-hover:text-gray-800">
                     {getProductDescription(product)}
                   </p>
                 </div>
@@ -152,7 +152,7 @@ const ProductList = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white relative">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white relative font-serif">
       {/* Filters */}
       <div className="p-2 md:p-2 max-w-7xl mx-auto">
         <div className="flex justify-end mb-2 relative" ref={filterRef}>

@@ -10,7 +10,7 @@ const LatestProducts = () => {
     product.features?.[0] || "Details not available.";
 
   return (
-    <div className="p-6 md:p-12 max-w-6xl mx-auto">
+    <div className="p-6 md:p-12 max-w-6xl mx-auto font-serif">
       {/* Header */}
       <div className="text-center mb-12">
         <p className="text-gray-700 font-bold text-base md:text-lg uppercase tracking-widest mb-2">
@@ -59,11 +59,11 @@ const LatestProducts = () => {
               {/* Info */}
               <div className="flex flex-col flex-grow justify-between w-full">
                 <div>
-                  <h2 className="text-base md:text-lg font-bold text-gray-900 line-clamp-2 mb-2 transition group-hover:text-green-700">
+                  <h2 className="text-base md:text-lg font-bold text-gray-900 line-clamp-2 mb-1 transition group-hover:text-green-700">
                     {product.title}
                   </h2>
 
-                  <p className="text-xs md:text-sm text-gray-700 line-clamp-2 h-10 mb-4 leading-relaxed group-hover:text-gray-800">
+                  <p className="text-xs  md:text-[15px] text-gray-700 line-clamp-2 h-12 mb-2 leading-relaxed group-hover:text-gray-800">
                     {getProductDescription(product)}
                   </p>
                 </div>

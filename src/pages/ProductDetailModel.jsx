@@ -52,7 +52,7 @@ const ProductDescription = ({ product }) => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
   return (
-    <div className="my-4 border-t border-gray-200">
+    <div className="my-4 border-t border-gray-200 font-serif">
       {/* Tabs */}
       <div className="bg-gray-50 border-b border-gray-200 flex overflow-x-auto rounded-t-md mx-4 mt-3 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
         {contentData.map((tab, index) => (

@@ -45,7 +45,7 @@ export default function AboutUs() {
   }, [currentSlide]);
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans">
+    <div className="min-h-screen bg-gray-50 font-serif">
     <div
   className="relative py-28 flex items-center justify-center text-center text-white overflow-clip"
   style={{
@@ -62,11 +62,11 @@ export default function AboutUs() {
     key={currentSlide}
     className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out"
   >
-    <h1 className="text-4xl md:text-5xl text-green-300 font-extrabold mb-6 drop-shadow-lg">
+    <h1 className="text-4xl md:text-5xl text-green-400 font-extrabold mb-6 drop-shadow-lg">
       {slides[currentSlide].title}
     </h1>
 
-    <p className="text-lg md:text-xl text-green-100 leading-relaxed max-w-3xl mx-auto">
+    <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
       {slides[currentSlide].subtitle}
     </p>
 

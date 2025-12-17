@@ -188,7 +188,7 @@ const XtremeTabletPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white font-serif">
       {/* Hero Section */}
       <section className="relative pt-10 pb-10 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-green-800 to-green-900"></div>

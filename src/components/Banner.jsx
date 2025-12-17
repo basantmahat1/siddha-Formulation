@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 export default function Banner() {
   return (
-    <div className="w-full font-sans">
+    <div className="w-full font-serif">
         
   
         {/* WHY AYURVEDA SECTION (Moved up, now followed directly by the CTA banner) */}
@@ -67,7 +67,7 @@ export default function Banner() {
     </div>
 
     {/* Heading */}
-    <h2 className="text-3xl md:text-3xl font-serif font-semibold text-green-800 mb-6">
+    <h2 className="text-3xl md:text-4xl font-serif font-semibold text-green-800 mb-6">
       Fusing Ancient Wisdom with Modern Science
     </h2>
 

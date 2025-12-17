@@ -16,15 +16,15 @@ export default function Hero() {
   return (
     <>
    {/* Hero Section */}
-<section className="w-full bg-gradient-to-br from-green-50 to-white py-16 md:py-24">
+<section className="w-full font-serif bg-gradient-to-br from-green-50 to-white py-16 md:py-24">
   <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6">
 
     {/* Left Text Section */}
     <div className="animate-fadeIn">
-      <h1 className="text-4xl italic md:text-6xl font-bold text-[#096e3b]  mb-4">
+      <h1 className="text-4xl md:text-6xl font-bold text-[#096e3b]  mb-4">
         Siddha
         <br />
-        <span className="text-[#00A651] italic">
+        <span className="text-[#00A651] ">
           Formulation Pvt.Ltd
         </span>
       </h1>

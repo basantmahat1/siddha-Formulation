@@ -4,7 +4,7 @@ import { ShieldCheck, TrendingUp, Factory, Mail, Phone } from "lucide-react";
 
 export default function Finance() {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white">
+    <div className="bg-gradient-to-b font-serif from-gray-50 to-white">
       {/* Hero Section */}
 
       {/* Main Container */}

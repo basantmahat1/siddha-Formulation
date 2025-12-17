@@ -4,7 +4,7 @@ import { Settings, Mail, Phone, Award, Factory } from "lucide-react";
 
 export default function Production() {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white">
+    <div className="bg-gradient-to-b from-gray-50 to-white font-serif">
       {/* Hero Section */}
 
       {/* Main Container */}

@@ -67,7 +67,7 @@ const boardMembers = {
 
 const BoardOfDirectors = () => {
   return (
-    <section className="py-6 bg-gray-50">
+    <section className="py-6 bg-gray-50 font-serif">
       <div className="max-w-7xl mx-auto px-4 ">
 
         {/* ===== HEADER ===== */}

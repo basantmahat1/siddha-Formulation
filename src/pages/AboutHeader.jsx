@@ -3,7 +3,7 @@ import { Leaf } from 'lucide-react';
 
 const AboutHeader = () => {
   return (
-    <section className="relative bg-gradient-to-r from-green-50 to-emerald-50 py-20 md:py-24 overflow-hidden">
+    <section className="relative bg-gradient-to-r from-green-50 to-emerald-50 py-20 md:py-24 overflow-hidden font-serif">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-40 h-40 bg-green-300 rounded-full"></div>
