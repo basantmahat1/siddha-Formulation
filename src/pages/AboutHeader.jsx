@@ -1,5 +1,5 @@
-import React from 'react';
-import { Leaf } from 'lucide-react';
+import React from "react";
+import { Leaf } from "lucide-react";
 
 const AboutHeader = () => {
   return (
@@ -28,24 +28,31 @@ const AboutHeader = () => {
           {/* Tagline */}
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg max-w-3xl">
             <p className="text-gray-700 text-lg leading-relaxed">
-              Blending 3000 years of Ayurvedic tradition with cutting-edge research to bring 
-              you the purest herbal formulations. Pioneering the future of herbal healthcare 
-              in Nepal with innovative, sustainable, and effective natural medicine solutions.
+              Blending 3000 years of Ayurvedic tradition with cutting-edge
+              research to bring you the purest herbal formulations. Pioneering
+              the future of herbal healthcare in Nepal with innovative,
+              sustainable, and effective natural medicine solutions.
             </p>
-            
+
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-gray-100">
               <div className="text-center">
                 <div className="text-3xl font-bold text-green-600">31+</div>
-                <div className="text-sm text-gray-600 mt-1">Years Experience</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  Years Experience
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-green-600">90+</div>
-                <div className="text-sm text-gray-600 mt-1">Herbal Products</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  Herbal Products
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-green-600">65K</div>
-                <div className="text-sm text-gray-600 mt-1">Sq. Ft Facility</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  Sq. Ft Facility
+                </div>
               </div>
             </div>
           </div>

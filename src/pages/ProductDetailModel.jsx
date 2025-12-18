@@ -15,11 +15,12 @@ const getContentData = (product) => [
       {product.details?.["How It Works"] ? (
         typeof product.details["How It Works"] === "string" ? (
           product.details["How It Works"]
-            .split(/\. |\n/) // split on dot+space or newline
-            .filter(Boolean)  // remove empty strings
-            .map((point, idx) => <li key={idx}>{point.trim()}.</li>)
-        ) : Array.isArray(product.details["How It Works"]) ? (
-          product.details["How It Works"].map((point, idx) => <li key={idx}>{point}</li>)
+            .split(". ")
+            .map((point, idx) => point.trim() && <li key={idx}>{point}.</li>)
+        ) : Array.isArray(product.details?.["How It Works"]) ? (
+          product.details["How It Works"].map((point, idx) => (
+            <li key={idx}>{point}</li>
+          ))
         ) : (
           <li>{product.details["How It Works"]}</li>
         )

@@ -30,7 +30,12 @@ export const productData = [
         "Enhances semen quality by combating oxidative stress.Improves blood circulation to genital organs.",
       ],
       Indication: [
-        "Oligospermia, Male infertility, Loss of Libido, Spermatorrhoea, Premature Ejaculation, Erectile Dysfunction",
+        "Oligospermia",
+        "Male infertility",
+        "Loss of Libido",
+        "Spermatorrhoea",
+        "Premature Ejaculation",
+        "Erectile Dysfunction",
       ],
       Dosage: "1 cap twice a day",
       Presentation: "1×10×10",
@@ -225,7 +230,8 @@ export const productData = [
       Description:
         "Recommended formula for Acute & chronic Piles (External & Internal).",
       "How It Works": [
-        "Neem: Anti Inflammatory. Kutaj: Relieves itching / Toning of anus.",
+        "Neem: Anti Inflammatory. ",
+        "Kutaj: Relieves itching / Toning of anus.",
         "Mahanembha (Bakain): Analgesic / Anti Inflammatory.",
         "Kachnar: Anti Inflammatory / Wound Healing.",
       ],
@@ -654,7 +660,7 @@ export const productData = [
         "Kutki: Hepatoprotective, supports liver cirrhosis, immune modulation, antioxidant.",
         "Punarnava: Hepatoprotective, anti - inflammatory.",
         "Makov: Relieves stomach ache and worms,anti - inflammatory",
-        "Rohitak: Liver and spleen disorders, hepatoprotective.",
+        "Rohitak: Liver and spleen disorders, hepatoprotectivenp.",
         "Bhumi Amla: Effective liver protector.",
       ],
       Indication: [
@@ -984,7 +990,7 @@ export const classicalProductData = [
     features: [
       "Effective classical Ayurvedic medicine for treating cough, cold, fever, productive cough, asthma and allergic disorders.",
     ],
-       paymentMethods: ["Visa", "MasterCard"],
+    paymentMethods: ["Visa", "MasterCard"],
     details: {
       "Therapeutic Category": "Classical",
       Description:
@@ -993,10 +999,9 @@ export const classicalProductData = [
         "Has kashara (antitussive), kaphnisaraka (expectorant), and anti-inflammatory properties that work together to soothe cough",
         "Restores lung capacity, improves pulmonary performance, and boosts immunity",
         "Reduces pharyngeal and chest congestion by liquefying thick mucus in the airways",
-        "Keeps the body healthy by balancing the Vata (air) and Pitta (fire and air) Doshas and effectively removes AMA doshas (harmful toxins) from the body"
+        "Keeps the body healthy by balancing the Vata (air) and Pitta (fire and air) Doshas and effectively removes AMA doshas (harmful toxins) from the body",
       ],
-      Indication:
-        "Dyspnea",
+      Indication: "Dyspnea",
 
       Dosage:
         "Adults: 1-3 grams twice daily with honey or warm water, or as directed by an Ayurvedic physician.",
@@ -1473,8 +1478,7 @@ export const veterinaryProductData = [
         "Vet Kafher is an herbal formulation that supports lung and throat health in livestock.",
       "How It Works":
         "Clears the respiratory tract, soothes inflammation, and enhances immunity in animals.",
-      Indication: ["Animal Cough & Cold",
-                   "Allergic Respiratory Conditions"],
+      Indication: ["Animal Cough & Cold", "Allergic Respiratory Conditions"],
 
       Dosage: "As directed by the veterinary physician.",
       Presentation: "100ml Liquid",
@@ -1507,10 +1511,11 @@ export const veterinaryProductData = [
         "Vet Livherb is a herbal formulation used to improve liver health and digestion in livestock. It supports detoxification and enhances metabolic efficiency.",
       "How It Works":
         "Stimulates bile secretion, improves appetite, detoxifies the liver, and prevents hepatic damage.",
-      Indication:
-        ["Liver dysfunction", 
-          "Anorexia and digestive issues",
-           "Support during hepatotoxic drug use"],
+      Indication: [
+        "Liver dysfunction",
+        "Anorexia and digestive issues",
+        "Support during hepatotoxic drug use",
+      ],
       Dosage:
         "As prescribed by the veterinary doctor depending on species and condition.",
       Presentation: "100ml and 500ml bottles",
@@ -1543,13 +1548,14 @@ export const veterinaryProductData = [
         "Vet Siddhamol Malt is a non-addictive, non-sedative & non-narcotic cough expectorant. It is sugar-free, safe, and effective with no side effects like sedation, drowsiness, or gastrointestinal disturbance.",
       "How It Works":
         "Adhatoda vasica acts as an expectorant and bronchodilator. Glycyrrhiza glabra provides demulcent and expectorant effects. Clerodendrum serratum and Tulsi offer anti-allergic and immunomodulatory properties.",
-      Indication:
-       ["Allergic cough", 
-        "Infective cough", 
+      Indication: [
+        "Allergic cough",
+        "Infective cough",
         "Asthmatic cough",
-         "Rhinitis", 
-         "Bronchitis",
-         "Running nose due to common cold"],
+        "Rhinitis",
+        "Bronchitis",
+        "Running nose due to common cold",
+      ],
       Dosage:
         "2 teaspoonfuls (TSF) thrice daily or as directed by the veterinarian.",
       Presentation: "100ml liquid bottle",
