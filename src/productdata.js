@@ -988,19 +988,25 @@ export const classicalProductData = [
     details: {
       "Therapeutic Category": "Classical",
       Description:
-        "Sitopiladi Churna is a traditional Ayurvedic powder used for centuries to treat various respiratory ailments. It is known for its sweet taste and effectiveness in clearing congestion.",
-      "How It Works": [
-        "Has kashara (antitussive), kaphnisaraka (expectorant), and anti-inflammatory properties that work together to soothe cough",
-        "Restores lung capacity, improves pulmonary performance, and boosts immunity",
-        "Reduces pharyngeal and chest congestion by liquefying thick mucus in the airways",
-        "Keeps the body healthy by balancing the Vata (air) and Pitta (fire and air) Doshas and effectively removes AMA doshas (harmful toxins) from the body"
+        "Sitopaladi churna is an effective classical Ayurvedic medicine used for treating respiratory diseases, digestive issues, and allergic disorders.",
+      "How It Works":[
+        "Has kashara (antitussive), kaphnisaraka (expectorant), and anti-inflammatory properties that work together to soothe cough.",
+        "Restores lung capacity, improves pulmonary performance, and boosts immunity.",
+        "Reduces pharyngeal and chest congestion by liquefying thick mucus in the airways.",
+        "Keeps the body healthy by balancing the Vata (air) and Pitta (fire and air) Doshas and effectively removes AMA doshas (harmful toxins) from the body.",
       ],
-      Indication:
-        "Dyspnea",
+      "Indication": [
+        "Dyspnea.",
+        "Cough.",
+        "Burning sensation in palms and feet.",
+        "Low digestion power.",
+        "Loss of sensation in tongue.",
+        "Abdominal pain, anorexia, fever, and nosebleeds.",
+      ],
 
       Dosage:
-        "Adults: 1-3 grams twice daily with honey or warm water, or as directed by an Ayurvedic physician.",
-      Presentation: "Available in 100gm jar.",
+        "1-3g twice a day with ghee or honey, or as directed by the physician.",
+      Presentation: "100gm",
     },
   },
 
@@ -1031,8 +1037,14 @@ export const classicalProductData = [
         "Useful in treating digestive problems, boosts immunity, and acts as a rejuvenator.",
       "How It Works":
         "Emblica officinalis (Amalaki) – Acts as an antioxidant, promotes digestion, and supports liver function.",
-      Indication:
-        "Hyperacidity, Gastritis, Loss of Appetite, Indigestion, Liver Disorders",
+      Indication:[
+        "Hyperacidity.",
+        "Gastritis.",
+        "Loss of Appetite.",
+        "Indigestion.",
+        "Liver Disorders.",
+      
+      ],
       Dosage:
         "1 to 2 grams twice daily with warm water or as directed by the physician.",
       Presentation: "100 gm",
@@ -1091,15 +1103,24 @@ export const classicalProductData = [
     ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Classical Women's Health / Galactagogue",
+      "Therapeutic Category": "Classical ",
       Description:
-        "Shatavari (Asparagus racemosus) is known as the 'Queen of Herbs' for female health. It supports the reproductive system and is especially valued for promoting lactation in nursing mothers.",
+        "Satavari is a classical Ayurvedic formulation traditionally used to support female reproductive health, improve vitality, and promote overall well-being.",
       "How It Works":
-        "It acts as a potent adaptogen and rejuvenator (Rasayana). It nourishes and balances the female reproductive hormones, soothing stress and supporting optimal milk production.",
-      Indication:
-        "Supporting female reproductive health, menopausal symptoms, and as a natural galactagogue.",
-      Dosage: "3-5 grams twice daily with milk or warm water, or as directed.",
-      Presentation: "Available in 100gm jar.",
+        "Helps manage hyperlipidemia, supports cardiovascular health, acts as a cardio-protective agent, and helps regulate hypertension.",
+      Indication:[
+        "Dyspnea.",
+         "Cough.",
+         "Burning sensation in palms and feet.",
+         "Low digestion power.",
+         "Loss of sensation in tongue.",
+         "Pain in abdomen.",
+         "Anorexia.",
+         "Fever.",
+         "Bleeding from nose.",
+      ],
+      Dosage: "1–3g twice a day with ghee or honey, or as directed by the physician.",
+      Presentation: "Available in 100g pack..",
     },
   },
 
@@ -1159,15 +1180,21 @@ export const classicalProductData = [
     ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Classical Liver/Spleen",
+      "Therapeutic Category": "Classical",
       Description:
-        "Rohitakadi Churna is a potent formulation focused on maintaining the health of the spleen and liver. It is especially useful in conditions related to spleen enlargement and related digestive issues.",
+        "Enhances appetite and improves digestion. Useful in liver disorders.",
       "How It Works":
-        "The primary ingredient, Rohitaka, is known for its splenoprotective and hepatoprotective actions. It helps regulate bile flow and reduces enlargement of abdominal organs.",
-      Indication:
-        "Liver and spleen disorders, loss of appetite, and indigestion.",
-      Dosage: "1-3 grams twice daily with honey or warm water.",
-      Presentation: "Available in 100gm jar.",
+        " Hepatoprotective. Contains Tecoma undulata (Rohatak). Beneficial in liver and spleen diseases.",
+      Indication: [
+        "Hepatomegaly,.",
+        "Splenomegaly",
+        "Jaundice",
+       "Anorexia due to digestive disorder, fatty liver",
+       "Pre or early cirrhotic condition"
+      ],
+       
+      Dosage: "3–6 grams or as prescribed by the physician.",
+      Presentation: "100gm",
     },
   },
 
@@ -1230,7 +1257,7 @@ export const classicalProductData = [
     details: {
       "Therapeutic Category": "Classical",
       Description:
-        "Ashwagandha Churna is a traditional herbal remedy derived from Withania somnifera, known for its adaptogenic and rejuvenating properties.",
+        "Ashwagandha Churna is a traditional herbal remedy derived from *Withania somnifera*, known for its adaptogenic and rejuvenating properties.",
       "How It Works":
         "Boosts immune function and stamina. Adaptogenic effects help the body manage stress. Improves sleep quality and libido. Contains Withania somnifera as the active ingredient. Helpful in managing insomnia.",
       Indication: "Neurological disorders, General weakness and fatigue",
@@ -1267,7 +1294,7 @@ export const classicalProductData = [
       "How It Works":
         "Immune stimulatory, adaptogenic properties, helps balance metabolism, and promotes detoxification.",
       Indication:
-        "Dyspnea (difficulty breathing), Cough, Burning sensation in palms and feet, Low digestive power, Loss of sensation in tongue, Abdominal pain, anorexia, fever, and nosebleeds",
+        "Dyspnea (difficulty breathing)., Cough, Burning sensation in palms and feet., Low digestive power., Loss of sensation in tongue., Abdominal pain, anorexia, fever, and nosebleeds.",
       Dosage:
         "1–3 grams twice a day with ghee or honey, or as directed by the physician.",
       Presentation: "100 gm pack",
@@ -1296,16 +1323,25 @@ export const classicalProductData = [
     ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Classical Cardiovascular / Heart Tonic",
+      "Therapeutic Category": "Patent",
       Description:
-        "Arjuna capsules provide a concentrated dose of the heart-supportive benefits of Terminalia arjuna bark, ideal for busy lifestyles. It is a powerful natural cardiotonic.",
+        "Arjuna Capsule is an Ayurvedic formulation made from Terminalia arjuna, known for its cardioprotective properties. It supports healthy heart function and helps manage blood pressure naturally.",
       "How It Works":
-        "Strengthens heart muscles (myocardium), helps maintain healthy cholesterol levels, and provides antioxidant protection to the cardiovascular system.",
-      Indication:
-        "Supports cardiac health, strengthens heart muscles, and regulates blood pressure.",
+      [
+        "Terminalia Arjuna: Strengthens cardiac muscles and improves the efficiency of heart pumping.",
+      "Supports healthy blood circulation and normal blood pressure levels.",
+      "Acts as an antioxidant and reduces oxidative stress on the heart.",
+      ],
+
+      Indication:[
+        "Cardiac weakness.",
+      "Mild hypertension.",
+      "Palpitation.",
+      "Chest discomfort due to anxiety or stress.", 
+      ],
       Dosage:
-        "1 capsule twice daily after meals, or as prescribed by a health professional.",
-      Presentation: "Available in 60 capsules bottle.",
+        "1-2 capsules twice daily with water or as directed by the physician.",
+      Presentation: "30 Capsules",
     },
   },
 
@@ -1331,16 +1367,27 @@ export const classicalProductData = [
     ],
     paymentMethods: ["Visa", "MasterCard"],
     details: {
-      "Therapeutic Category": "Classical Respiratory / Throat Care",
+      "Therapeutic Category": "Classical Ayurvedic formulation",
       Description:
-        "Yasti Madhu (Licorice/Mulethi) Churna is a soothing formulation widely used for throat and respiratory relief. It is sweet-tasting and acts as a demulcent.",
+        "Yasti Madhu Churna is a herbal powder blend known for its rejuvenating and cooling properties. It supports digestive health and helps balance Pitta dosha.",
       "How It Works":
-        "It forms a protective coat over the irritated mucosal lining of the throat and esophagus, reducing irritation, inflammation, and coughing. It also acts as an expectorant.",
+      [
+        "Balances Pitta and Kapha doshas.",
+        "Enhances digestive fire (Agni)",
+        "Promotes detoxification and cooling effects.",
+      ],
+     
       Indication:
-        "Sore throat, cough, hoarseness, chest congestion, and respiratory disorders.",
+      [
+         "Digestive disorders",
+         "Excess acidity and heartburn",
+         "Fever and inflammation",
+         "Skin disorders linked to Pitta imbalance",
+      ],
+
       Dosage:
-        "1-3 grams twice daily, mixed with honey or warm water, or as advised by a physician.",
-      Presentation: "Available in 100gm jar.",
+        "3 to 6 grams daily, preferably with warm water or honey, or as directed by the physician.",
+      Presentation: "Available in 100gm.",
     },
   },
 
