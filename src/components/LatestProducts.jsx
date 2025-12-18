@@ -10,7 +10,7 @@ const LatestProducts = () => {
     product.features?.[0] || "Details not available.";
 
   return (
-    <div className="p-6 md:p-12 max-w-6xl mx-auto">
+    <div className="p-6 md:p-12 max-w-6xl mx-auto font-serif">
       {/* Header */}
       <div className="text-center mb-12">
         <p className="text-gray-700 font-bold text-base md:text-lg uppercase tracking-widest mb-2">
@@ -25,20 +25,20 @@ const LatestProducts = () => {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3  gap-4 md:gap-8">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
         {latestProducts.map((product) => (
           <div
             key={product.id}
             onClick={() => setSelectedProduct(product)}
-            className="group cursor-pointer  "
+            className="group cursor-pointer"
           >
             <div
               className="
-                relative 
+                relative
                 hover:bg-green-50
                 border
                 border-gray-100
-              bg-gray-200
+                bg-gray-200
                 hover:border-green-300
                 rounded-lg
                 p-4 md:p-5
@@ -52,18 +52,18 @@ const LatestProducts = () => {
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="max-h-full max-w-full object-contain"
+                  className="max-h-full min-w-full object-contain"
                 />
               </div>
 
               {/* Info */}
               <div className="flex flex-col flex-grow justify-between w-full">
                 <div>
-                  <h2 className="text-base md:text-lg font-bold text-gray-900 line-clamp-2 mb-2 transition group-hover:text-green-700">
+                  <h2 className="text-base md:text-lg font-bold text-gray-900 line-clamp-2 mb-1 transition group-hover:text-green-700">
                     {product.title}
                   </h2>
 
-                  <p className="text-xs md:text-sm text-gray-700 line-clamp-2 h-10 mb-4 leading-relaxed group-hover:text-gray-800">
+                  <p className="text-xs md:text-[15px] text-gray-700 line-clamp-2 h-12 mb-3 leading-relaxed group-hover:text-gray-800">
                     {getProductDescription(product)}
                   </p>
                 </div>

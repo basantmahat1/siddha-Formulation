@@ -6,7 +6,7 @@ const ProductsPage = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   return (
-    <div className="p-6">
+    <div className="p-6 font-serif">
       <h1 className="text-3xl font-bold mb-6">All Products</h1>
       
       {/* Product Grid */}

@@ -4,7 +4,7 @@ import { ShieldCheck, TrendingUp, Factory, Mail, Phone } from "lucide-react";
 
 export default function Finance() {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white">
+    <div className="bg-gradient-to-b font-serif from-gray-50 to-white">
       {/* Hero Section */}
 
       {/* Main Container */}
@@ -71,7 +71,7 @@ export default function Finance() {
                   Message from the Head – Finance
                 </span>
 
-                <p className="text-gray-700 leading-relaxed mb-6">
+                <p className="text-gray-700 text-justify leading-relaxed mb-6">
                   The pharmaceutical industry is a highly regulated sector with
                   substantial capital investment requirements and long
                   development timelines. Effective financial management is

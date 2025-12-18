@@ -70,7 +70,7 @@ export default function Navbar() {
       </div>
 
     
-      <nav className="bg-green-700 relative">
+      <nav className="bg-green-50 md:bg-green-700 relative">
         <div className="max-w-7xl mx-auto px-4">
 
           {/* ===== Desktop Menu ===== */}
@@ -111,7 +111,7 @@ export default function Navbar() {
 
           {/* ===== Mobile Menu ===== */}
           {isMenuOpen && (
-            <ul className="md:hidden text-white text-sm py-2">
+            <ul className="md:hidden text-green-700 font-bold text-sm py-2">
 
               <li className="px-4 py-3 border-t border-green-600">
                 <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
@@ -138,10 +138,9 @@ export default function Navbar() {
                 </button>
 
                 {mobileOpen.about && (
-                  <ul className="mt-3 pl-4 space-y-2 text-green-100">
+                  <ul className="mt-3 pl-4 space-y-2 text-green-700">
                     {[
                       ["Who We Are", "/about"],
-                      ["Company Information", "/about/company"],
                       ["MD Message", "/about/md"],
                       ["Board of Directors", "/board-of-directors"],
                       ["Patron & Adviser", "/patron_adviser"],
@@ -187,16 +186,15 @@ export default function Navbar() {
           onMouseEnter={() => clearTimeout(closeTimeout.current)}
           onMouseLeave={handleSubnavLeave}
         >
-          <div className="max-w-7xl mx-auto px-6 py-7 grid grid-cols-3 gap-10">
+          <div className="max-w-7xl mx-auto px-2 py-2 grid grid-cols-3  gap-2">
 
-            <div className="border-r border-green-200 pr-8">
+            <div className="border-r border-green-200 pr-4">
               <h3 className="font-bold text-green-900 mb-4 uppercase tracking-wider">
                 About Siddha
               </h3>
-              <ul className="space-y-2 text-gray-800 font-medium">
+              <ul className="space-y-0 text-gray-800 font-medium">
                 {[
                   ["Who We Are", "/about"],
-                  ["Company Information", "/about/company"],
                   ["MD Message", "/about/md"],
                   ["Board of Directors", "/board-of-directors"],
                   ["Patron & Adviser", "/patron_adviser"],

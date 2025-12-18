@@ -226,7 +226,7 @@ const KidneyFailureGuide = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-blue-50 font-serif">
       {/* Hero Section */}
       <section className="relative pt-10 pb-10 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-green-900 to-blue-900"></div>

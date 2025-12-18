@@ -45,9 +45,9 @@ export default function AboutUs() {
   }, [currentSlide]);
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans">
+    <div className="min-h-screen bg-gray-50 font-serif">
     <div
-  className="relative py-28 flex items-center justify-center text-center text-white overflow-clip"
+  className="relative h-[300px] md:h-[410px] py-28 flex items-center justify-center text-center text-white overflow-clip"
   style={{
     backgroundImage: `url('${slides[currentSlide].bgImage}')`,
     backgroundSize: "cover",
@@ -62,11 +62,11 @@ export default function AboutUs() {
     key={currentSlide}
     className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out"
   >
-    <h1 className="text-4xl md:text-5xl text-green-300 font-extrabold mb-6 drop-shadow-lg">
+    <h1 className="text-4xl md:text-5xl text-green-400 font-extrabold mb-6 drop-shadow-lg">
       {slides[currentSlide].title}
     </h1>
 
-    <p className="text-lg md:text-xl text-green-100 leading-relaxed max-w-3xl mx-auto">
+    <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
       {slides[currentSlide].subtitle}
     </p>
 
@@ -92,14 +92,14 @@ export default function AboutUs() {
       <div className="max-w-6xl mx-auto px-6 py-20">
         <section className="mb-24">
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 text-justify">
               {/* Text */}
               <div className="p-12 flex flex-col justify-center">
                 <h2 className="text-4xl font-bold text-gray-900 mb-6">
                   Our Story
                 </h2>
 
-                <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
                   Siddha Formulation was born with a vision to restore the
                   ancient healing wisdom of Ayurveda and integrate it with
                   modern scientific standards. For over two decades, our journey
@@ -107,7 +107,7 @@ export default function AboutUs() {
                   that bring real wellness into people's lives.
                 </p>
 
-                <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
                   Each product is carefully formulated using premium herbal
                   ingredients, ethically sourced from the richest natural
                   regions of India. We emphasize purity, safety, and
@@ -115,7 +115,7 @@ export default function AboutUs() {
                   benefits Ayurveda promises.
                 </p>
 
-                <p className="text-gray-700 text-lg leading-relaxed">
+                <p className="text-gray-700 text-bse md:text-lg leading-relaxed">
                   Today, thousands of families trust Siddha Formulation for
                   their daily wellness and healing needs. Our mission continues:
                   to make natural and holistic health accessible to everyone.
@@ -123,7 +123,7 @@ export default function AboutUs() {
               </div>
 
               {/* Image */}
-              <div className="h-96 md:h-auto">
+              <div className="h-80 md:h-auto">
                 <img
                   src="/assets/img/img-1about.jpg"
                   alt="Herbal ingredients and Ayurvedic preparations on a wooden surface"
@@ -138,12 +138,12 @@ export default function AboutUs() {
         <section className="mb-24">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Mission */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
-              <div className="text-6xl mb-6">🎯</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <div className="bg-white rounded-2xl p-5 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
+              <div className="text-4xl md:text-6xl mb-2 md:mb-6">🎯</div>
+              <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2 md:mb-4">
                 Our Mission
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                 To enrich lives with pure, effective, and affordable Ayurvedic
                 products that nurture health, balance, and holistic wellness.
               </p>
@@ -151,11 +151,11 @@ export default function AboutUs() {
 
             {/* Vision */}
             <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
-              <div className="text-6xl mb-6">🌱</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <div className="text-4xl md:text-6xl mb-2 md:mb-6">🌱</div>
+              <h3 className="text-2xl font-bold text-gray-900  mb-2 md:mb-4">
                 Our Vision
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                 To be a global symbol of trust in natural wellness, rooted in
                 Ayurveda and committed to purity, sustainability, and care.
               </p>
@@ -163,11 +163,11 @@ export default function AboutUs() {
 
             {/* Values */}
             <div className="bg-white rounded-2xl p-10 shadow-lg border-t-4 border-green-600 hover:shadow-xl transition transform hover:-translate-y-0.5">
-              <div className="text-6xl mb-6">💎</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <div className="text-4xl md:text-6xl mb-2 md:mb-6">💎</div>
+              <h3 className="text-2xl font-bold text-gray-900  mb-2 md:mb-4">
                 Our Values
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-base  md:text-lg leading-relaxed">
                 Integrity, authenticity, purity, compassion, and innovation —
                 these principles form the core of everything we do.
               </p>
@@ -177,10 +177,10 @@ export default function AboutUs() {
 
         {/* Why Choose Us */}
         <section className="mb-24">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Why Choose Siddha Formulation?
           </h2>
-          <p className="text-center text-gray-600 mb-14 max-w-2xl mx-auto text-lg">
+          <p className="text-center text-base text-gray-600 mb-14 max-w-2xl mx-auto md:text-lg">
             We bring you premium Ayurvedic wellness backed by years of research,
             heritage, and trust.
           </p>
@@ -213,11 +213,11 @@ export default function AboutUs() {
                 key={index}
                 className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl text-center transition border-l-4 border-green-600 transform hover:scale-[1.02]"
               >
-                <div className="text-6xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <div className="text-4xl md:text-6xl mb-3 md:mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4 md:mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-base leading-relaxed">
                   {item.text}
                 </p>
               </div>
@@ -227,7 +227,7 @@ export default function AboutUs() {
 
         {/* Call to Action */}
         <section className=" bg-green-700 text-white rounded-3xl p-16  text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className=" text-3xl md:text-4xl font-bold mb-6">
             Begin Your Natural Wellness Journey
           </h2>
           <p className="text-green-100 mb-10 max-w-3xl mx-auto text-lg leading-relaxed">

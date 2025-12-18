@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen p-6">
+    <div className="bg-gray-100 min-h-screen p-6 font-serif">
       <div className="max-w-6xl mx-auto space-y-10">
 
      
@@ -75,7 +75,7 @@ const Contact = () => {
                       }
                       value={formData[field]}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 text-sm"
+                      className="w-full px-3 py-2 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-900 text-lg"
                     />
                   )
                 )}
@@ -86,7 +86,7 @@ const Contact = () => {
                   placeholder="How can we help?"
                   value={formData.help}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-800 text-sm resize-none"
+                  className="w-full px-3 py-2 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-900 text-lg resize-none"
                 />
 
                 <button
@@ -106,7 +106,7 @@ const Contact = () => {
 
   {/* Location Card */}
   <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-    <h2 className="text-2xl font-serif font-semibold text-green-900 flex items-center gap-3 mb-4">
+    <h2 className="text-3xl font-serif font-semibold text-green-900 flex items-center gap-3 mb-4">
       <MapPin className="w-6 h-6 text-green-800" />
       Siddha Formulation Location
     </h2>
@@ -164,7 +164,7 @@ const Contact = () => {
 
   {/* Office Hours Card */}
   <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-    <h2 className="text-xl font-serif font-semibold text-green-900 flex items-center gap-3 mb-6">
+    <h2 className="text-3xl font-serif font-semibold text-green-900 flex items-center gap-3 mb-6">
       <Clock className="w-6 h-6 text-green-800" />
       Office Hours
     </h2>

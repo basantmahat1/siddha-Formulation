@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 export default function Banner() {
   return (
-    <div className="w-full font-sans">
+    <div className="w-full font-serif">
         
   
         {/* WHY AYURVEDA SECTION (Moved up, now followed directly by the CTA banner) */}
@@ -67,7 +67,7 @@ export default function Banner() {
     </div>
 
     {/* Heading */}
-    <h2 className="text-3xl md:text-3xl font-serif font-semibold text-green-800 mb-6">
+    <h2 className="text-3xl md:text-4xl font-serif font-semibold text-green-800 mb-6">
       Fusing Ancient Wisdom with Modern Science
     </h2>
 
@@ -143,15 +143,15 @@ export default function Banner() {
 
 
         {/* NEW CALL TO ACTION BANNER: Ready to Experience Natural Healing? (Placed at the end/bottom) */}
-        <section className="py-8 px-4 bg-gradient-to-r h-100  from-green-800 to-green-700 text-white text-center">
+        <section className="py-8 px-4 md:pt-20 bg-gradient-to-r h-[300px md:h-105  from-green-800 to-green-700 text-white text-center">
   
             {/* GET IN TOUCH CTA */}
-            <div className="inline-block px-8 py-4 mb-6 text-sm font-semibold tracking-wider uppercase bg-yellow-400 text-gray-800 rounded-full shadow-md">
+            <div className="inline-block px-4 py-3 mb-2 md:px-8 md:py-4 md:mb-6 text-sm font-semibold tracking-wider uppercase bg-yellow-400 text-gray-800 rounded-full shadow-md">
               GET IN TOUCH
             </div>
             
             {/* Main Heading */}
-            <h2 className="text-4xl md:text-4xl font-serif font-light mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-light mb-4">
               Ready to Experience Natural Healing?
             </h2>
             
@@ -164,7 +164,7 @@ export default function Banner() {
             <div className="flex justify-center">
               <Link
                 to="/contact" // replace with your actual contact page route
-                className="px-8 py-3 bg-white text-green-800 font-semibold rounded-lg shadow-xl hover:bg-gray-100 transition duration-300"
+                className="px-2 py-2 md:px-8 md:py-3 bg-white text-green-800 font-semibold rounded-lg shadow-xl hover:bg-gray-100 transition duration-300"
               >
                 Contact Us
               </Link>
