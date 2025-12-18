@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  MapPin,
-  Clock,
-  Mail,
-  Phone,
-} from "lucide-react";
+import { MapPin, Clock, Mail, Phone } from "lucide-react";
 import ScrollUpButton from "../common/ScrollUpButton";
 
 const Contact = () => {
@@ -22,18 +17,15 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data Captured:", formData);
-    alert("Form submitted! Check console for data.");
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Form Data Captured:", formData);
+  //   alert("Form submitted! Check console for data.");
+  // };
 
   return (
     <div className="bg-gray-100 min-h-screen p-6 font-serif">
       <div className="max-w-6xl mx-auto space-y-10">
-
-     
-
         {/* ================= CONTACT FORM ================= */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <header className="px-6 py-4">
@@ -57,7 +49,11 @@ const Contact = () => {
 
             {/* Form */}
             <div className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form
+                action="https://formsubmit.co/rijalbishwash199@gmail.com"
+                method="POST"
+                className="space-y-4"
+              >
                 {["name", "email", "address", "phone", "country"].map(
                   (field) => (
                     <input
@@ -88,7 +84,7 @@ const Contact = () => {
                   onChange={handleChange}
                   className="w-full px-3 py-2 border-b border-gray-300 focus:border-green-600 focus:outline-none text-gray-900 text-lg resize-none"
                 />
-
+                <input type="hidden" name="_template" value="table" />
                 <button
                   type="submit"
                   className="w-full px-4 py-2 rounded-md font-bold bg-green-700
@@ -101,22 +97,21 @@ const Contact = () => {
             </div>
           </div>
         </div>
-{/* ================= LOCATION + OFFICE HOURS ================= */}
-<div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* ================= LOCATION + OFFICE HOURS ================= */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Location Card */}
+          <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <h2 className="text-3xl font-serif font-semibold text-green-900 flex items-center gap-3 mb-4">
+              <MapPin className="w-6 h-6 text-green-800" />
+              Siddha Formulation Location
+            </h2>
 
-  {/* Location Card */}
-  <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-    <h2 className="text-3xl font-serif font-semibold text-green-900 flex items-center gap-3 mb-4">
-      <MapPin className="w-6 h-6 text-green-800" />
-      Siddha Formulation Location
-    </h2>
+            <p className="text-gray-700 mb-4">
+              All of our offices are open Sunday through Friday (except on major
+              holidays).
+            </p>
 
-    <p className="text-gray-700 mb-4">
-      All of our offices are open Sunday through Friday
-      (except on major holidays).
-    </p>
-
-    {/* <p className="text-gray-700 mb-4">
+            {/* <p className="text-gray-700 mb-4">
       Want to grow with us? Visit our{" "}
       <a
         className="text-green-700 font-semibold underline hover:text-green-900"
@@ -125,78 +120,77 @@ const Contact = () => {
       </a>.
     </p> */}
 
-    <div className="space-y-3 text-gray-800">
-      <p className="flex items-center gap-2">
-        <Mail className="w-5 h-5 text-green-700" />
-        <span className="font-semibold">Email:</span>
-        <a
-          href="mailto:siddha.formulation@gmail.com"
-          className="text-green-700 hover:text-green-900 "
-        >
-          siddha.formulation@gmail.com
-        </a>
-      </p>
+            <div className="space-y-3 text-gray-800">
+              <p className="flex items-center gap-2">
+                <Mail className="w-5 h-5 text-green-700" />
+                <span className="font-semibold">Email:</span>
+                <a
+                  href="mailto:siddha.formulation@gmail.com"
+                  className="text-green-700 hover:text-green-900 "
+                >
+                  siddha.formulation@gmail.com
+                </a>
+              </p>
 
-      <p className="flex items-start gap-2">
-        <Phone className="w-5 h-5 text-green-700 mt-1" />
-        <span>
-          <span className="font-semibold">Phone:</span>
-          <br />
-          External Relation / Marketing:{" "}
-          <a
-            href="tel:+9779857030665"
-            className="text-green-700 hover:text-green-900  ml-1"
-          >
-            9857030665
-          </a>
-          <br />
-          Admin:{" "}
-          <a
-            href="tel:+9779851214257"
-            className="text-green-700 hover:text-green-900  ml-1"
-          >
-            9851214257
-          </a>
-        </span>
-      </p>
-    </div>
-  </div>
+              <p className="flex items-start gap-2">
+                <Phone className="w-5 h-5 text-green-700 mt-1" />
+                <span>
+                  <span className="font-semibold">Phone:</span>
+                  <br />
+                  External Relation / Marketing:{" "}
+                  <a
+                    href="tel:+9779857030665"
+                    className="text-green-700 hover:text-green-900  ml-1"
+                  >
+                    9857030665
+                  </a>
+                  <br />
+                  Admin:{" "}
+                  <a
+                    href="tel:+9779851214257"
+                    className="text-green-700 hover:text-green-900  ml-1"
+                  >
+                    9851214257
+                  </a>
+                </span>
+              </p>
+            </div>
+          </div>
 
-  {/* Office Hours Card */}
-  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-    <h2 className="text-3xl font-serif font-semibold text-green-900 flex items-center gap-3 mb-6">
-      <Clock className="w-6 h-6 text-green-800" />
-      Office Hours
-    </h2>
+          {/* Office Hours Card */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <h2 className="text-3xl font-serif font-semibold text-green-900 flex items-center gap-3 mb-6">
+              <Clock className="w-6 h-6 text-green-800" />
+              Office Hours
+            </h2>
 
-    <div className="space-y-6 text-gray-800">
-      <div>
-        <h3 className="font-semibold text-lg mb-1">Main Office</h3>
-        <p className="text-sm flex items-center gap-2">
-          <MapPin className="w-4 h-4 text-green-700" />
-          Tilottama-15, Rupandehi, Nepal
-        </p>
-        <p className="text-sm flex items-center gap-2">
-          <Clock className="w-4 h-4 text-green-700" />
-          10:00 AM – 6:00 PM
-        </p>
-      </div>
+            <div className="space-y-6 text-gray-800">
+              <div>
+                <h3 className="font-semibold text-lg mb-1">Main Office</h3>
+                <p className="text-sm flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-green-700" />
+                  Tilottama-15, Rupandehi, Nepal
+                </p>
+                <p className="text-sm flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-green-700" />
+                  10:00 AM – 6:00 PM
+                </p>
+              </div>
 
-      <div>
-        <h3 className="font-semibold text-lg mb-1">Factory Office</h3>
-        <p className="text-sm flex items-center gap-2">
-          <MapPin className="w-4 h-4 text-green-700" />
-          Tilottama-15, Rupandehi, Nepal
-        </p>
-        <p className="text-sm flex items-center gap-2">
-          <Clock className="w-4 h-4 text-green-700" />
-          10:00 AM – 6:00 PM
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
+              <div>
+                <h3 className="font-semibold text-lg mb-1">Factory Office</h3>
+                <p className="text-sm flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-green-700" />
+                  Tilottama-15, Rupandehi, Nepal
+                </p>
+                <p className="text-sm flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-green-700" />
+                  10:00 AM – 6:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <ScrollUpButton />
