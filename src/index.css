@@ -2,25 +2,33 @@
 
 /* Root CSS variables for colors and font */
 :root {
-	--font-sans: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --font-sans: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
 
-	--color-primary: #166534; /* tailwind green-700 */
-	--color-primary-dark: #14532d; /* tailwind green-800 */
-	--color-accent: #6e9e54; /* custom accent used in UI */
+  --color-primary: #166534; /* tailwind green-700 */
+  --color-primary-dark: #14532d; /* tailwind green-800 */
+  --color-accent: #6e9e54; /* custom accent used in UI */
 
-	--bg: #f3f4f6; /* gray-100 */
-	--surface: #ffffff;
-	--muted: #6b7280; /* gray-500 */
-	--border: #e5e7eb; /* gray-200 */
+  --bg: #f3f4f6; /* gray-100 */
+  --surface: #ffffff;
+  --muted: #6b7280; /* gray-500 */
+  --border: #e5e7eb; /* gray-200 */
 }
 
 /* Apply root font */
-html, body {
-	font-family: var(--font-sans);
-	background-color: var(--bg);
+html,
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg);
 }
 
 /* Utility: allow components to reference CSS variables in custom styles */
-.theme-primary { color: var(--color-primary); }
-.bg-surface { background-color: var(--surface); }
-.border-muted { border-color: var(--border); }
+.theme-primary {
+  color: var(--color-primary);
+}
+.bg-surface {
+  background-color: var(--surface);
+}
+.border-muted {
+  border-color: var(--border);
+}
