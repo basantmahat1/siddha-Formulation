@@ -648,7 +648,7 @@
 
 // export default ProductList;
 //----------------------------------------------see more --------------------------
-
+import { useLocation } from "react-router-dom";
 import React, { useState, useMemo, useRef, useEffect } from "react";
 import {
   productData,
@@ -670,7 +670,7 @@ const ProductSection = ({
     product.features?.[0] || "Details not available.";
 
   return (
-    <div className="mb-12">
+    <div className="mb-12 ">
       {showTitle && (
         <div className="scroll-mt-20 mb-2 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#096e3b] mb-2 uppercase tracking-wider">
@@ -760,7 +760,16 @@ const ProductList = () => {
     setActiveMainFilter("herbal");
     setShowAll(false);
   };
+  const location = useLocation();
 
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const filter = params.get("filter"); // "herbal" or "veterinary"
+    if (filter === "herbal" || filter === "veterinary") {
+      // Delay setting state to avoid cascading render warning
+      setTimeout(() => setActiveMainFilter(filter), 0);
+    }
+  }, [location.search]); // include location.search
   const filteredProducts = useMemo(() => {
     let products = [];
     if (activeMainFilter === "all") {
@@ -904,7 +913,7 @@ const ProductList = () => {
               showTitle={true}
             />
             {!showAll && filteredProducts.length > 8 && (
-              <div className="flex justify-center -mt-4 mb-12">
+              <div className="flex justify-center -mt-4  mb-5">
                 <button
                   onClick={() => setShowAll(true)}
                   className="px-10 py-3 bg-white border-2 border-green-700 text-green-700 font-bold rounded-full hover:bg-green-700 hover:text-white transition-all duration-300 shadow-md uppercase tracking-wider text-sm"

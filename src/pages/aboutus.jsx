@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ScrollUpButton from "../common/ScrollUpButton";
+import { useNavigate } from "react-router-dom";
 
 // Define the slides data for the carousel
 const slides = [
@@ -24,9 +25,14 @@ const slides = [
   },
 ];
 
-
 export default function AboutUs() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
+
+  const goToProducts = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // scroll to top
+    setTimeout(() => navigate("/products"), 100); // navigate after scroll
+  };
 
   // Function to move to the next slide
   const nextSlide = () => {
@@ -46,47 +52,47 @@ export default function AboutUs() {
 
   return (
     <div className="min-h-screen bg-gray-50 font-serif">
-    <div
-  className="relative h-[300px] md:h-[410px] py-28 flex items-center justify-center text-center text-white overflow-clip"
-  style={{
-    backgroundImage: `url('${slides[currentSlide].bgImage}')`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black opacity-30"></div>
+      <div
+        className="relative h-[300px] md:h-[410px] py-28 flex items-center justify-center text-center text-white overflow-clip"
+        style={{
+          backgroundImage: `url('${slides[currentSlide].bgImage}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black opacity-30"></div>
 
-  {/* Content */}
-  <div
-    key={currentSlide}
-    className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out"
-  >
-    <h1 className="text-4xl md:text-5xl text-green-400 font-extrabold mb-6 drop-shadow-lg">
-      {slides[currentSlide].title}
-    </h1>
-
-    <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
-      {slides[currentSlide].subtitle}
-    </p>
-
-    {/* Slider Indicators */}
-    <div className="flex justify-center gap-2 mt-8">
-      {slides.map((_, index) => (
+        {/* Content */}
         <div
-          key={index}
-          onClick={() => goToSlide(index)}
-          className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
-            currentSlide === index
-              ? "bg-white scale-110"
-              : "bg-green-300 hover:bg-white/70"
-          }`}
-          aria-label={`Go to slide ${index + 1}`}
-        />
-      ))}
-    </div>
-  </div>
-</div>
+          key={currentSlide}
+          className="relative max-w-6xl mx-auto px-6 text-center transition-opacity duration-1000 ease-in-out"
+        >
+          <h1 className="text-4xl md:text-5xl text-green-400 font-extrabold mb-6 drop-shadow-lg">
+            {slides[currentSlide].title}
+          </h1>
+
+          <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
+            {slides[currentSlide].subtitle}
+          </p>
+
+          {/* Slider Indicators */}
+          <div className="flex justify-center gap-2 mt-8">
+            {slides.map((_, index) => (
+              <div
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
+                  currentSlide === index
+                    ? "bg-white scale-110"
+                    : "bg-green-300 hover:bg-white/70"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Story Section */}
       <div className="max-w-6xl mx-auto px-6 py-20">
@@ -213,7 +219,9 @@ export default function AboutUs() {
                 key={index}
                 className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl text-center transition border-l-4 border-green-600 transform hover:scale-[1.02]"
               >
-                <div className="text-4xl md:text-6xl mb-3 md:mb-4">{item.icon}</div>
+                <div className="text-4xl md:text-6xl mb-3 md:mb-4">
+                  {item.icon}
+                </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 md:mb-3">
                   {item.title}
                 </h3>
@@ -236,15 +244,12 @@ export default function AboutUs() {
             now.
           </p>
 
-          <Link
-            to="/products"
-            //   className="bg-green-700 text-white px-6 py-3 rounded-lg font-bold
-            // hover:bg-green-800 transition-all hover:shadow-lg transform hover:scale-105
-            // flex items-center gap-2 text-lg tracking-wider"
-            className="inline-block bg-white text-lg text-green-600  font-bold px-12 py-3  rounded-lg shadow-xl hover:bg-gray-100 transition-all transform hover:scale-105"
+          <button
+            onClick={goToProducts}
+            className="inline-block bg-white text-lg text-green-600 font-bold px-12 py-3 rounded-lg shadow-xl hover:bg-gray-100 transition-all transform hover:scale-105"
           >
             Explore Products
-          </Link>
+          </button>
         </section>
       </div>
       <ScrollUpButton />

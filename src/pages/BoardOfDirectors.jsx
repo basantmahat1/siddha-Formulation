@@ -69,7 +69,6 @@ const BoardOfDirectors = () => {
   return (
     <section className="py-6 bg-gray-50 font-serif">
       <div className="max-w-7xl mx-auto px-4 ">
-
         {/* ===== HEADER ===== */}
         <div className="text-center mb-8 ">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-50 rounded-full mb-6">
@@ -79,8 +78,8 @@ const BoardOfDirectors = () => {
             Board of Directors
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-            Discover all members of Siddha Formulation and the splendid
-            30 years of responsibilities.
+            Discover all members of Siddha Formulation and the splendid 30 years
+            of responsibilities.
           </p>
         </div>
 
@@ -105,7 +104,7 @@ const BoardOfDirectors = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-32 h-32 rounded-full object-cover border-4 border-white"
+                    className="w-32 h-32 rounded-full object-fill border-4 border-white"
                   />
                 </div>
 
@@ -147,7 +146,7 @@ const BoardOfDirectors = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-28 h-28 rounded-full object-cover border-4 border-white shadow"
+                    className="w-28 h-28 rounded-full object-fill border-4 border-white shadow"
                   />
                 </div>
 
