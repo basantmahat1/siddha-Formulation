@@ -436,15 +436,24 @@
 //   );
 
 //   const filterRef = useRef(null);
-//   useEffect(() => {
-//     const handleClickOutside = (event) => {
-//       if (filterRef.current && !filterRef.current.contains(event.target)) {
-//         setIsFilterOpen(false);
-//       }
-//     };
-//     document.addEventListener("mousedown", handleClickOutside);
-//     return () => document.removeEventListener("mousedown", handleClickOutside);
-//   }, []);
+// useEffect(() => {
+//   const handleClickOutside = (event) => {
+//     if (filterRef.current && !filterRef.current.contains(event.target)) {
+//       setIsFilterOpen(false);
+//     }
+//   };
+
+//   // Desktop click
+//   document.addEventListener("mousedown", handleClickOutside);
+
+//   // Mobile touch
+//   document.addEventListener("touchstart", handleClickOutside);
+
+//   return () => {
+//     document.removeEventListener("mousedown", handleClickOutside);
+//     document.removeEventListener("touchstart", handleClickOutside);
+//   };
+// }, []);
 
 //   return (
 //     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white relative">
@@ -639,6 +648,7 @@
 
 // export default ProductList;
 //----------------------------------------------see more --------------------------
+
 import React, { useState, useMemo, useRef, useEffect } from "react";
 import {
   productData,
@@ -797,8 +807,17 @@ const ProductList = () => {
         setIsFilterOpen(false);
       }
     };
+
+    // Desktop click
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+
+    // Mobile touch
+    document.addEventListener("touchstart", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
   }, []);
 
   return (
